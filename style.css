@@ -1,0 +1,47 @@
+.logo {
+    display: inline;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo h1 {
+    margin-top: 25px;
+}
+
+.card {
+    width: 200px;
+}
+.box{
+    padding: 30px;
+}
+.top{
+    display: flex;
+}
+.input-group{
+    margin-bottom: 12px;
+    margin-right: 12px;
+    width: 50%;
+}
+
+.custom-box {
+    border: 1px solid #ced4da;
+    background-color: #6c757d;
+    border-radius: 0px;
+    display: flex;
+    padding: 0px;
+    width: 300px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    border-right: 1px solid #fff;
+    padding: 5px;
+    margin-right: 8px;
+    background-color: #487297;
+    width: 50px;
+}
