@@ -16,30 +16,36 @@ article {
 	margin-bottom: 0px;
 }
 
+#box {
+	padding: 0px;
+	display: flex;
+	overflow: hidden;
+}
 
-@media only screen and (min-width: 1540px){
+@media only screen and (min-width: 1540px) {
 	.cardList {
 		width: 11.5rem;
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1022px){
+@media only screen and (min-width: 768px) and (max-width: 1022px) {
 	.cardList {
 		width: 9.71rem;
 	}
 }
 
-@media only screen and (min-width: 100px) and (max-width: 767px){
-	.cardList {
-		width: 33%;
-	}
-}
-
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 580px) {
 	.cardList {
 		width: 100%;
 	}
+	#box{
+		display: inline;
+	}
 }
 
-
-
+@media only screen and (max-width: 480px) {
+	#btnFileUpload {
+		visibility: hidden;
+		display: none;
+	}
+}
