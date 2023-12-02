@@ -22,6 +22,13 @@ docker exec -it vite_docker sh -c "npm i && npm run dev"
 docker exec -it vite_docker sh -c "rm -rf dist && npm run build"
 ```
 
+- Test the builded app:
+
+```bash
+docker run --rm -t -v $PWD/dist:/var/www/localhost/htdocs/InputGameReact -p 80:80 sebp/lighttpd
+firefox http://localhost/InputGameReact/
+```
+
 - Enter the container:
 
 ```bash
