@@ -17,7 +17,7 @@ function App() {
 	useEffect(() => {
 		const keyDownHandler = (event) => {
 
-			let inputSearch = document.getElementById("input").value
+			let inputSearch = document.getElementById("input").value.trim();
 
 			if (event.key === 'Enter') {
 				
