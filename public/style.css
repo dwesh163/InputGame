@@ -18,19 +18,39 @@ article {
 #box {
 	padding: 0px;
 	display: flex;
-	overflow: hidden;
+	overflow: scroll;
+	max-height: 68vh;
+	flex-direction: column-reverse;
 }
 
-html,
+button {
+	background-color: #006e89;
+	border: var(--pico-border-width) solid var(--pico-form-element-border-color);
+	padding: 0px;
+	width: 300px !important;
+}
+
+.find {
+	background-color: #00895A;
+}
+
+.unfind {
+	background-color: rgb(197, 30, 63);
+}
+
+html {
+	height: 100%;
+}
+
 body {
   height: 100%;
-}
-body {
   display: flex;
   flex-direction: column;
 }
 .container {
   flex: 1 0 auto;
+  padding-top: 20px !important;
+  padding-bottom: 0px !important;
 }
 footer {
   flex-shrink: 0;
