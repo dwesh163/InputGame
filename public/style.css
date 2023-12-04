@@ -18,10 +18,16 @@ article {
 #box {
 	padding: 0px;
 	display: flex;
+	overflow: scroll;
+	max-height: 68vh;
+	flex-direction: column-reverse;
 	overflow: hidden;
 }
 
-html,
+html {
+	height: 100%;
+}
+
 body {
   height: 100%;
 }
@@ -31,6 +37,8 @@ body {
 }
 .container {
   flex: 1 0 auto;
+  padding-top: 20px !important;
+  padding-bottom: 0px !important;
 }
 footer {
   flex-shrink: 0;
