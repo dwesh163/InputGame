@@ -21,7 +21,21 @@ article {
 	overflow: scroll;
 	max-height: 68vh;
 	flex-direction: column-reverse;
-	overflow: hidden;
+}
+
+button {
+	background-color: #006e89;
+	border: var(--pico-border-width) solid var(--pico-form-element-border-color);
+	padding: 0px;
+	width: 300px !important;
+}
+
+.find {
+	background-color: #00895A;
+}
+
+.unfind {
+	background-color: rgb(197, 30, 63);
 }
 
 html {
@@ -30,8 +44,6 @@ html {
 
 body {
   height: 100%;
-}
-body {
   display: flex;
   flex-direction: column;
 }

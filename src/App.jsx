@@ -4,10 +4,10 @@ import { Input } from './components/forms/Input.jsx';
 import { Number } from './components/forms/Number.jsx';
 import { CardList } from './components/main/CardList.jsx';
 
-const color = '#00895A';
-
 function App() {
     const [search, setSearch] = useState('');
+
+	const [viewFull, setViewFull] = useState(false)
 
     const [completeList, setCompleteList] = useState([
         'a',
@@ -123,6 +123,10 @@ function App() {
 
     let isEmpty = false;
 
+	const handleToggle = () => {
+		setViewFull(true);
+	};
+	
     useEffect(() => {
         const keyDownHandler = (event) => {
             let inputSearch = document.getElementById('input').value.trim();
@@ -150,19 +154,37 @@ function App() {
         <>
             <span role="group" style={{ display: 'flex' }}>
                 <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
+				<button onClick={handleToggle}>Show answers</button>
                 <Number value={list.length} totalValue={completeList.length} />
             </span>
-            <ContainerList value={list} />
+            <ContainerList value={list} completeList={completeList} viewFull={viewFull}/>
         </>
     );
 }
 
-function ContainerList({ value }) {
+function ContainerList({ value, completeList, viewFull }) {
     let elementList = [];
+	let colorClass = "find"
 
-    for (let element of value) {
-        elementList.push(<CardList element={element} key={element} color={color} />);
-    }
+	if (viewFull) {
+		for (let element of completeList) {
+			if (value.includes(element)) {
+				colorClass = "find"
+			}
+			else {
+				colorClass = "unfind"
+			}
+			elementList.push(<CardList element={element} key={element} colorClass={colorClass} />);
+		}	
+	
+	}
+	else {
+		for (let element of value) {
+			elementList.push(<CardList element={element} key={element} colorClass={colorClass} />);
+		}
+	}
+
+ 
 
     return (
         <article id="box">
