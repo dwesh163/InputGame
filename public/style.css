@@ -21,6 +21,23 @@ article {
 	overflow: hidden;
 }
 
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+  padding: 20px !important;
+  text-align: center;
+}
+
 @media only screen and (min-width: 1540px) {
 	.cardList {
 		width: 11.5rem;
