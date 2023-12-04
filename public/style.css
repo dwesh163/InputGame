@@ -24,7 +24,7 @@ article {
 }
 
 button {
-	background-color: #006e89;
+	background-color: #ff9500;
 	border: var(--pico-border-width) solid var(--pico-form-element-border-color);
 	padding: 0px;
 	width: 300px !important;
