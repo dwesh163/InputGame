@@ -1,0 +1,551 @@
+{
+    "options": {
+        "title": "HTML Elements",
+        "case-sensitive": true,
+        "answoers-sort": "desc",
+        "timer": true,
+        "timer-value": "300"
+    },
+    "data": [
+        {
+            "element": "a so ss-ff",
+            "url": "https://www.w3.com/something/a",
+            "description": "A description for a"
+        },
+        {
+            "element": "abbr",
+            "url": "https://www.w3.com/something/abbr",
+            "description": "A description for abbr"
+        },
+        {
+            "element": "address",
+            "url": "https://www.w3.com/something/address",
+            "description": "A description for address"
+        },
+        {
+            "element": "area",
+            "url": "https://www.w3.com/something/area",
+            "description": "A description for area"
+        },
+        {
+            "element": "article",
+            "url": "https://www.w3.com/something/article",
+            "description": "A description for article"
+        },
+        {
+            "element": "aside",
+            "url": "https://www.w3.com/something/aside",
+            "description": "A description for aside"
+        },
+        {
+            "element": "audio",
+            "url": "https://www.w3.com/something/audio",
+            "description": "A description for audio"
+        },
+        {
+            "element": "b",
+            "url": "https://www.w3.com/something/b",
+            "description": "A description for b"
+        },
+        {
+            "element": "base",
+            "url": "https://www.w3.com/something/base",
+            "description": "A description for base"
+        },
+        {
+            "element": "bdi",
+            "url": "https://www.w3.com/something/bdi",
+            "description": "A description for bdi"
+        },
+        {
+            "element": "bdo",
+            "url": "https://www.w3.com/something/bdo",
+            "description": "A description for bdo"
+        },
+        {
+            "element": "blockquote",
+            "url": "https://www.w3.com/something/blockqu",
+            "description": "A description for blockqu"
+        },
+        {
+            "element": "body",
+            "url": "https://www.w3.com/something/body",
+            "description": "A description for body"
+        },
+        {
+            "element": "br",
+            "url": "https://www.w3.com/something/br",
+            "description": "A description for br"
+        },
+        {
+            "element": "button",
+            "url": "https://www.w3.com/something/button",
+            "description": "A description for button"
+        },
+        {
+            "element": "canvas",
+            "url": "https://www.w3.com/something/canvas",
+            "description": "A description for canvas"
+        },
+        {
+            "element": "caption",
+            "url": "https://www.w3.com/something/caption",
+            "description": "A description for caption"
+        },
+        {
+            "element": "cite",
+            "url": "https://www.w3.com/something/cite",
+            "description": "A description for cite"
+        },
+        {
+            "element": "code",
+            "url": "https://www.w3.com/something/code",
+            "description": "A description for code"
+        },
+        {
+            "element": "col",
+            "url": "https://www.w3.com/something/col",
+            "description": "A description for col"
+        },
+        {
+            "element": "colgroup",
+            "url": "https://www.w3.com/something/colgrou",
+            "description": "A description for colgrou"
+        },
+        {
+            "element": "command",
+            "url": "https://www.w3.com/something/command",
+            "description": "A description for command"
+        },
+        {
+            "element": "datalist",
+            "url": "https://www.w3.com/something/datalis",
+            "description": "A description for datalis"
+        },
+        {
+            "element": "dd",
+            "url": "https://www.w3.com/something/dd",
+            "description": "A description for dd"
+        },
+        {
+            "element": "del",
+            "url": "https://www.w3.com/something/del",
+            "description": "A description for del"
+        },
+        {
+            "element": "details",
+            "url": "https://www.w3.com/something/details",
+            "description": "A description for details"
+        },
+        {
+            "element": "dfn",
+            "url": "https://www.w3.com/something/dfn",
+            "description": "A description for dfn"
+        },
+        {
+            "element": "div",
+            "url": "https://www.w3.com/something/div",
+            "description": "A description for div"
+        },
+        {
+            "element": "dl",
+            "url": "https://www.w3.com/something/dl",
+            "description": "A description for dl"
+        },
+        {
+            "element": "dt",
+            "url": "https://www.w3.com/something/dt",
+            "description": "A description for dt"
+        },
+        {
+            "element": "em",
+            "url": "https://www.w3.com/something/em",
+            "description": "A description for em"
+        },
+        {
+            "element": "embed",
+            "url": "https://www.w3.com/something/embed",
+            "description": "A description for embed"
+        },
+        {
+            "element": "fieldset",
+            "url": "https://www.w3.com/something/fieldse",
+            "description": "A description for fieldse"
+        },
+        {
+            "element": "figcaption",
+            "url": "https://www.w3.com/something/figcapt",
+            "description": "A description for figcapt"
+        },
+        {
+            "element": "figure",
+            "url": "https://www.w3.com/something/figure",
+            "description": "A description for figure"
+        },
+        {
+            "element": "footer",
+            "url": "https://www.w3.com/something/footer",
+            "description": "A description for footer"
+        },
+        {
+            "element": "form",
+            "url": "https://www.w3.com/something/form",
+            "description": "A description for form"
+        },
+        {
+            "element": "h1",
+            "url": "https://www.w3.com/something/h1",
+            "description": "A description for h1"
+        },
+        {
+            "element": "h2",
+            "url": "https://www.w3.com/something/h2",
+            "description": "A description for h2"
+        },
+        {
+            "element": "h3",
+            "url": "https://www.w3.com/something/h3",
+            "description": "A description for h3"
+        },
+        {
+            "element": "h4",
+            "url": "https://www.w3.com/something/h4",
+            "description": "A description for h4"
+        },
+        {
+            "element": "h5",
+            "url": "https://www.w3.com/something/h5",
+            "description": "A description for h5"
+        },
+        {
+            "element": "h6",
+            "url": "https://www.w3.com/something/h6",
+            "description": "A description for h6"
+        },
+        {
+            "element": "head",
+            "url": "https://www.w3.com/something/head",
+            "description": "A description for head"
+        },
+        {
+            "element": "header",
+            "url": "https://www.w3.com/something/header",
+            "description": "A description for header"
+        },
+        {
+            "element": "hgroup",
+            "url": "https://www.w3.com/something/hgroup",
+            "description": "A description for hgroup"
+        },
+        {
+            "element": "hr",
+            "url": "https://www.w3.com/something/hr",
+            "description": "A description for hr"
+        },
+        {
+            "element": "html",
+            "url": "https://www.w3.com/something/html",
+            "description": "A description for html"
+        },
+        {
+            "element": "i",
+            "url": "https://www.w3.com/something/i",
+            "description": "A description for i"
+        },
+        {
+            "element": "iframe",
+            "url": "https://www.w3.com/something/iframe",
+            "description": "A description for iframe"
+        },
+        {
+            "element": "img",
+            "url": "https://www.w3.com/something/img",
+            "description": "A description for img"
+        },
+        {
+            "element": "input",
+            "url": "https://www.w3.com/something/input",
+            "description": "A description for input"
+        },
+        {
+            "element": "ins",
+            "url": "https://www.w3.com/something/ins",
+            "description": "A description for ins"
+        },
+        {
+            "element": "kbd",
+            "url": "https://www.w3.com/something/kbd",
+            "description": "A description for kbd"
+        },
+        {
+            "element": "keygen",
+            "url": "https://www.w3.com/something/keygen",
+            "description": "A description for keygen"
+        },
+        {
+            "element": "label",
+            "url": "https://www.w3.com/something/label",
+            "description": "A description for label"
+        },
+        {
+            "element": "legend",
+            "url": "https://www.w3.com/something/legend",
+            "description": "A description for legend"
+        },
+        {
+            "element": "li",
+            "url": "https://www.w3.com/something/li",
+            "description": "A description for li"
+        },
+        {
+            "element": "link",
+            "url": "https://www.w3.com/something/link",
+            "description": "A description for link"
+        },
+        {
+            "element": "map",
+            "url": "https://www.w3.com/something/map",
+            "description": "A description for map"
+        },
+        {
+            "element": "mark",
+            "url": "https://www.w3.com/something/mark",
+            "description": "A description for mark"
+        },
+        {
+            "element": "menu",
+            "url": "https://www.w3.com/something/menu",
+            "description": "A description for menu"
+        },
+        {
+            "element": "meta",
+            "url": "https://www.w3.com/something/meta",
+            "description": "A description for meta"
+        },
+        {
+            "element": "meter",
+            "url": "https://www.w3.com/something/meter",
+            "description": "A description for meter"
+        },
+        {
+            "element": "nav",
+            "url": "https://www.w3.com/something/nav",
+            "description": "A description for nav"
+        },
+        {
+            "element": "noscript",
+            "url": "https://www.w3.com/something/noscrip",
+            "description": "A description for noscrip"
+        },
+        {
+            "element": "object",
+            "url": "https://www.w3.com/something/object",
+            "description": "A description for object"
+        },
+        {
+            "element": "ol",
+            "url": "https://www.w3.com/something/ol",
+            "description": "A description for ol"
+        },
+        {
+            "element": "optgroup",
+            "url": "https://www.w3.com/something/optgrou",
+            "description": "A description for optgrou"
+        },
+        {
+            "element": "option",
+            "url": "https://www.w3.com/something/option",
+            "description": "A description for option"
+        },
+        {
+            "element": "output",
+            "url": "https://www.w3.com/something/output",
+            "description": "A description for output"
+        },
+        {
+            "element": "p",
+            "url": "https://www.w3.com/something/p",
+            "description": "A description for p"
+        },
+        {
+            "element": "param",
+            "url": "https://www.w3.com/something/param",
+            "description": "A description for param"
+        },
+        {
+            "element": "pre",
+            "url": "https://www.w3.com/something/pre",
+            "description": "A description for pre"
+        },
+        {
+            "element": "progress",
+            "url": "https://www.w3.com/something/progres",
+            "description": "A description for progres"
+        },
+        {
+            "element": "q",
+            "url": "https://www.w3.com/something/q",
+            "description": "A description for q"
+        },
+        {
+            "element": "rp",
+            "url": "https://www.w3.com/something/rp",
+            "description": "A description for rp"
+        },
+        {
+            "element": "rt",
+            "url": "https://www.w3.com/something/rt",
+            "description": "A description for rt"
+        },
+        {
+            "element": "ruby",
+            "url": "https://www.w3.com/something/ruby",
+            "description": "A description for ruby"
+        },
+        {
+            "element": "s",
+            "url": "https://www.w3.com/something/s",
+            "description": "A description for s"
+        },
+        {
+            "element": "samp",
+            "url": "https://www.w3.com/something/samp",
+            "description": "A description for samp"
+        },
+        {
+            "element": "script",
+            "url": "https://www.w3.com/something/script",
+            "description": "A description for script"
+        },
+        {
+            "element": "section",
+            "url": "https://www.w3.com/something/section",
+            "description": "A description for section"
+        },
+        {
+            "element": "select",
+            "url": "https://www.w3.com/something/select",
+            "description": "A description for select"
+        },
+        {
+            "element": "small",
+            "url": "https://www.w3.com/something/small",
+            "description": "A description for small"
+        },
+        {
+            "element": "source",
+            "url": "https://www.w3.com/something/source",
+            "description": "A description for source"
+        },
+        {
+            "element": "span",
+            "url": "https://www.w3.com/something/span",
+            "description": "A description for span"
+        },
+        {
+            "element": "strong",
+            "url": "https://www.w3.com/something/strong",
+            "description": "A description for strong"
+        },
+        {
+            "element": "style",
+            "url": "https://www.w3.com/something/style",
+            "description": "A description for style"
+        },
+        {
+            "element": "sub",
+            "url": "https://www.w3.com/something/sub",
+            "description": "A description for sub"
+        },
+        {
+            "element": "summary",
+            "url": "https://www.w3.com/something/summary",
+            "description": "A description for summary"
+        },
+        {
+            "element": "sup",
+            "url": "https://www.w3.com/something/sup",
+            "description": "A description for sup"
+        },
+        {
+            "element": "table",
+            "url": "https://www.w3.com/something/table",
+            "description": "A description for table"
+        },
+        {
+            "element": "tbody",
+            "url": "https://www.w3.com/something/tbody",
+            "description": "A description for tbody"
+        },
+        {
+            "element": "td",
+            "url": "https://www.w3.com/something/td",
+            "description": "A description for td"
+        },
+        {
+            "element": "textarea",
+            "url": "https://www.w3.com/something/textare",
+            "description": "A description for textare"
+        },
+        {
+            "element": "tfoot",
+            "url": "https://www.w3.com/something/tfoot",
+            "description": "A description for tfoot"
+        },
+        {
+            "element": "th",
+            "url": "https://www.w3.com/something/th",
+            "description": "A description for th"
+        },
+        {
+            "element": "thead",
+            "url": "https://www.w3.com/something/thead",
+            "description": "A description for thead"
+        },
+        {
+            "element": "time",
+            "url": "https://www.w3.com/something/time",
+            "description": "A description for time"
+        },
+        {
+            "element": "title",
+            "url": "https://www.w3.com/something/title",
+            "description": "A description for title"
+        },
+        {
+            "element": "tr",
+            "url": "https://www.w3.com/something/tr",
+            "description": "A description for tr"
+        },
+        {
+            "element": "track",
+            "url": "https://www.w3.com/something/track",
+            "description": "A description for track"
+        },
+        {
+            "element": "u",
+            "url": "https://www.w3.com/something/u",
+            "description": "A description for u"
+        },
+        {
+            "element": "ul",
+            "url": "https://www.w3.com/something/ul",
+            "description": "A description for ul"
+        },
+        {
+            "element": "var",
+            "url": "https://www.w3.com/something/var",
+            "description": "A description for var"
+        },
+        {
+            "element": "video",
+            "url": "https://www.w3.com/something/video",
+            "description": "A description for video"
+        },
+        {
+            "element": "wbr",
+            "url": "https://www.w3.com/something/wbr",
+            "description": "A description for wbr"
+        }
+    ]
+}
