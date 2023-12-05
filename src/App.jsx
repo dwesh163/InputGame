@@ -46,12 +46,9 @@ function App() {
         const keyDownHandler = (event) => {
             let inputSearch = document.getElementById('input').value.trim();
 
-            console.log(inputSearch);
             if (event.key === 'Enter') {
-                console.log(completeList);
-
                 if (completeList.includes(inputSearch)) {
-                    if (true) {
+                    if (!list.includes(inputSearch)) {
                         list.push(inputSearch);
                         setList(list);
                         isEmpty = true;
@@ -60,13 +57,12 @@ function App() {
                 }
             }
         };
-
         document.addEventListener('keydown', keyDownHandler);
 
         return () => {
             document.removeEventListener('keydown', keyDownHandler);
         };
-    }, [data]);
+    }, [completeList]);
 
     const handleToggle = () => {
         setViewFull(true);
