@@ -10,45 +10,44 @@ if (currentGame == undefined) {
     currentGame = 'html';
 }
 
-async function fetchJSON() {
-    const response = await fetch('./json/' + currentGame + '.json');
-    const data = await response.json();
-    localStorage.setItem('inputGameData', JSON.stringify(data));
-    if (JSON.parse(localStorage.getItem('inputGameData')) != JSON.parse(data)) {
-        location.reload();
-    }
-}
-
-fetchJSON();
-
 function App() {
-    const [data, setData] = useState(JSON.parse(localStorage.getItem('inputGameData')));
-
-    const [search, setSearch] = useState('');
-    const [viewFull, setViewFull] = useState(false);
-
     let completeDataList = [];
-
-    for (const element of data['data']) {
-        completeDataList.push(element['element']);
-    }
-
-    console.log(completeDataList);
-
-    const [list, setList] = useState([]);
-    const [completeList, setCompleteList] = useState(completeDataList);
-
     let isEmpty = false;
 
-    const handleToggle = () => {
-        setViewFull(true);
-    };
+    const [list, setList] = useState([]);
+    const [completeList, setCompleteList] = useState([]);
+    const [search, setSearch] = useState('');
+    const [viewFull, setViewFull] = useState(false);
+    const [data, setData] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setIsLoading(true);
+        fetch('./json/html.json')
+            .then((response) => response.json())
+            .then((data) => {
+                setData(data);
+                setIsLoading(false);
+            });
+    }, []);
+
+    useEffect(() => {
+        if (data) {
+            for (const element of data['data']) {
+                completeDataList.push(element['element']);
+            }
+            setCompleteList(completeDataList);
+        }
+    }, [data]);
 
     useEffect(() => {
         const keyDownHandler = (event) => {
             let inputSearch = document.getElementById('input').value.trim();
 
+            console.log(inputSearch);
             if (event.key === 'Enter') {
+                console.log(completeList);
+
                 if (completeList.includes(inputSearch)) {
                     if (true) {
                         list.push(inputSearch);
@@ -60,22 +59,32 @@ function App() {
             }
         };
 
-        document.addEventListener('keydown', keyDownHandler);
+            document.addEventListener('keydown', keyDownHandler);
 
         return () => {
             document.removeEventListener('keydown', keyDownHandler);
         };
-    }, []);
+    }, [data]);
+    
+
+    const handleToggle = () => {
+        setViewFull(true);
+    };
 
     return (
-        <>
-            <span role="group" style={{ display: 'flex' }}>
-                <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
-                <button onClick={handleToggle}>Show answers</button>
-                <Number value={list.length} totalValue={completeList.length} />
-            </span>
-            <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} />
-        </>
+        <div>
+            {isLoading && <p>Loading...</p>}
+            {data && (
+                <>
+                    <span role="group" style={{ display: 'flex' }}>
+                        <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
+                        <button onClick={handleToggle}>Show answers</button>
+                        <Number value={list.length} totalValue={completeList.length} />
+                    </span>
+                    <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} />
+                </>
+            )}
+        </div>
     );
 }
 
@@ -92,8 +101,8 @@ function ContainerList({ value, completeList, viewFull, data }) {
 
     const Modal = ({ object: { tag, description, url } }) => (
         <dialog open id="productModal" className="active">
-            <article style={{paddingBottom : "20px"}}>
-                <header style={{ padding: '12px 22px', marginBottom: "6%" }}>
+            <article style={{ paddingBottom: '20px' }}>
+                <header style={{ padding: '12px 22px', marginBottom: '6%' }}>
                     <h1 style={{ marginBottom: '8px', textAlign: 'center', verticalAlign: 'baseline' }}>{tag}</h1>
                 </header>
                 <div className="modalMain">
