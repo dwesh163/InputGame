@@ -2,550 +2,550 @@
     "options": {
         "title": "HTML Elements",
         "case-sensitive": true,
-        "answoers-sort": "desc",
+        "answers-sort": "desc",
         "timer": true,
         "timer-value": "300"
     },
     "data": [
         {
             "element": "a",
-            "url": "https://www.w3.com/something/a",
-            "description": "A description for a"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a",
+            "description": "Defines a hyperlink, typically used with the href attribute to specify the target URL."
         },
         {
             "element": "abbr",
-            "url": "https://www.w3.com/something/abbr",
-            "description": "A description for abbr"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr",
+            "description": "Represents an abbreviation or acronym, providing a title attribute for the expanded form."
         },
         {
             "element": "address",
-            "url": "https://www.w3.com/something/address",
-            "description": "A description for address"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address",
+            "description": "Represents contact information for the author or owner of a document/article."
         },
         {
             "element": "area",
-            "url": "https://www.w3.com/something/area",
-            "description": "A description for area"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area",
+            "description": "Defines an area inside an image map, often used with the map and shape attributes."
         },
         {
             "element": "article",
-            "url": "https://www.w3.com/something/article",
-            "description": "A description for article"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article",
+            "description": "Represents an independent, self-contained piece of content, such as a news article or blog post."
         },
         {
             "element": "aside",
-            "url": "https://www.w3.com/something/aside",
-            "description": "A description for aside"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside",
+            "description": "Represents content that is tangentially related to the content around it, often used for sidebars."
         },
         {
             "element": "audio",
-            "url": "https://www.w3.com/something/audio",
-            "description": "A description for audio"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio",
+            "description": "Embeds audio content in a document, allowing playback controls and other audio-related functionality."
         },
         {
             "element": "b",
-            "url": "https://www.w3.com/something/b",
-            "description": "A description for b"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b",
+            "description": "Represents bold text. Deprecated in favor of using CSS for styling."
         },
         {
             "element": "base",
-            "url": "https://www.w3.com/something/base",
-            "description": "A description for base"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base",
+            "description": "Specifies the base URL/target for all relative URLs in a document."
         },
         {
             "element": "bdi",
-            "url": "https://www.w3.com/something/bdi",
-            "description": "A description for bdi"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi",
+            "description": "Represents text that should be isolated from its surrounding text, typically for formatting in different directions."
         },
         {
             "element": "bdo",
-            "url": "https://www.w3.com/something/bdo",
-            "description": "A description for bdo"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo",
+            "description": "Overrides the current text direction, either left-to-right or right-to-left."
         },
         {
             "element": "blockquote",
-            "url": "https://www.w3.com/something/blockqu",
-            "description": "A description for blockqu"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote",
+            "description": "Indicates a section of text that is a long quotation from another source."
         },
         {
             "element": "body",
-            "url": "https://www.w3.com/something/body",
-            "description": "A description for body"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body",
+            "description": "Represents the content of an HTML document."
         },
         {
             "element": "br",
-            "url": "https://www.w3.com/something/br",
-            "description": "A description for br"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br",
+            "description": "Represents a line break within text."
         },
         {
             "element": "button",
-            "url": "https://www.w3.com/something/button",
-            "description": "A description for button"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
+            "description": "Defines a clickable button."
         },
         {
             "element": "canvas",
-            "url": "https://www.w3.com/something/canvas",
-            "description": "A description for canvas"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas",
+            "description": "Provides an area for drawing graphics using JavaScript."
         },
         {
             "element": "caption",
-            "url": "https://www.w3.com/something/caption",
-            "description": "A description for caption"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption",
+            "description": "Represents the title or explanation of a table."
         },
         {
             "element": "cite",
-            "url": "https://www.w3.com/something/cite",
-            "description": "A description for cite"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite",
+            "description": "Specifies the title of a creative work, such as a book or movie."
         },
         {
             "element": "code",
-            "url": "https://www.w3.com/something/code",
-            "description": "A description for code"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code",
+            "description": "Represents a single line of code."
         },
         {
             "element": "col",
-            "url": "https://www.w3.com/something/col",
-            "description": "A description for col"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col",
+            "description": "Defines a column within a table and is often used with colgroup."
         },
         {
             "element": "colgroup",
-            "url": "https://www.w3.com/something/colgrou",
-            "description": "A description for colgrou"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup",
+            "description": "Groups a set of col elements in a table to apply styles or attributes."
         },
         {
             "element": "command",
-            "url": "https://www.w3.com/something/command",
-            "description": "A description for command"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/command",
+            "description": "Represents a command that the user can invoke, often used with the command attribute in interactive UIs."
         },
         {
             "element": "datalist",
-            "url": "https://www.w3.com/something/datalis",
-            "description": "A description for datalis"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist",
+            "description": "Contains a set of option elements for use with input elements using the list attribute."
         },
         {
             "element": "dd",
-            "url": "https://www.w3.com/something/dd",
-            "description": "A description for dd"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd",
+            "description": "Defines a description or value in a description list."
         },
         {
             "element": "del",
-            "url": "https://www.w3.com/something/del",
-            "description": "A description for del"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del",
+            "description": "Represents text that has been deleted from a document."
         },
         {
             "element": "details",
-            "url": "https://www.w3.com/something/details",
-            "description": "A description for details"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
+            "description": "Represents a disclosure widget from which the user can obtain additional information."
         },
         {
             "element": "dfn",
-            "url": "https://www.w3.com/something/dfn",
-            "description": "A description for dfn"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn",
+            "description": "Represents the defining instance of a term."
         },
         {
             "element": "div",
-            "url": "https://www.w3.com/something/div",
-            "description": "A description for div"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div",
+            "description": "Defines a division or section in an HTML document, often used for styling with CSS."
         },
         {
             "element": "dl",
-            "url": "https://www.w3.com/something/dl",
-            "description": "A description for dl"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl",
+            "description": "Represents a description list comprising term and description pairs."
         },
         {
             "element": "dt",
-            "url": "https://www.w3.com/something/dt",
-            "description": "A description for dt"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt",
+            "description": "Defines a term in a description list."
         },
         {
             "element": "em",
-            "url": "https://www.w3.com/something/em",
-            "description": "A description for em"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em",
+            "description": "Represents emphasized text, typically displayed in italics."
         },
         {
             "element": "embed",
-            "url": "https://www.w3.com/something/embed",
-            "description": "A description for embed"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed",
+            "description": "Embeds external content, such as a plugin or multimedia element."
         },
         {
             "element": "fieldset",
-            "url": "https://www.w3.com/something/fieldse",
-            "description": "A description for fieldse"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset",
+            "description": "Groups related elements within a form and defines a border around them."
         },
         {
             "element": "figcaption",
-            "url": "https://www.w3.com/something/figcapt",
-            "description": "A description for figcapt"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption",
+            "description": "Represents a caption or legend for a figure element."
         },
         {
             "element": "figure",
-            "url": "https://www.w3.com/something/figure",
-            "description": "A description for figure"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure",
+            "description": "Represents any content that is referenced from the main content but is not the main content itself."
         },
         {
             "element": "footer",
-            "url": "https://www.w3.com/something/footer",
-            "description": "A description for footer"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer",
+            "description": "Represents the footer of a section or page."
         },
         {
             "element": "form",
-            "url": "https://www.w3.com/something/form",
-            "description": "A description for form"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form",
+            "description": "Defines an HTML form for user input."
         },
         {
             "element": "h1",
-            "url": "https://www.w3.com/something/h1",
-            "description": "A description for h1"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1",
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
         },
         {
             "element": "h2",
-            "url": "https://www.w3.com/something/h2",
-            "description": "A description for h2"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h2",
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
         },
         {
             "element": "h3",
-            "url": "https://www.w3.com/something/h3",
-            "description": "A description for h3"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h3",
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
         },
         {
             "element": "h4",
-            "url": "https://www.w3.com/something/h4",
-            "description": "A description for h4"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h4",
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
         },
         {
             "element": "h5",
-            "url": "https://www.w3.com/something/h5",
-            "description": "A description for h5"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h5",
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
         },
         {
             "element": "h6",
-            "url": "https://www.w3.com/something/h6",
-            "description": "A description for h6"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h6",
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
         },
         {
             "element": "head",
-            "url": "https://www.w3.com/something/head",
-            "description": "A description for head"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head",
+            "description": "Contains meta-information about the HTML document, such as title, links, and meta tags."
         },
         {
             "element": "header",
-            "url": "https://www.w3.com/something/header",
-            "description": "A description for header"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header",
+            "description": "Represents the header of a section or page."
         },
         {
             "element": "hgroup",
-            "url": "https://www.w3.com/something/hgroup",
-            "description": "A description for hgroup"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup",
+            "description": "Groups heading elements when a document has multiple levels of headings."
         },
         {
             "element": "hr",
-            "url": "https://www.w3.com/something/hr",
-            "description": "A description for hr"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr",
+            "description": "Represents a horizontal rule, often used to separate content."
         },
         {
             "element": "html",
-            "url": "https://www.w3.com/something/html",
-            "description": "A description for html"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html",
+            "description": "Represents the root of an HTML document."
         },
         {
             "element": "i",
-            "url": "https://www.w3.com/something/i",
-            "description": "A description for i"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i",
+            "description": "Represents italicized text. Deprecated in favor of using CSS for styling."
         },
         {
             "element": "iframe",
-            "url": "https://www.w3.com/something/iframe",
-            "description": "A description for iframe"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe",
+            "description": "Represents an inline frame, used to embed external content within a document."
         },
         {
             "element": "img",
-            "url": "https://www.w3.com/something/img",
-            "description": "A description for img"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
+            "description": "Embeds an image in a document."
         },
         {
             "element": "input",
-            "url": "https://www.w3.com/something/input",
-            "description": "A description for input"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input",
+            "description": "Represents an interactive control, such as a text box, checkbox, or button."
         },
         {
             "element": "ins",
-            "url": "https://www.w3.com/something/ins",
-            "description": "A description for ins"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins",
+            "description": "Represents text that has been inserted into a document."
         },
         {
             "element": "kbd",
-            "url": "https://www.w3.com/something/kbd",
-            "description": "A description for kbd"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd",
+            "description": "Represents text to be entered by the user, often displayed in a monospaced font."
         },
         {
             "element": "keygen",
-            "url": "https://www.w3.com/something/keygen",
-            "description": "A description for keygen"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen",
+            "description": "Represents a key-pair generator field used in cryptographic forms."
         },
         {
             "element": "label",
-            "url": "https://www.w3.com/something/label",
-            "description": "A description for label"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label",
+            "description": "Represents a label for an input element."
         },
         {
             "element": "legend",
-            "url": "https://www.w3.com/something/legend",
-            "description": "A description for legend"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend",
+            "description": "Represents a caption for the content of a fieldset."
         },
         {
             "element": "li",
-            "url": "https://www.w3.com/something/li",
-            "description": "A description for li"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li",
+            "description": "Represents a list item in an ordered or unordered list."
         },
         {
             "element": "link",
-            "url": "https://www.w3.com/something/link",
-            "description": "A description for link"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",
+            "description": "Defines the relationship between a document and an external resource, often used for stylesheets."
         },
         {
             "element": "map",
-            "url": "https://www.w3.com/something/map",
-            "description": "A description for map"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map",
+            "description": "Defines a client-side image map."
         },
         {
             "element": "mark",
-            "url": "https://www.w3.com/something/mark",
-            "description": "A description for mark"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark",
+            "description": "Represents text highlighted for reference or notation purposes."
         },
         {
             "element": "menu",
-            "url": "https://www.w3.com/something/menu",
-            "description": "A description for menu"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu",
+            "description": "Represents a list of commands or options."
         },
         {
             "element": "meta",
-            "url": "https://www.w3.com/something/meta",
-            "description": "A description for meta"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta",
+            "description": "Provides metadata about an HTML document, such as character set, description, and keywords."
         },
         {
             "element": "meter",
-            "url": "https://www.w3.com/something/meter",
-            "description": "A description for meter"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter",
+            "description": "Represents a scalar measurement within a known range."
         },
         {
             "element": "nav",
-            "url": "https://www.w3.com/something/nav",
-            "description": "A description for nav"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav",
+            "description": "Represents navigation links."
         },
         {
             "element": "noscript",
-            "url": "https://www.w3.com/something/noscrip",
-            "description": "A description for noscrip"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript",
+            "description": "Provides fallback content for users who have disabled JavaScript in their browsers."
         },
         {
             "element": "object",
-            "url": "https://www.w3.com/something/object",
-            "description": "A description for object"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object",
+            "description": "Embeds external content, such as multimedia or plugins."
         },
         {
             "element": "ol",
-            "url": "https://www.w3.com/something/ol",
-            "description": "A description for ol"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol",
+            "description": "Represents an ordered list."
         },
         {
             "element": "optgroup",
-            "url": "https://www.w3.com/something/optgrou",
-            "description": "A description for optgrou"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup",
+            "description": "Groups related option elements within a select element."
         },
         {
             "element": "option",
-            "url": "https://www.w3.com/something/option",
-            "description": "A description for option"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option",
+            "description": "Represents an option in a select element."
         },
         {
             "element": "output",
-            "url": "https://www.w3.com/something/output",
-            "description": "A description for output"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output",
+            "description": "Represents the result of a calculation or user action."
         },
         {
             "element": "p",
-            "url": "https://www.w3.com/something/p",
-            "description": "A description for p"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p",
+            "description": "Represents a paragraph of text."
         },
         {
             "element": "param",
-            "url": "https://www.w3.com/something/param",
-            "description": "A description for param"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param",
+            "description": "Specifies parameters for an object element."
         },
         {
             "element": "pre",
-            "url": "https://www.w3.com/something/pre",
-            "description": "A description for pre"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre",
+            "description": "Represents preformatted text, preserving both spaces and line breaks."
         },
         {
             "element": "progress",
-            "url": "https://www.w3.com/something/progres",
-            "description": "A description for progres"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress",
+            "description": "Represents the progress of a task."
         },
         {
             "element": "q",
-            "url": "https://www.w3.com/something/q",
-            "description": "A description for q"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q",
+            "description": "Represents a short quotation."
         },
         {
             "element": "rp",
-            "url": "https://www.w3.com/something/rp",
-            "description": "A description for rp"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp",
+            "description": "Provides fallback text for browsers that do not support ruby annotations."
         },
         {
             "element": "rt",
-            "url": "https://www.w3.com/something/rt",
-            "description": "A description for rt"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt",
+            "description": "Represents the pronunciation of characters presented in a ruby annotation."
         },
         {
             "element": "ruby",
-            "url": "https://www.w3.com/something/ruby",
-            "description": "A description for ruby"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby",
+            "description": "Represents a ruby annotation, used in East Asian typography."
         },
         {
             "element": "s",
-            "url": "https://www.w3.com/something/s",
-            "description": "A description for s"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s",
+            "description": "Represents text that is no longer accurate or relevant, often displayed with a strikethrough."
         },
         {
             "element": "samp",
-            "url": "https://www.w3.com/something/samp",
-            "description": "A description for samp"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp",
+            "description": "Represents sample output from a computer program."
         },
         {
             "element": "script",
-            "url": "https://www.w3.com/something/script",
-            "description": "A description for script"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script",
+            "description": "Embeds or references executable code, often JavaScript."
         },
         {
             "element": "section",
-            "url": "https://www.w3.com/something/section",
-            "description": "A description for section"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section",
+            "description": "Represents a section of content within a document."
         },
         {
             "element": "select",
-            "url": "https://www.w3.com/something/select",
-            "description": "A description for select"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select",
+            "description": "Represents a control for selecting among a set of options."
         },
         {
             "element": "small",
-            "url": "https://www.w3.com/something/small",
-            "description": "A description for small"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small",
+            "description": "Represents smaller text, often used for fine print."
         },
         {
             "element": "source",
-            "url": "https://www.w3.com/something/source",
-            "description": "A description for source"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source",
+            "description": "Specifies multiple media resources for elements such as audio and video."
         },
         {
             "element": "span",
-            "url": "https://www.w3.com/something/span",
-            "description": "A description for span"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span",
+            "description": "Represents an inline container, often used for styling with CSS."
         },
         {
             "element": "strong",
-            "url": "https://www.w3.com/something/strong",
-            "description": "A description for strong"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong",
+            "description": "Represents strong importance, typically displayed in bold."
         },
         {
             "element": "style",
-            "url": "https://www.w3.com/something/style",
-            "description": "A description for style"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style",
+            "description": "Contains style information for a document."
         },
         {
             "element": "sub",
-            "url": "https://www.w3.com/something/sub",
-            "description": "A description for sub"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub",
+            "description": "Represents subscripted text."
         },
         {
             "element": "summary",
-            "url": "https://www.w3.com/something/summary",
-            "description": "A description for summary"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary",
+            "description": "Represents a summary or caption for the content of a details element."
         },
         {
             "element": "sup",
-            "url": "https://www.w3.com/something/sup",
-            "description": "A description for sup"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup",
+            "description": "Represents superscripted text."
         },
         {
             "element": "table",
-            "url": "https://www.w3.com/something/table",
-            "description": "A description for table"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table",
+            "description": "Represents a table."
         },
         {
             "element": "tbody",
-            "url": "https://www.w3.com/something/tbody",
-            "description": "A description for tbody"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody",
+            "description": "Groups the body content in a table."
         },
         {
             "element": "td",
-            "url": "https://www.w3.com/something/td",
-            "description": "A description for td"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td",
+            "description": "Represents a data cell within a table."
         },
         {
             "element": "textarea",
-            "url": "https://www.w3.com/something/textare",
-            "description": "A description for textare"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea",
+            "description": "Represents a multiline text input control."
         },
         {
             "element": "tfoot",
-            "url": "https://www.w3.com/something/tfoot",
-            "description": "A description for tfoot"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot",
+            "description": "Groups the footer content in a table."
         },
         {
             "element": "th",
-            "url": "https://www.w3.com/something/th",
-            "description": "A description for th"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th",
+            "description": "Represents a header cell within a table."
         },
         {
             "element": "thead",
-            "url": "https://www.w3.com/something/thead",
-            "description": "A description for thead"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead",
+            "description": "Groups the header content in a table."
         },
         {
             "element": "time",
-            "url": "https://www.w3.com/something/time",
-            "description": "A description for time"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time",
+            "description": "Represents a specific period in time or a range of time."
         },
         {
             "element": "title",
-            "url": "https://www.w3.com/something/title",
-            "description": "A description for title"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title",
+            "description": "Defines the title of the HTML document, displayed in the browser's title bar."
         },
         {
             "element": "tr",
-            "url": "https://www.w3.com/something/tr",
-            "description": "A description for tr"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr",
+            "description": "Represents a row within a table."
         },
         {
             "element": "track",
-            "url": "https://www.w3.com/something/track",
-            "description": "A description for track"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track",
+            "description": "Specifies text tracks for elements such as audio and video."
         },
         {
             "element": "u",
-            "url": "https://www.w3.com/something/u",
-            "description": "A description for u"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u",
+            "description": "Represents text that should be stylistically offset, often displayed as underlined."
         },
         {
             "element": "ul",
-            "url": "https://www.w3.com/something/ul",
-            "description": "A description for ul"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul",
+            "description": "Represents an unordered list."
         },
         {
             "element": "var",
-            "url": "https://www.w3.com/something/var",
-            "description": "A description for var"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var",
+            "description": "Represents the name of a variable in programming or mathematics."
         },
         {
             "element": "video",
-            "url": "https://www.w3.com/something/video",
-            "description": "A description for video"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video",
+            "description": "Embeds video content in a document."
         },
         {
             "element": "wbr",
-            "url": "https://www.w3.com/something/wbr",
-            "description": "A description for wbr"
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr",
+            "description": "Represents a word break opportunity, indicating where a line break can occur."
         }
     ]
 }
