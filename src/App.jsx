@@ -11,19 +11,18 @@ if (currentGame == undefined) {
 }
 
 async function fetchJSON() {
-
-    const response = await fetch('./json/' + currentGame + '.json')
-    const data = await response.json()
-    localStorage.setItem("inputGameData", JSON.stringify(data))
-    if (JSON.parse(localStorage.getItem("inputGameData")) != JSON.parse(data)) {
-        location.reload()
+    const response = await fetch('./json/' + currentGame + '.json');
+    const data = await response.json();
+    localStorage.setItem('inputGameData', JSON.stringify(data));
+    if (JSON.parse(localStorage.getItem('inputGameData')) != JSON.parse(data)) {
+        location.reload();
     }
 }
 
-fetchJSON()
+fetchJSON();
 
 function App() {
-    const [data, setData] = useState(JSON.parse(localStorage.getItem("inputGameData"))); // Initialize state with null or an appropriate initial value
+    const [data, setData] = useState(JSON.parse(localStorage.getItem('inputGameData')));
 
     const [search, setSearch] = useState('');
     const [viewFull, setViewFull] = useState(false);
@@ -93,13 +92,18 @@ function ContainerList({ value, completeList, viewFull, data }) {
 
     const Modal = ({ object: { tag, description, url } }) => (
         <dialog open id="productModal" className="active">
-            <article>
-                <header style={{ padding: '12px 22px' }}>
-                    <h2 style={{ marginBottom: '0px' }}>{tag}</h2>
+            <article style={{paddingBottom : "20px"}}>
+                <header style={{ padding: '12px 22px', marginBottom: "6%" }}>
+                    <h1 style={{ marginBottom: '8px', textAlign: 'center', verticalAlign: 'baseline' }}>{tag}</h1>
                 </header>
-                <p>{description}</p>
-                <a href={url}>{url}</a>
-                <button onClick={() => setShowModal(false)}>Close me</button>
+                <div className="modalMain">
+                    <p>{description}</p>
+                    <a href={url}>{url}</a>
+                    <br />
+                    <button className="closeButton" onClick={() => setShowModal(false)}>
+                        Close
+                    </button>
+                </div>
             </article>
         </dialog>
     );
@@ -131,8 +135,6 @@ function ContainerList({ value, completeList, viewFull, data }) {
             );
         }
     }
-
-    console.log(activeObject);
 
     return (
         <>

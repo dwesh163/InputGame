@@ -30,6 +30,13 @@ button {
 	width: 300px !important;
 }
 
+.closeButton{
+	width: 19% !important;
+	min-width: 100px;
+	margin-top: 8%;
+	height: 36px;
+}
+
 .find {
 	background-color: #00895A;
 }
@@ -74,6 +81,10 @@ footer {
 	.cardList {
 		width: 100%;
 	}
+	.modalMain {
+		font-size: small;
+	}
+
 }
 
 @media only screen and (max-width: 480px) {
