@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Input } from './components/forms/Input.jsx';
 import { Number } from './components/forms/Number.jsx';
-import { CardList } from './components/main/CardList.jsx';
+import { ContainerList } from './components/main/ContainerList.jsx';
 
 let currentGame = localStorage.getItem('inputGameCurrent');
 
@@ -19,7 +19,9 @@ function App() {
     const [search, setSearch] = useState('');
     const [viewFull, setViewFull] = useState(false);
     const [data, setData] = useState(null);
+
     const [isLoading, setIsLoading] = useState(true);
+    const [isSettings, setIsSettings] = useState(false);
 
     useEffect(() => {
         setIsLoading(true);
@@ -59,13 +61,12 @@ function App() {
             }
         };
 
-            document.addEventListener('keydown', keyDownHandler);
+        document.addEventListener('keydown', keyDownHandler);
 
         return () => {
             document.removeEventListener('keydown', keyDownHandler);
         };
     }, [data]);
-    
 
     const handleToggle = () => {
         setViewFull(true);
@@ -73,6 +74,7 @@ function App() {
 
     return (
         <div>
+            {isSettings && <p>Setiings</p>}
             {isLoading && <p>Loading...</p>}
             {data && (
                 <>
@@ -85,74 +87,6 @@ function App() {
                 </>
             )}
         </div>
-    );
-}
-
-function ContainerList({ value, completeList, viewFull, data }) {
-    let elementList = [];
-    let colorClass = 'find';
-
-    const [showModal, setShowModal] = useState(false);
-    const [activeObject, setActiveObject] = useState(null);
-
-    function getClass(index) {
-        return index === activeObject?.id ? 'active' : 'inactive';
-    }
-
-    const Modal = ({ object: { tag, description, url } }) => (
-        <dialog open id="productModal" className="active">
-            <article style={{ paddingBottom: '20px' }}>
-                <header style={{ padding: '12px 22px', marginBottom: '6%' }}>
-                    <h1 style={{ marginBottom: '8px', textAlign: 'center', verticalAlign: 'baseline' }}>{tag}</h1>
-                </header>
-                <div className="modalMain">
-                    <p>{description}</p>
-                    <a href={url}>{url}</a>
-                    <br />
-                    <button className="closeButton" onClick={() => setShowModal(false)}>
-                        Close
-                    </button>
-                </div>
-            </article>
-        </dialog>
-    );
-
-    if (viewFull) {
-        for (let htmlElement of completeList) {
-            if (value.includes(htmlElement)) {
-                colorClass = 'find';
-            } else {
-                colorClass = 'unfind';
-            }
-
-            let info = data.find(({ element }) => element === htmlElement);
-
-            elementList.push(
-                <CardList element={htmlElement} key={htmlElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(htmlElement)} info={info}>
-                    {' '}
-                </CardList>
-            );
-        }
-    } else {
-        for (let htmlElement of value) {
-            let info = data.find(({ element }) => element === htmlElement);
-
-            elementList.push(
-                <CardList element={htmlElement} key={htmlElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(htmlElement)} info={info}>
-                    {' '}
-                </CardList>
-            );
-        }
-    }
-
-    return (
-        <>
-            <article id="box">
-                <div style={{ display: 'flex', flexWrap: 'wrap' }}>{elementList}</div>
-            </article>
-
-            {showModal ? <Modal object={activeObject} /> : null}
-        </>
     );
 }
 

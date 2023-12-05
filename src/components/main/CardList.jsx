@@ -9,7 +9,6 @@ export function CardList({ element, colorClass, setActiveObject, setShowModal, i
             style={{ borderRadius: '0px' }}
             className={className + ' cardList ' + colorClass}
             onClick={() => {
-				console.log("yesss");
                 setActiveObject({ tag, description, url });
                 setShowModal(true);
             }}>
