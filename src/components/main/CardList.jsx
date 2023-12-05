@@ -1,7 +1,18 @@
-export function CardList({ element, colorClass }) {
+export function CardList({ element, colorClass, setActiveObject, setShowModal, info, className}) {
+
+	let tag  = info["element"]
+	let url = info["url"]
+	let description = info["description"]
 
     return (
-        <article style={{ borderRadius: '0px'}} className={"cardList " + colorClass}>
+        <article
+            style={{ borderRadius: '0px' }}
+            className={className + ' cardList ' + colorClass}
+            onClick={() => {
+				console.log("yesss");
+                setActiveObject({ tag, description, url });
+                setShowModal(true);
+            }}>
             {element}
         </article>
     );
