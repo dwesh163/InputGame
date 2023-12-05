@@ -23,7 +23,7 @@ function App() {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch('./json/html.json')
+        fetch('./data/html.json')
             .then((response) => response.json())
             .then((data) => {
                 setData(data);
