@@ -5,6 +5,7 @@ import { ContainerList } from './components/main/ContainerList.jsx';
 import { Setting } from './components/Settings/Setting.jsx';
 import { NavComponents } from './components/NavComponents.jsx';
 import { FooterComponents } from './components/FooterComponents.jsx';
+import { Timer } from './components/forms/Timer.jsx';
 
 let currentGame = localStorage.getItem('inputGameCurrent');
 
@@ -73,7 +74,7 @@ function App() {
                     }
                 } else {
                     if (completeList.includes(inputSearch.toUpperCase()) || completeList.includes(inputSearch.toLowerCase())) {
-                        if (!list.includes(inputSearch.toUpperCase()) || list.includes(inputSearch.toLowerCase())) {
+                        if (!list.includes(inputSearch.toUpperCase()) && !list.includes(inputSearch.toLowerCase())) {
                             list.push(inputSearch.toLowerCase());
                             setList(list);
                             isEmpty = true;
@@ -103,6 +104,7 @@ function App() {
             <NavComponents onClick={settingToggle} isSettings={isSettings} />
             <main className="container">
                 <div id="root">
+                    <Timer isSettings={isSettings}/>
                     <div>
                         {isLoading ? (
                             <p>Loading...</p>
