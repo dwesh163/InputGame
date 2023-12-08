@@ -57,7 +57,7 @@ body {
 
 .container {
     flex: 1 0 auto;
-    padding-top: 20px !important;
+    padding-top: 80px !important;
     padding-bottom: 0px !important;
 }
 
@@ -70,9 +70,20 @@ footer {
 .settingBox {
 	margin-top: 6%;
 	width: 50%;
-
 	margin: auto;
+}
 
+.settingLogo {
+    vertical-align: middle;
+    padding-top: 1.3rem;
+    cursor: pointer;
+}
+
+.settingLogo:hover {
+    opacity: 0.9;
+}
+.settingLogo img {
+    width: 1.5rem;
 }
 
 .tdInput{
