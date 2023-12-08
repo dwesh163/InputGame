@@ -43,10 +43,8 @@ function App() {
                     localData = {};
                 }
 
-                console.log(data);
-
                 if (localData[currentGame] == null) {
-                    localData[currentGame] = data;
+                    localData[currentGame] = data["options"];
                     localStorage.setItem('inputGameSettings', JSON.stringify(localData));
                     localData = JSON.parse(localStorage.getItem('inputGameSettings'));
                 }
