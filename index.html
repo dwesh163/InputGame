@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>InputGames</title>
+        <title>InputGame</title>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css" />
 
@@ -18,30 +18,9 @@
         <meta name="theme-color" content="#ffffff" />
         <link rel="stylesheet" href="/style.css" />
     </head>
-    <body>
-        <nav style="padding: 0px 30px">
-            <ul class="logo">
-                <li style="display: flex">
-                    <img src="/logo.png" alt="" />
-                    <h1 class="text-white fw-bold fst-italic">InputGame</h1>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <button type="button" id="btnFileUpload" value="Select File" class="btn btn-primary" style="display: none">Import JSON</button>
-                    <input type="file" id="FileUpload1" style="display: none" />
-                </li>
-            </ul>
-        </nav>
+    <body id="root">
 
-        <main class="container">
-            <div id="root"></div>
-        </main>
-        <script type="module" src="/src/main.jsx"></script>
     </body>
-    <hr style="margin: 0px" />
-    <footer style="color: #c7c7c7">
-        <a style="text-decoration: none; color: #c7c7c7" href="https://github.com/dwesh163/InputGameReact/issues" class="" target="_blank">feature/request</a> -
-        <a style="text-decoration: none; color: #ff9500" class="" target="_blank" href="https://github.com/dwesh163">@dwesh163</a> - v2.0.3
-	</footer>    
+    <script type="module" src="/src/main.jsx"></script>
+
 </html>

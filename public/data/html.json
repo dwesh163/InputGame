@@ -1,10 +1,10 @@
 {
     "options": {
         "title": "HTML Elements",
-        "case-sensitive": true,
+        "case-sensitive": false,
         "answers-sort": "desc",
         "timer": true,
-        "timer-value": "300"
+        "timer-value": 300
     },
     "data": [
         {

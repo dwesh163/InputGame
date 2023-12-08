@@ -1,0 +1,30 @@
+{
+    "title" : {
+        "type" : "title"
+    },
+    "case-sensitive": {
+        "type": "boolean",
+        "choice": "boolean",
+        "name": "Case sensitive"
+    },
+    "answers-sort": {
+        "type": "select",
+        "choice": [
+            "a-z",
+            "z-a",
+            "find order asc",
+            "find order desc"
+        ],
+        "name": "Answers sort"
+    },
+    "timer": {
+        "type": "boolean",
+        "choice": "boolean",
+        "name": "Timer"
+    },
+    "timer-value": {
+        "type": "int",
+        "choice": "",
+        "name": "Timer value"
+    }
+}
