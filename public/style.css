@@ -1,125 +1,197 @@
 .logo img {
-	width: 100%;
-	max-width: 100px;
-	height: auto;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
 }
 .logo h1 {
-	margin-top: 25px;
+    margin-top: 25px;
 }
 .cardList {
-	width: 10rem;
-	padding: 28px 0px;
-	text-align: center;
+    width: 10rem;
+    padding: 28px 0px;
+    text-align: center;
 }
 article {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 #box {
-	padding: 0px;
-	display: flex;
-	overflow: scroll;
-	max-height: 50vh;
-	flex-direction: column-reverse;
+    padding: 0px;
+    display: flex;
+    overflow: scroll;
+    max-height: 50vh;
+    flex-direction: column-reverse;
 }
 
 button {
-	background-color: #ff9500;
-	border: var(--pico-border-width) solid var(--pico-form-element-border-color);
-	padding: 0px;
-	width: 300px !important;
+    background-color: #ff9500;
+    border: var(--pico-border-width) solid var(--pico-form-element-border-color);
+    padding: 0px;
+    width: 300px !important;
 }
 
-.closeButton{
-	width: 19% !important;
-	min-width: 100px;
-	margin-top: 8%;
-	height: 36px;
+.closeButton {
+    width: 19% !important;
+    min-width: 100px;
+    margin-top: 8%;
+    height: 36px;
 }
 
 .find {
-	background-color: #00895A;
+    background-color: #00895a;
 }
 
 .unfind {
-	background-color: rgb(197, 30, 63);
+    background-color: rgb(197, 30, 63);
 }
 
 html {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 .container {
-  flex: 1 0 auto;
-  padding-top: 20px !important;
-  padding-bottom: 0px !important;
+    flex: 1 0 auto;
+    padding-top: 20px !important;
+    padding-bottom: 0px !important;
 }
+
 footer {
-  flex-shrink: 0;
-  padding: 20px !important;
-  text-align: center;
+    flex-shrink: 0;
+    padding: 20px !important;
+    text-align: center;
+}
+
+.settingBox {
+	margin-top: 6%;
+	width: 50%;
+
+	margin: auto;
+
+}
+
+.tdInput{
+	width: 50%;
+}
+.tdText {
+	width: 50%;
+}
+
+.settingCard {
+    display: flex;
+	width: 100%;
+}
+
+.settingText {
+	width: 100%;
+}
+
+.switch {
+    position: relative;
+    width: 3.2rem;
+    height: 1.8rem;
+    background-color: #ccc;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.switch-handle {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.switch.true .switch-handle {
+    transform: translateX(100%);
+}
+
+.switch.true {
+    background-color: #ff9500;
+}
+
+.switch input {
+    display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+    .settingBox{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 465px) {
+    .tdText{
+		width: 40%;
+	}
+	.tdInput{
+		width: 60%;
+	}
 }
 
 @media only screen and (min-width: 1540px) {
-	.cardList {
-		width: 11.5rem;
-	}
+    .cardList {
+        width: 11.5rem;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1022px) {
-	.cardList {
-		width: 9.71rem;
-	}
+    .cardList {
+        width: 9.71rem;
+    }
 }
 
 @media only screen and (max-width: 580px) {
-	.cardList {
-		width: 100%;
-	}
-	.modalMain {
-		font-size: small;
-	}
-
+    .cardList {
+        width: 100%;
+    }
+    .modalMain {
+        font-size: small;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-	#btnFileUpload {
-		visibility: hidden;
-		display: none;
-	}
+    #btnFileUpload {
+        visibility: hidden;
+        display: none;
+    }
 }
 
 @media only screen and (min-height: 528px) {
-	#box {
-		max-height: 50vh;
-	}
+    #box {
+        max-height: 50vh;
+    }
 }
 
 @media only screen and (min-height: 1000px) {
-	#box {
-		max-height: 75vh;
-	}
+    #box {
+        max-height: 75vh;
+    }
 }
 
 @media only screen and (min-height: 900px) {
-	#box {
-		max-height: 65vh;
-	}
+    #box {
+        max-height: 65vh;
+    }
 }
 
 @media only screen and (min-height: 1150px) {
-	#box {
-		max-height: 74vh;
-	}
+    #box {
+        max-height: 74vh;
+    }
 }
 
 @media only screen and (min-height: 1150px) {
-	#box {
-		max-height: 74vh;
-	}
+    #box {
+        max-height: 74vh;
+    }
 }
