@@ -27,6 +27,8 @@ function App() {
     const [isLoading, setIsLoading] = useState(true);
     const [isSettings, setIsSettings] = useState(false);
 
+    const settings = JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')];
+
     useEffect(() => {
         setIsLoading(true);
         fetch(`./data/${currentGame}.json`)
@@ -58,14 +60,25 @@ function App() {
     useEffect(() => {
         const keyDownHandler = (event) => {
             let inputSearch = document.getElementById('input').value.trim();
+            const settings = JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')];
 
             if (event.key === 'Enter') {
-                if (completeList.includes(inputSearch)) {
-                    if (!list.includes(inputSearch)) {
+
+                if (settings['case-sensitive']) {
+                    if (completeList.includes(inputSearch) && !list.includes(inputSearch)) {
                         list.push(inputSearch);
                         setList(list);
                         isEmpty = true;
                         setSearch('');
+                    }
+                } else {
+                    if (completeList.includes(inputSearch.toUpperCase()) || completeList.includes(inputSearch.toLowerCase())) {
+                        if (!list.includes(inputSearch.toUpperCase()) || list.includes(inputSearch.toLowerCase())) {
+                            list.push(inputSearch.toLowerCase());
+                            setList(list);
+                            isEmpty = true;
+                            setSearch('');
+                        }
                     }
                 }
             }
@@ -117,7 +130,6 @@ function App() {
                 </div>
             </main>
             <FooterComponents />
-
         </>
     );
 }
