@@ -13,8 +13,6 @@ export function Timer({ isSettings }) {
         return result;
     }
 
-    let time = toTimeString(settings['timer-value']);
-
     useEffect(() => {
         const keyDownHandler = (event) => {
             setIsRunning(true);

@@ -6,6 +6,7 @@ import { Setting } from './components/Settings/Setting.jsx';
 import { NavComponents } from './components/NavComponents.jsx';
 import { FooterComponents } from './components/FooterComponents.jsx';
 import { Timer } from './components/forms/Timer.jsx';
+import { render } from 'react-dom';
 
 let currentGame = localStorage.getItem('inputGameCurrent');
 
@@ -15,6 +16,22 @@ if (currentGame == undefined) {
 }
 
 function App() {
+
+    let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
+    let current = localStorage.getItem('inputGameCurrent');
+
+    if (localData == null) {
+        localData = {};
+    }
+
+    if (localData[current] == null) {
+        localData[current] = options;
+        localStorage.setItem('inputGameSettings', JSON.stringify(localData));
+        localData = JSON.parse(localStorage.getItem('inputGameSettings'));
+    }
+
+    const settings = JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')];
+
     let completeDataList = [];
     let isEmpty = false;
 
@@ -28,7 +45,6 @@ function App() {
     const [isLoading, setIsLoading] = useState(true);
     const [isSettings, setIsSettings] = useState(false);
 
-    const settings = JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')];
 
     useEffect(() => {
         setIsLoading(true);
@@ -57,6 +73,7 @@ function App() {
             setCompleteList(completeDataList);
         }
     }, [data]);
+
 
     useEffect(() => {
         const keyDownHandler = (event) => {
