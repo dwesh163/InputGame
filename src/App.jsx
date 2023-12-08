@@ -16,22 +16,6 @@ if (currentGame == undefined) {
 }
 
 function App() {
-
-    let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
-    let current = localStorage.getItem('inputGameCurrent');
-
-    if (localData == null) {
-        localData = {};
-    }
-
-    if (localData[current] == null) {
-        localData[current] = options;
-        localStorage.setItem('inputGameSettings', JSON.stringify(localData));
-        localData = JSON.parse(localStorage.getItem('inputGameSettings'));
-    }
-
-    const settings = JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')];
-
     let completeDataList = [];
     let isEmpty = false;
 
@@ -45,13 +29,27 @@ function App() {
     const [isLoading, setIsLoading] = useState(true);
     const [isSettings, setIsSettings] = useState(false);
 
-
     useEffect(() => {
         setIsLoading(true);
         fetch(`./data/${currentGame}.json`)
             .then((response) => response.json())
             .then((data) => {
                 setData(data);
+                let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
+
+                console.log(localData);
+
+                if (localData == null) {
+                    localData = {};
+                }
+
+                console.log(data);
+
+                if (localData[currentGame] == null) {
+                    localData[currentGame] = data;
+                    localStorage.setItem('inputGameSettings', JSON.stringify(localData));
+                    localData = JSON.parse(localStorage.getItem('inputGameSettings'));
+                }
             });
         fetch('./data/option.json')
             .then((response) => response.json())
@@ -74,14 +72,12 @@ function App() {
         }
     }, [data]);
 
-
     useEffect(() => {
         const keyDownHandler = (event) => {
             let inputSearch = document.getElementById('input').value.trim();
             const settings = JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')];
 
             if (event.key === 'Enter') {
-
                 if (settings['case-sensitive']) {
                     if (completeList.includes(inputSearch) && !list.includes(inputSearch)) {
                         list.push(inputSearch);
@@ -119,13 +115,13 @@ function App() {
     return (
         <>
             <NavComponents onClick={settingToggle} isSettings={isSettings} />
-            <main className="container">
-                <div id="root">
-                    <Timer isSettings={isSettings}/>
-                    <div>
-                        {isLoading ? (
-                            <p>Loading...</p>
-                        ) : (
+            {isLoading ? (
+                <p>Loading...</p>
+            ) : (
+                <main className="container">
+                    <div id="root">
+                        <Timer isSettings={isSettings} />
+                        <div>
                             <>
                                 {isSettings ? (
                                     <Setting options={data['options']} optionsData={optionData} />
@@ -144,10 +140,10 @@ function App() {
                                     </>
                                 )}
                             </>
-                        )}
+                        </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            )}
             <FooterComponents />
         </>
     );
