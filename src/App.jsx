@@ -12,7 +12,6 @@ if (currentGame == undefined) {
 
 function App() {
     let completeDataList = [];
-    let isEmpty = false;
 
     const [list, setList] = useState([]);
     const [completeList, setCompleteList] = useState([]);
@@ -51,7 +50,6 @@ function App() {
                     if (!list.includes(inputSearch)) {
                         list.push(inputSearch);
                         setList(list);
-                        isEmpty = true;
                         setSearch('');
                     }
                 }
@@ -70,12 +68,12 @@ function App() {
 
     return (
         <div>
-            {isSettings && <p>Setiings</p>}
+            {isSettings && <p>Settings</p>}
             {isLoading && <p>Loading...</p>}
             {data && (
                 <>
                     <span role="group" style={{ display: 'flex' }}>
-                        <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
+                        <Input value={search} onChange={setSearch} placeholder="Rechercher..." />
                         <button onClick={handleToggle}>Show answers</button>
                         <Number value={list.length} totalValue={completeList.length} />
                     </span>
