@@ -3,6 +3,8 @@ import { Input } from './components/forms/Input.jsx';
 import { Number } from './components/forms/Number.jsx';
 import { ContainerList } from './components/main/ContainerList.jsx';
 import { Setting } from './components/Settings/Setting.jsx';
+import { NavComponents } from './components/NavComponents.jsx';
+import { FooterComponents } from './components/FooterComponents.jsx';
 
 let currentGame = localStorage.getItem('inputGameCurrent');
 
@@ -85,17 +87,7 @@ function App() {
 
     return (
         <>
-            <nav style={{ padding: '0px 30px', marginTop: '15px' }}>
-                <div className="logo">
-                    <div style={{ display: 'flex' }}>
-                        <img src="./logo.png" alt="" />
-                        <h1 className="text-white fw-bold fst-italic">InputGame</h1>
-                    </div>
-                </div>
-                <div className="settingLogo" onClick={settingToggle}>
-                    {isSettings ? <img src="./exit.svg" alt="" /> : <img src="./settings.svg" alt="" />}
-                </div>
-            </nav>
+            <NavComponents onClick={settingToggle} isSettings={isSettings} />
             <main className="container">
                 <div id="root">
                     <div>
@@ -124,17 +116,8 @@ function App() {
                     </div>
                 </div>
             </main>
-            <hr style={{ margin: '0px' }} />
-            <footer style={{ color: '#c7c7c7' }}>
-                <a style={{ textDecoration: 'none', color: '#c7c7c7' }} href="https://github.com/dwesh163/InputGameReact/issues" target="_blank">
-                    feature/request
-                </a>{' '}
-                -
-                <a style={{ textDecoration: 'none' }} target="_blank" href="https://github.com/dwesh163">
-                    @dwesh163
-                </a>{' '}
-                - v2.0.3
-            </footer>
+            <FooterComponents />
+
         </>
     );
 }
