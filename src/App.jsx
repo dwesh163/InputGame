@@ -68,7 +68,7 @@ function App() {
 
     return (
         <div>
-            {isSettings && <p>Setiings</p>}
+            {isSettings && <p>Settings</p>}
             {isLoading && <p>Loading...</p>}
             {data && (
                 <>
