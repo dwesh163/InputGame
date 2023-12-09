@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import React from 'react';
 
 export function Setting({ options, optionsData }) {
     let settingsList = [];
@@ -22,7 +23,7 @@ export function Setting({ options, optionsData }) {
         if (optionsData[option]['type'] == 'select') {
             value = [];
 
-            const [addrtype, setAddrtype] = useState(optionsData[option]["choice"]);
+            const [addrtype, setAddrtype] = useState(optionsData[option]['choice']);
             const Add = addrtype.map((Add) => Add);
             const handleAddrTypeChange = (e) => {
                 localData[current][option] = e.target.value;
@@ -60,6 +61,41 @@ export function Setting({ options, optionsData }) {
             isHidden = false;
         }
 
+        if (optionsData[option]['type'] === 'checkbox') {
+            const storedData = localData[current][option];
+            const [checkboxOption, setCheckboxOption] = useState(storedData['select']);
+            const [choiceList, setChoiceList] = useState([]);
+        
+            useEffect(() => {
+                const updatedChoiceList = storedData['all'].map(index => (
+                    <div key={index}>
+                        <input
+                            type="checkbox"
+                            value={index}
+                            checked={checkboxOption.includes(index)}
+                            className="checkbox"
+                            onChange={() => handleCheckboxChange(index)}
+                        />
+                        <span>{index}</span>
+                    </div>
+                ));
+                setChoiceList(updatedChoiceList);
+            }, [checkboxOption]);
+        
+            const handleCheckboxChange = index => {
+                const updatedSelect = checkboxOption.includes(index)
+                    ? checkboxOption.filter(selectedIndex => selectedIndex !== index)
+                    : [...checkboxOption, index];
+        
+                localData[current][option]['select'] = updatedSelect;
+                setCheckboxOption(updatedSelect);
+                localStorage.setItem('inputGameSettings', JSON.stringify(localData));
+            };
+        
+            value = <>{choiceList}</>;
+            isHidden = false;
+        }
+
         const [inputValue, setInputValue] = useState(localData[current][option]);
 
         if (optionsData[option]['name'] === 'Timer value' && localData[current]['timer']) {
@@ -83,14 +119,14 @@ export function Setting({ options, optionsData }) {
 
         if (!isHidden) {
             settingsList.push(
-                <>
-                    <tr key={option} className="settingCard">
+                <React.Fragment key={option}>
+                    <tr className="settingCard">
                         <td className="tdText">
                             <p className="settingText">{optionsData[option]['name']}</p>
                         </td>
                         <td className="tdInput">{value}</td>
                     </tr>
-                </>
+                </React.Fragment>
             );
         }
     }

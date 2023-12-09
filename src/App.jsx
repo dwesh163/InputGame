@@ -62,11 +62,15 @@ function App() {
     useEffect(() => {
         if (data) {
             for (const element of data['data']) {
-                completeDataList.push(element['element']);
+                if (JSON.parse(localStorage.getItem("inputGameSettings"))[localStorage.getItem("inputGameCurrent")]["type"]["select"].includes(element['type'])) {
+                    
+                    completeDataList.push(element['element']);
+                }
             }
             setCompleteList(completeDataList);
         }
-    }, [data]);
+
+    }, [data, localStorage.getItem("inputGameSettings")]);
 
     useEffect(() => {
         const keyDownHandler = (event) => {

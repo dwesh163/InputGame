@@ -26,5 +26,9 @@
         "type": "int",
         "choice": "",
         "name": "Timer value"
+    },
+    "type" : {
+        "type": "checkbox",
+        "name": "type"
     }
 }

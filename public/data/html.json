@@ -4,548 +4,788 @@
         "case-sensitive": false,
         "answers-sort": "desc",
         "timer": true,
-        "timer-value": 300
+        "timer-value": 300,
+        "type": {
+            "select": ["base", "obselete"],
+            "all": ["base", "special", "obselete"]
+        }
     },
     "data": [
         {
             "element": "a",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a",
-            "description": "Defines a hyperlink, typically used with the href attribute to specify the target URL."
+            "description": "Defines a hyperlink, typically used with the href attribute to specify the target URL.",
+            "type": "base"
         },
         {
             "element": "abbr",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr",
-            "description": "Represents an abbreviation or acronym, providing a title attribute for the expanded form."
+            "description": "Represents an abbreviation or acronym, providing a title attribute for the expanded form.",
+            "type": "base"
         },
         {
             "element": "address",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address",
-            "description": "Represents contact information for the author or owner of a document/article."
+            "description": "Represents contact information for the author or owner of a document/article.",
+            "type": "base"
         },
         {
             "element": "area",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area",
-            "description": "Defines an area inside an image map, often used with the map and shape attributes."
+            "description": "Defines an area inside an image map, often used with the map and shape attributes.",
+            "type": "base"
         },
         {
             "element": "article",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article",
-            "description": "Represents an independent, self-contained piece of content, such as a news article or blog post."
+            "description": "Represents an independent, self-contained piece of content, such as a news article or blog post.",
+            "type": "base"
         },
         {
             "element": "aside",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside",
-            "description": "Represents content that is tangentially related to the content around it, often used for sidebars."
+            "description": "Represents content that is tangentially related to the content around it, often used for sidebars.",
+            "type": "base"
         },
         {
             "element": "audio",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio",
-            "description": "Embeds audio content in a document, allowing playback controls and other audio-related functionality."
+            "description": "Embeds audio content in a document, allowing playback controls and other audio-related functionality.",
+            "type": "base"
         },
         {
             "element": "b",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b",
-            "description": "Represents bold text. Deprecated in favor of using CSS for styling."
+            "description": "Represents bold text. Deprecated in favor of using CSS for styling.",
+            "type": "base"
         },
         {
             "element": "base",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base",
-            "description": "Specifies the base URL/target for all relative URLs in a document."
+            "description": "Specifies the base URL/target for all relative URLs in a document.",
+            "type": "base"
         },
         {
             "element": "bdi",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi",
-            "description": "Represents text that should be isolated from its surrounding text, typically for formatting in different directions."
+            "description": "Represents text that should be isolated from its surrounding text, typically for formatting in different directions.",
+            "type": "base"
         },
         {
             "element": "bdo",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo",
-            "description": "Overrides the current text direction, either left-to-right or right-to-left."
+            "description": "Overrides the current text direction, either left-to-right or right-to-left.",
+            "type": "base"
         },
         {
             "element": "blockquote",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote",
-            "description": "Indicates a section of text that is a long quotation from another source."
+            "description": "Indicates a section of text that is a long quotation from another source.",
+            "type": "base"
         },
         {
             "element": "body",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body",
-            "description": "Represents the content of an HTML document."
+            "description": "Represents the content of an HTML document.",
+            "type": "base"
         },
         {
             "element": "br",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br",
-            "description": "Represents a line break within text."
+            "description": "Represents a line break within text.",
+            "type": "base"
         },
         {
             "element": "button",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
-            "description": "Defines a clickable button."
+            "description": "Defines a clickable button.",
+            "type": "base"
         },
         {
             "element": "canvas",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas",
-            "description": "Provides an area for drawing graphics using JavaScript."
+            "description": "Provides an area for drawing graphics using JavaScript.",
+            "type": "base"
         },
         {
             "element": "caption",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption",
-            "description": "Represents the title or explanation of a table."
+            "description": "Represents the title or explanation of a table.",
+            "type": "base"
         },
         {
             "element": "cite",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite",
-            "description": "Specifies the title of a creative work, such as a book or movie."
+            "description": "Specifies the title of a creative work, such as a book or movie.",
+            "type": "base"
         },
         {
             "element": "code",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code",
-            "description": "Represents a single line of code."
+            "description": "Represents a single line of code.",
+            "type": "base"
         },
         {
             "element": "col",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col",
-            "description": "Defines a column within a table and is often used with colgroup."
+            "description": "Defines a column within a table and is often used with colgroup.",
+            "type": "base"
         },
         {
             "element": "colgroup",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup",
-            "description": "Groups a set of col elements in a table to apply styles or attributes."
+            "description": "Groups a set of col elements in a table to apply styles or attributes.",
+            "type": "base"
         },
         {
             "element": "command",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/command",
-            "description": "Represents a command that the user can invoke, often used with the command attribute in interactive UIs."
+            "description": "Represents a command that the user can invoke, often used with the command attribute in interactive UIs.",
+            "type": "base"
         },
         {
             "element": "datalist",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist",
-            "description": "Contains a set of option elements for use with input elements using the list attribute."
+            "description": "Contains a set of option elements for use with input elements using the list attribute.",
+            "type": "base"
         },
         {
             "element": "dd",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd",
-            "description": "Defines a description or value in a description list."
+            "description": "Defines a description or value in a description list.",
+            "type": "base"
         },
         {
             "element": "del",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del",
-            "description": "Represents text that has been deleted from a document."
+            "description": "Represents text that has been deleted from a document.",
+            "type": "base"
         },
         {
             "element": "details",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
-            "description": "Represents a disclosure widget from which the user can obtain additional information."
+            "description": "Represents a disclosure widget from which the user can obtain additional information.",
+            "type": "base"
         },
         {
             "element": "dfn",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn",
-            "description": "Represents the defining instance of a term."
+            "description": "Represents the defining instance of a term.",
+            "type": "base"
         },
         {
             "element": "div",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div",
-            "description": "Defines a division or section in an HTML document, often used for styling with CSS."
+            "description": "Defines a division or section in an HTML document, often used for styling with CSS.",
+            "type": "base"
         },
         {
             "element": "dl",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl",
-            "description": "Represents a description list comprising term and description pairs."
+            "description": "Represents a description list comprising term and description pairs.",
+            "type": "base"
         },
         {
             "element": "dt",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt",
-            "description": "Defines a term in a description list."
+            "description": "Defines a term in a description list.",
+            "type": "base"
         },
         {
             "element": "em",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em",
-            "description": "Represents emphasized text, typically displayed in italics."
+            "description": "Represents emphasized text, typically displayed in italics.",
+            "type": "base"
         },
         {
             "element": "embed",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed",
-            "description": "Embeds external content, such as a plugin or multimedia element."
+            "description": "Embeds external content, such as a plugin or multimedia element.",
+            "type": "base"
         },
         {
             "element": "fieldset",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset",
-            "description": "Groups related elements within a form and defines a border around them."
+            "description": "Groups related elements within a form and defines a border around them.",
+            "type": "base"
         },
         {
             "element": "figcaption",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption",
-            "description": "Represents a caption or legend for a figure element."
+            "description": "Represents a caption or legend for a figure element.",
+            "type": "base"
         },
         {
             "element": "figure",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure",
-            "description": "Represents any content that is referenced from the main content but is not the main content itself."
+            "description": "Represents any content that is referenced from the main content but is not the main content itself.",
+            "type": "base"
         },
         {
             "element": "footer",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer",
-            "description": "Represents the footer of a section or page."
+            "description": "Represents the footer of a section or page.",
+            "type": "base"
         },
         {
             "element": "form",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form",
-            "description": "Defines an HTML form for user input."
+            "description": "Defines an HTML form for user input.",
+            "type": "base"
         },
         {
             "element": "h1",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1",
-            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest.",
+            "type": "base"
         },
         {
             "element": "h2",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h2",
-            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest.",
+            "type": "base"
         },
         {
             "element": "h3",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h3",
-            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest.",
+            "type": "base"
         },
         {
             "element": "h4",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h4",
-            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest.",
+            "type": "base"
         },
         {
             "element": "h5",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h5",
-            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest.",
+            "type": "base"
         },
         {
             "element": "h6",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h6",
-            "description": "Heading elements, with h1 being the highest level and h6 the lowest."
+            "description": "Heading elements, with h1 being the highest level and h6 the lowest.",
+            "type": "base"
         },
         {
             "element": "head",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head",
-            "description": "Contains meta-information about the HTML document, such as title, links, and meta tags."
+            "description": "Contains meta-information about the HTML document, such as title, links, and meta tags.",
+            "type": "base"
         },
         {
             "element": "header",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header",
-            "description": "Represents the header of a section or page."
+            "description": "Represents the header of a section or page.",
+            "type": "base"
         },
         {
             "element": "hgroup",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup",
-            "description": "Groups heading elements when a document has multiple levels of headings."
+            "description": "Groups heading elements when a document has multiple levels of headings.",
+            "type": "base"
         },
         {
             "element": "hr",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr",
-            "description": "Represents a horizontal rule, often used to separate content."
+            "description": "Represents a horizontal rule, often used to separate content.",
+            "type": "base"
         },
         {
             "element": "html",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html",
-            "description": "Represents the root of an HTML document."
+            "description": "Represents the root of an HTML document.",
+            "type": "base"
         },
         {
             "element": "i",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i",
-            "description": "Represents italicized text. Deprecated in favor of using CSS for styling."
+            "description": "Represents italicized text. Deprecated in favor of using CSS for styling.",
+            "type": "base"
         },
         {
             "element": "iframe",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe",
-            "description": "Represents an inline frame, used to embed external content within a document."
+            "description": "Represents an inline frame, used to embed external content within a document.",
+            "type": "base"
         },
         {
             "element": "img",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
-            "description": "Embeds an image in a document."
+            "description": "Embeds an image in a document.",
+            "type": "base"
         },
         {
             "element": "input",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input",
-            "description": "Represents an interactive control, such as a text box, checkbox, or button."
+            "description": "Represents an interactive control, such as a text box, checkbox, or button.",
+            "type": "base"
         },
         {
             "element": "ins",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins",
-            "description": "Represents text that has been inserted into a document."
+            "description": "Represents text that has been inserted into a document.",
+            "type": "base"
         },
         {
             "element": "kbd",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd",
-            "description": "Represents text to be entered by the user, often displayed in a monospaced font."
+            "description": "Represents text to be entered by the user, often displayed in a monospaced font.",
+            "type": "base"
         },
         {
             "element": "keygen",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen",
-            "description": "Represents a key-pair generator field used in cryptographic forms."
+            "description": "Represents a key-pair generator field used in cryptographic forms.",
+            "type": "base"
         },
         {
             "element": "label",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label",
-            "description": "Represents a label for an input element."
+            "description": "Represents a label for an input element.",
+            "type": "base"
         },
         {
             "element": "legend",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend",
-            "description": "Represents a caption for the content of a fieldset."
+            "description": "Represents a caption for the content of a fieldset.",
+            "type": "base"
         },
         {
             "element": "li",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li",
-            "description": "Represents a list item in an ordered or unordered list."
+            "description": "Represents a list item in an ordered or unordered list.",
+            "type": "base"
         },
         {
             "element": "link",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link",
-            "description": "Defines the relationship between a document and an external resource, often used for stylesheets."
+            "description": "Defines the relationship between a document and an external resource, often used for stylesheets.",
+            "type": "base"
         },
         {
             "element": "map",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map",
-            "description": "Defines a client-side image map."
+            "description": "Defines a client-side image map.",
+            "type": "base"
         },
         {
             "element": "mark",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark",
-            "description": "Represents text highlighted for reference or notation purposes."
+            "description": "Represents text highlighted for reference or notation purposes.",
+            "type": "base"
         },
         {
             "element": "menu",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu",
-            "description": "Represents a list of commands or options."
+            "description": "Represents a list of commands or options.",
+            "type": "base"
         },
         {
             "element": "meta",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta",
-            "description": "Provides metadata about an HTML document, such as character set, description, and keywords."
+            "description": "Provides metadata about an HTML document, such as character set, description, and keywords.",
+            "type": "base"
         },
         {
             "element": "meter",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter",
-            "description": "Represents a scalar measurement within a known range."
+            "description": "Represents a scalar measurement within a known range.",
+            "type": "base"
         },
         {
             "element": "nav",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav",
-            "description": "Represents navigation links."
+            "description": "Represents navigation links.",
+            "type": "base"
         },
         {
             "element": "noscript",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript",
-            "description": "Provides fallback content for users who have disabled JavaScript in their browsers."
+            "description": "Provides fallback content for users who have disabled JavaScript in their browsers.",
+            "type": "base"
         },
         {
             "element": "object",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object",
-            "description": "Embeds external content, such as multimedia or plugins."
+            "description": "Embeds external content, such as multimedia or plugins.",
+            "type": "base"
         },
         {
             "element": "ol",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol",
-            "description": "Represents an ordered list."
+            "description": "Represents an ordered list.",
+            "type": "base"
         },
         {
             "element": "optgroup",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup",
-            "description": "Groups related option elements within a select element."
+            "description": "Groups related option elements within a select element.",
+            "type": "base"
         },
         {
             "element": "option",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option",
-            "description": "Represents an option in a select element."
+            "description": "Represents an option in a select element.",
+            "type": "base"
         },
         {
             "element": "output",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output",
-            "description": "Represents the result of a calculation or user action."
+            "description": "Represents the result of a calculation or user action.",
+            "type": "base"
         },
         {
             "element": "p",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p",
-            "description": "Represents a paragraph of text."
+            "description": "Represents a paragraph of text.",
+            "type": "base"
         },
         {
             "element": "param",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param",
-            "description": "Specifies parameters for an object element."
+            "description": "Specifies parameters for an object element.",
+            "type": "base"
         },
         {
             "element": "pre",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre",
-            "description": "Represents preformatted text, preserving both spaces and line breaks."
+            "description": "Represents preformatted text, preserving both spaces and line breaks.",
+            "type": "base"
         },
         {
             "element": "progress",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress",
-            "description": "Represents the progress of a task."
+            "description": "Represents the progress of a task.",
+            "type": "base"
         },
         {
             "element": "q",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q",
-            "description": "Represents a short quotation."
+            "description": "Represents a short quotation.",
+            "type": "base"
         },
         {
             "element": "rp",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp",
-            "description": "Provides fallback text for browsers that do not support ruby annotations."
+            "description": "Provides fallback text for browsers that do not support ruby annotations.",
+            "type": "base"
         },
         {
             "element": "rt",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt",
-            "description": "Represents the pronunciation of characters presented in a ruby annotation."
+            "description": "Represents the pronunciation of characters presented in a ruby annotation.",
+            "type": "base"
         },
         {
             "element": "ruby",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby",
-            "description": "Represents a ruby annotation, used in East Asian typography."
+            "description": "Represents a ruby annotation, used in East Asian typography.",
+            "type": "base"
         },
         {
             "element": "s",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s",
-            "description": "Represents text that is no longer accurate or relevant, often displayed with a strikethrough."
+            "description": "Represents text that is no longer accurate or relevant, often displayed with a strikethrough.",
+            "type": "base"
         },
         {
             "element": "samp",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp",
-            "description": "Represents sample output from a computer program."
+            "description": "Represents sample output from a computer program.",
+            "type": "base"
         },
         {
             "element": "script",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script",
-            "description": "Embeds or references executable code, often JavaScript."
+            "description": "Embeds or references executable code, often JavaScript.",
+            "type": "base"
         },
         {
             "element": "section",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section",
-            "description": "Represents a section of content within a document."
+            "description": "Represents a section of content within a document.",
+            "type": "base"
         },
         {
             "element": "select",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select",
-            "description": "Represents a control for selecting among a set of options."
+            "description": "Represents a control for selecting among a set of options.",
+            "type": "base"
         },
         {
             "element": "small",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small",
-            "description": "Represents smaller text, often used for fine print."
+            "description": "Represents smaller text, often used for fine print.",
+            "type": "base"
         },
         {
             "element": "source",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source",
-            "description": "Specifies multiple media resources for elements such as audio and video."
+            "description": "Specifies multiple media resources for elements such as audio and video.",
+            "type": "base"
         },
         {
             "element": "span",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span",
-            "description": "Represents an inline container, often used for styling with CSS."
+            "description": "Represents an inline container, often used for styling with CSS.",
+            "type": "base"
         },
         {
             "element": "strong",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong",
-            "description": "Represents strong importance, typically displayed in bold."
+            "description": "Represents strong importance, typically displayed in bold.",
+            "type": "base"
         },
         {
             "element": "style",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style",
-            "description": "Contains style information for a document."
+            "description": "Contains style information for a document.",
+            "type": "base"
         },
         {
             "element": "sub",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub",
-            "description": "Represents subscripted text."
+            "description": "Represents subscripted text.",
+            "type": "base"
         },
         {
             "element": "summary",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary",
-            "description": "Represents a summary or caption for the content of a details element."
+            "description": "Represents a summary or caption for the content of a details element.",
+            "type": "base"
         },
         {
             "element": "sup",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup",
-            "description": "Represents superscripted text."
+            "description": "Represents superscripted text.",
+            "type": "base"
         },
         {
             "element": "table",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table",
-            "description": "Represents a table."
+            "description": "Represents a table.",
+            "type": "base"
         },
         {
             "element": "tbody",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody",
-            "description": "Groups the body content in a table."
+            "description": "Groups the body content in a table.",
+            "type": "base"
         },
         {
             "element": "td",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td",
-            "description": "Represents a data cell within a table."
+            "description": "Represents a data cell within a table.",
+            "type": "base"
         },
         {
             "element": "textarea",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea",
-            "description": "Represents a multiline text input control."
+            "description": "Represents a multiline text input control.",
+            "type": "base"
         },
         {
             "element": "tfoot",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot",
-            "description": "Groups the footer content in a table."
+            "description": "Groups the footer content in a table.",
+            "type": "base"
         },
         {
             "element": "th",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th",
-            "description": "Represents a header cell within a table."
+            "description": "Represents a header cell within a table.",
+            "type": "base"
         },
         {
             "element": "thead",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead",
-            "description": "Groups the header content in a table."
+            "description": "Groups the header content in a table.",
+            "type": "base"
         },
         {
             "element": "time",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time",
-            "description": "Represents a specific period in time or a range of time."
+            "description": "Represents a specific period in time or a range of time.",
+            "type": "base"
         },
         {
             "element": "title",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title",
-            "description": "Defines the title of the HTML document, displayed in the browser's title bar."
+            "description": "Defines the title of the HTML document, displayed in the browser's title bar.",
+            "type": "base"
         },
         {
             "element": "tr",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr",
-            "description": "Represents a row within a table."
+            "description": "Represents a row within a table.",
+            "type": "base"
         },
         {
             "element": "track",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track",
-            "description": "Specifies text tracks for elements such as audio and video."
+            "description": "Specifies text tracks for elements such as audio and video.",
+            "type": "base"
         },
         {
             "element": "u",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u",
-            "description": "Represents text that should be stylistically offset, often displayed as underlined."
+            "description": "Represents text that should be stylistically offset, often displayed as underlined.",
+            "type": "base"
         },
         {
             "element": "ul",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul",
-            "description": "Represents an unordered list."
+            "description": "Represents an unordered list.",
+            "type": "base"
         },
         {
             "element": "var",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var",
-            "description": "Represents the name of a variable in programming or mathematics."
+            "description": "Represents the name of a variable in programming or mathematics.",
+            "type": "base"
         },
         {
             "element": "video",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video",
-            "description": "Embeds video content in a document."
+            "description": "Embeds video content in a document.",
+            "type": "base"
         },
         {
             "element": "wbr",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr",
-            "description": "Represents a word break opportunity, indicating where a line break can occur."
+            "description": "Represents a word break opportunity, indicating where a line break can occur.",
+            "type": "base"
+        },
+
+        {
+            "element": "acronym",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym",
+            "description": "Obsolete - Represents an acronym, not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "big",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big",
+            "description": "Obsolete - Represents text styled as big. Not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "center",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center",
+            "description": "Obsolete - Represents centered text. Not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "dir",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir",
+            "description": "Obsolete - Represents a directory list. Not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "font",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font",
+            "description": "Obsolete - Represents font-related styling. Not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "frame",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frame",
+            "description": "Obsolete - Represents a window or frame. Not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "frameset",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset",
+            "description": "Obsolete - Defines a set of frames in a window. Not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "marquee",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee",
+            "description": "Obsolete - Represents a scrolling text or image.",
+            "type": "obselete"
+        },
+        {
+            "element": "nobr",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nobr",
+            "description": "Obsolete - Represents text that should not wrap to the next line.",
+            "type": "obselete"
+        },
+        {
+            "element": "noembed",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noembed",
+            "description": "Obsolete - Represents content that should be displayed when the browser does not support the embed tag.",
+            "type": "obselete"
+        },
+        {
+            "element": "noframes",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noframes",
+            "description": "Obsolete - Represents content that should be displayed when the browser does not support frames.",
+            "type": "obselete"
+        },
+        {
+            "element": "param",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param",
+            "description": "Defines parameters for an object element.",
+            "type": "obselete"
+        },
+        {
+            "element": "plaintext",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext",
+            "description": "Obsolete - Represents plain text without any formatting.",
+            "type": "obselete"
+        },
+        {
+            "element": "rb",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb",
+            "description": "Obsolete - Represents the base text of a ruby annotation.",
+            "type": "obselete"
+        },
+        {
+            "element": "rtc",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rtc",
+            "description": "Obsolete - Represents ruby text containers. Not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "strike",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike",
+            "description": "Obsolete - Represents strikethrough text. Not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "tt",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt",
+            "description": "Obsolete - Represents teletype or monospaced text. Not supported in HTML5.",
+            "type": "obselete"
+        },
+        {
+            "element": "xmp",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp",
+            "description": "Obsolete - Represents preformatted text. Not supported in HTML5.",
+            "type": "obselete"
+        },
+
+        {
+            "element": "html",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html",
+            "description": "Represents the root of an HTML document.",
+            "type": "special"
+        },
+        {
+            "element": "svg",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/SVG",
+            "description": "Represents scalable vector graphics.",
+            "type": "special"
+        },
+        {
+            "element": "blink",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink",
+            "description": "Represents blinking text. Not supported in HTML5.",
+            "type": "special"
         }
     ]
 }

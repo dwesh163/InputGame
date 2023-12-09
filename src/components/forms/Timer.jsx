@@ -28,7 +28,6 @@ export function Timer({ isSettings }) {
         if (isRunning) {
             setInterval(() => {
                 settimer(count => count - 1)
-                console.log(timer);
             }, 1000);
         }
     }, [isRunning]);
