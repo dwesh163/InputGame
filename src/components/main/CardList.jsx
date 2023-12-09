@@ -4,10 +4,12 @@ export function CardList({ element, colorClass, setActiveObject, setShowModal, i
 	let url = info["url"]
 	let description = info["description"]
 
+    let type = info["type"]
+
     return (
         <article
             style={{ borderRadius: '0px' }}
-            className={`${className} cardList ${colorClass}`}
+            className={`${className} cardList ${colorClass} ${type}`}
             onClick={() => {
                 setActiveObject({ tag, description, url });
                 setShowModal(true);
