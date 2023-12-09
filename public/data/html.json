@@ -294,12 +294,6 @@
             "type": "base"
         },
         {
-            "element": "html",
-            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html",
-            "description": "Represents the root of an HTML document.",
-            "type": "base"
-        },
-        {
             "element": "i",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i",
             "description": "Represents italicized text. Deprecated in favor of using CSS for styling.",
