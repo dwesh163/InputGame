@@ -37,8 +37,6 @@ function App() {
                 setData(data);
                 let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
 
-                console.log(localData);
-
                 if (localData == null) {
                     localData = {};
                 }
@@ -110,41 +108,40 @@ function App() {
         setIsSettings(!isSettings);
     };
 
-    return (
-        <>
-            <NavComponents onClick={settingToggle} isSettings={isSettings} />
-            {isLoading ? (
-                <p>Loading...</p>
-            ) : (
-                <main className="container">
-                    <div id="root">
-                        <Timer isSettings={isSettings} />
-                        <div>
-                            <>
-                                {isSettings ? (
-                                    <Setting options={data['options']} optionsData={optionData} />
-                                ) : (
+return (
+    <>
+        <NavComponents onClick={settingToggle} isSettings={isSettings} />
+        {isLoading ? (
+            <p>Loading...</p>
+        ) : (
+            <main className="container">
+                <div id="root">
+                    {isSettings ? (
+                        <Setting options={data['options']} optionsData={optionData} />
+                    ) : (
+                        <>
+                            <Timer isSettings={isSettings} />
+                            <div>
+                                {data && (
                                     <>
-                                        {data && (
-                                            <>
-                                                <span role="group" style={{ display: 'flex' }}>
-                                                    <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
-                                                    <button onClick={handleToggle}>Show answers</button>
-                                                    <Number value={list.length} totalValue={completeList.length} />
-                                                </span>
-                                                <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} />
-                                            </>
-                                        )}
+                                        <span role="group" style={{ display: 'flex' }}>
+                                            <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
+                                            <button onClick={handleToggle}>Show answers</button>
+                                            <Number value={list.length} totalValue={completeList.length} />
+                                        </span>
+                                        <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} />
                                     </>
                                 )}
-                            </>
-                        </div>
-                    </div>
-                </main>
-            )}
-            <FooterComponents />
-        </>
-    );
+                            </div>
+                        </>
+                    )}
+                </div>
+            </main>
+        )}
+        <FooterComponents />
+    </>
+);
+
 }
 
 export default App;
