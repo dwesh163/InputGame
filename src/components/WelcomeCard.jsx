@@ -8,7 +8,8 @@ export function WelcomeCard({ optionsData }) {
 
         cardList.push(
             <section onClick={setCurrent} className={`choiceCard ${iterator['json']}`} key={iterator['json']}>
-                {iterator['name']}
+                <span>{iterator['name']}</span>
+                <img src={iterator['img']} alt="" />
             </section>
         );
     }

@@ -26,5 +26,12 @@
         "type": "int",
         "choice": "",
         "name": "Timer value"
-    }
+    },
+    "choiceList" : [
+        {
+            "json" : "html",
+            "name" : "HTML Elements",
+            "img" : "./background/html.jpg"
+        }
+    ]
 }
