@@ -4,6 +4,7 @@ export function WelcomeCard({ optionsData, onClick }) {
     for (const iterator of optionsData['choiceList']) {
         const setCurrent = () => {
             localStorage.setItem('inputGameCurrent', iterator['json']);
+            onClick();
         };
 
         cardList.push(
@@ -16,12 +17,14 @@ export function WelcomeCard({ optionsData, onClick }) {
 
     return (
         <section className="welcomeBox">
-            <h3>Welcome to InputGame</h3>
+            <h3>
+                Welcome to InputGame
+            </h3>
             <h5>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quisquam distinctio voluptatum atque voluptatem error, nobis eos ut maiores perspiciatis? Maiores, eligendi eos!
-                Delectus expedita iusto voluptatibus et numquam unde.
+                Your interactive platform dedicated to learning through play, highlighting subjects such as HTML. Explore customizable features, discover one-click answers, and enjoy an immersive
+                experience with options tailored to your learning or entertainment preferences.
             </h5>
-            <div className="choiceBox" onClick={onClick}>{cardList}</div>
+            <div className="choiceBox">{cardList}</div>
         </section>
     );
 }
