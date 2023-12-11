@@ -86,9 +86,6 @@ function App() {
                     const lowerCaseCompleteList = completeList.map(item => item.toLowerCase());
                     const upperCaseCompleteList = completeList.map(item => item.toUpperCase());
 
-                    console.log(lowerCaseCompleteList);
-                    console.log(upperCaseCompleteList);
-
                     if (upperCaseCompleteList.includes(inputSearch.toUpperCase()) || lowerCaseCompleteList.includes(inputSearch.toLowerCase())) {
                         if (!list.includes(inputSearch.toUpperCase()) && !list.includes(inputSearch.toLowerCase())) {
                             let info = data['data'].find(({ element }) => element.toLowerCase() === inputSearch.toLowerCase());
