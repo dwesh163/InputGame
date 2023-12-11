@@ -32,26 +32,28 @@ export function ContainerList({ value, completeList, viewFull, data }) {
     );
 
     if (viewFull) {
-        for (let htmlElement of completeList) {
-            if (value.includes(htmlElement)) {
+        for (let element of completeList) {
+            if (value.includes(element)) {
                 colorClass = 'find';
             } else {
                 colorClass = 'unfind';
             }
 
-            let info = data.find(({ element }) => element === htmlElement);
+            let info = data.find(({ element }) => element === element);
 
             elementList.push(
-                <CardList element={htmlElement} key={htmlElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(htmlElement)} info={info}>
+                <CardList element={element} key={element} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(element)} info={info}>
                 </CardList>
             );
         }
     } else {
-        for (let htmlElement of value) {
-            let info = data.find(({ element }) => element === htmlElement);
+        for (let element of value) {
+
+            console.log(value);
+            let info = data.find(({ element }) => element === element);
 
             elementList.push(
-                <CardList element={htmlElement} key={htmlElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(htmlElement)} info={info}>
+                <CardList element={element} key={element} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(element)} info={info}>
                 </CardList>
             );
         }

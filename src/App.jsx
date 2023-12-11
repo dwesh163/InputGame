@@ -38,9 +38,6 @@ function App() {
             .then((data) => {
                 setData(data);
                 let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
-
-                console.log(localData);
-
                 if (localData == null) {
                     localData = {};
                 }
@@ -86,9 +83,16 @@ function App() {
                         setSearch('');
                     }
                 } else {
-                    if (completeList.includes(inputSearch.toUpperCase()) || completeList.includes(inputSearch.toLowerCase())) {
+                    const lowerCaseCompleteList = completeList.map(item => item.toLowerCase());
+                    const upperCaseCompleteList = completeList.map(item => item.toUpperCase());
+
+                    console.log(lowerCaseCompleteList);
+                    console.log(upperCaseCompleteList);
+
+                    if (upperCaseCompleteList.includes(inputSearch.toUpperCase()) || lowerCaseCompleteList.includes(inputSearch.toLowerCase())) {
                         if (!list.includes(inputSearch.toUpperCase()) && !list.includes(inputSearch.toLowerCase())) {
-                            list.push(inputSearch.toLowerCase());
+                            let info = data['data'].find(({ element }) => element.toLowerCase() === inputSearch.toLowerCase());
+                            list.push(info["element"]);
                             setList(list);
                             isEmpty = true;
                             setSearch('');
