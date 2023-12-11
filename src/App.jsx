@@ -7,6 +7,7 @@ import { NavComponents } from './components/NavComponents.jsx';
 import { FooterComponents } from './components/FooterComponents.jsx';
 import { Timer } from './components/forms/Timer.jsx';
 import { render } from 'react-dom';
+import { WelcomeCard } from "./components/WelcomeCard.jsx"
 
 let currentGame = localStorage.getItem('inputGameCurrent');
 
@@ -28,6 +29,7 @@ function App() {
 
     const [isLoading, setIsLoading] = useState(true);
     const [isSettings, setIsSettings] = useState(false);
+    const [isWelcome, setIsWelcome] = useState(true);
 
     useEffect(() => {
         setIsLoading(true);
@@ -44,7 +46,7 @@ function App() {
                 }
 
                 if (localData[currentGame] == null) {
-                    localData[currentGame] = data["options"];
+                    localData[currentGame] = data['options'];
                     localStorage.setItem('inputGameSettings', JSON.stringify(localData));
                     localData = JSON.parse(localStorage.getItem('inputGameSettings'));
                 }
@@ -116,31 +118,37 @@ function App() {
             {isLoading ? (
                 <p>Loading...</p>
             ) : (
-                <main className="container">
-                    <div id="root">
-                        <Timer isSettings={isSettings} />
-                        <div>
-                            <>
-                                {isSettings ? (
-                                    <Setting options={data['options']} optionsData={optionData} />
-                                ) : (
+                <>
+                    {isWelcome ? (
+                        <WelcomeCard/>
+                    ) : (
+                        <main className="container">
+                            <div id="root">
+                                <Timer isSettings={isSettings} />
+                                <div>
                                     <>
-                                        {data && (
+                                        {isSettings ? (
+                                            <Setting options={data['options']} optionsData={optionData} />
+                                        ) : (
                                             <>
-                                                <span role="group" style={{ display: 'flex' }}>
-                                                    <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
-                                                    <button onClick={handleToggle}>Show answers</button>
-                                                    <Number value={list.length} totalValue={completeList.length} />
-                                                </span>
-                                                <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} />
+                                                {data && (
+                                                    <>
+                                                        <span role="group" style={{ display: 'flex' }}>
+                                                            <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
+                                                            <button onClick={handleToggle}>Show answers</button>
+                                                            <Number value={list.length} totalValue={completeList.length} />
+                                                        </span>
+                                                        <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} />
+                                                    </>
+                                                )}
                                             </>
                                         )}
                                     </>
-                                )}
-                            </>
-                        </div>
-                    </div>
-                </main>
+                                </div>
+                            </div>
+                        </main>
+                    )}
+                </>
             )}
             <FooterComponents />
         </>
