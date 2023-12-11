@@ -4,13 +4,17 @@
         "case-sensitive": false,
         "answers-sort": "desc",
         "timer": true,
-        "timer-value": 300
+        "timer-value": 300,
+        "type" : {
+            "select" : ["Mammifère", "Arachnide", "Oiseau", "Reptile", "Insecte"],
+            "all" : ["Mammifère", "Arachnide", "Oiseau", "Reptile", "Insecte"]
+        }
     },
     "data": [
         {
             "element": "Lion",
             "habitat": "Savane",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Carnivore",
             "description": "Le lion est un grand félin vivant en groupe appelé fierté. Il est connu pour sa crinière distinctive chez les mâles.",
             "url": "https://fr.wikipedia.org/wiki/lion"
@@ -18,7 +22,7 @@
         {
             "element": "Araignée",
             "habitat": "Divers",
-            "classification": "Arachnide",
+            "type": "Arachnide",
             "régime alimentaire": "Carnivore",
             "description": "L'araignée est un arachnide avec huit pattes, produisant de la soie pour construire des toiles pour la chasse.",
             "url": "https://fr.wikipedia.org/wiki/araignée"
@@ -26,7 +30,7 @@
         {
             "element": "Aigle",
             "habitat": "Montagnes",
-            "classification": "Oiseau",
+            "type": "Oiseau",
             "régime alimentaire": "Carnivore",
             "description": "L'aigle est un oiseau de proie avec une vision aiguë et des serres puissantes pour la chasse.",
             "url": "https://fr.wikipedia.org/wiki/aigle"
@@ -34,7 +38,7 @@
         {
             "element": "Tortue",
             "habitat": "Terrestre et Aquatique",
-            "classification": "Reptile",
+            "type": "Reptile",
             "régime alimentaire": "Herbivore",
             "description": "La tortue est un reptile caractérisé par sa carapace protectrice. Certaines espèces vivent sur terre, tandis que d'autres sont aquatiques.",
             "url": "https://fr.wikipedia.org/wiki/tortue"
@@ -42,7 +46,7 @@
         {
             "element": "Panda",
             "habitat": "Forêts de bambous",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Herbivore",
             "description": "Le panda géant est un symbole de conservation, se nourrissant principalement de bambous et étant reconnu pour sa fourrure noire et blanche.",
             "url": "https://fr.wikipedia.org/wiki/panda"
@@ -50,7 +54,7 @@
         {
             "element": "Serpent",
             "habitat": "Divers",
-            "classification": "Reptile",
+            "type": "Reptile",
             "régime alimentaire": "Carnivore",
             "description": "Le serpent est un reptile sans pattes, se déplaçant en rampant. Certains sont venimeux, tandis que d'autres sont constricteurs.",
             "url": "https://fr.wikipedia.org/wiki/serpent"
@@ -58,7 +62,7 @@
         {
             "element": "Kangourou",
             "habitat": "Australie",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Herbivore",
             "description": "Le kangourou est un marsupial sauteur, adapté à la vie en Australie. Les femelles portent et élèvent leurs petits dans une poche ventrale.",
             "url": "https://fr.wikipedia.org/wiki/kangourou"
@@ -66,7 +70,7 @@
         {
             "element": "Chouette",
             "habitat": "Forêts",
-            "classification": "Oiseau",
+            "type": "Oiseau",
             "régime alimentaire": "Carnivore",
             "description": "La chouette est un oiseau de proie nocturne, chassant principalement la nuit grâce à sa vision exceptionnelle et à sa capacité à tourner la tête sur de larges angles.",
             "url": "https://fr.wikipedia.org/wiki/chouette"
@@ -74,7 +78,7 @@
         {
             "element": "Crocodile",
             "habitat": "Eaux douces et salées",
-            "classification": "Reptile",
+            "type": "Reptile",
             "régime alimentaire": "Carnivore",
             "description": "Le crocodile est un reptile semi-aquatique redoutable, chassant dans les eaux douces et salées avec sa puissante mâchoire.",
             "url": "https://fr.wikipedia.org/wiki/crocodile"
@@ -82,7 +86,7 @@
         {
             "element": "Panthère",
             "habitat": "Forêts et Montagnes",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Carnivore",
             "description": "La panthère est un grand félin connu pour sa fourrure tachetée. Elle est agile et habile à la chasse, se déplaçant silencieusement dans divers habitats.",
             "url": "https://fr.wikipedia.org/wiki/panthère"
@@ -90,7 +94,7 @@
         {
             "element": "Ours polaire",
             "habitat": "Arctique",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Carnivore",
             "description": "L'ours polaire est adapté à la vie dans les régions froides de l'Arctique. Il est un nageur puissant et se nourrit principalement de phoques.",
             "url": "https://fr.wikipedia.org/wiki/ours_polaire"
@@ -98,7 +102,7 @@
         {
             "element": "Gorille",
             "habitat": "Forêts tropicales",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Herbivore",
             "description": "Le gorille est un grand singe, proche parent de l'homme. Il vit en groupes sociaux dans les forêts tropicales d'Afrique, se nourrissant principalement de plantes.",
             "url": "https://fr.wikipedia.org/wiki/gorille"
@@ -106,7 +110,7 @@
         {
             "element": "Papillon Monarque",
             "habitat": "Amérique du Nord",
-            "classification": "Insecte",
+            "type": "Insecte",
             "régime alimentaire": "Nectar",
             "description": "Le papillon monarque est connu pour ses migrations massives sur de longues distances. Il se nourrit du nectar des fleurs et joue un rôle crucial dans la pollinisation.",
             "url": "https://fr.wikipedia.org/wiki/Monarque_(papillon)"
@@ -114,7 +118,7 @@
         {
             "element": "Koala",
             "habitat": "Forêts d'eucalyptus",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Herbivore",
             "description": "Le koala est un marsupial arboricole se nourrissant principalement de feuilles d'eucalyptus. Il est originaire d'Australie.",
             "url": "https://fr.wikipedia.org/wiki/koala"
@@ -122,7 +126,7 @@
         {
             "element": "Hippopotame",
             "habitat": "Rivières et Lacs",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Herbivore",
             "description": "L'hippopotame est un mammifère semi-aquatique, passant la plupart de son temps dans l'eau. Il se nourrit d'herbes et est connu pour sa forte mâchoire.",
             "url": "https://fr.wikipedia.org/wiki/hippopotame"
@@ -130,7 +134,7 @@
         {
             "element": "Poulet",
             "habitat": "Fermes",
-            "classification": "Oiseau",
+            "type": "Oiseau",
             "régime alimentaire": "Omnivore",
             "description": "Le poulet domestique est une espèce d'oiseau élevée pour sa viande et ses œufs. Il est l'un des animaux domestiques les plus répandus dans le monde.",
             "url": "https://fr.wikipedia.org/wiki/poulet"
@@ -138,7 +142,7 @@
         {
             "element": "Pangolin",
             "habitat": "Afrique et Asie",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Fourmis et Termites",
             "description": "Le pangolin est un mammifère couvert d'écailles, se nourrissant principalement de fourmis et de termites. Il est menacé en raison du trafic illégal.",
             "url": "https://fr.wikipedia.org/wiki/pangolin"
@@ -146,7 +150,7 @@
         {
             "element": "Aigle royal",
             "habitat": "Montagnes",
-            "classification": "Oiseau",
+            "type": "Oiseau",
             "régime alimentaire": "Carnivore",
             "description": "L'aigle royal est un grand rapace, capable de voler à des altitudes élevées. Il se nourrit principalement de petits mammifères et d'oiseaux.",
             "url": "https://fr.wikipedia.org/wiki/Aigle_royal"
@@ -154,7 +158,7 @@
         {
             "element": "Cachalot",
             "habitat": "Océans",
-            "classification": "Mammifère marin",
+            "type": "Mammifère",
             "régime alimentaire": "Carnivore",
             "description": "Le cachalot est le plus grand prédateur à dents, chassant des proies dans les profondeurs de l'océan. Il est connu pour son énorme tête et son huile précieuse.",
             "url": "https://fr.wikipedia.org/wiki/cachalot"
@@ -162,7 +166,7 @@
         {
             "element": "Dauphin",
             "habitat": "Océans",
-            "classification": "Mammifère marin",
+            "type": "Mammifère",
             "régime alimentaire": "Poissons et céphalopodes",
             "description": "Le dauphin est un mammifère marin intelligent et social, vivant en groupes appelés pods. Il se nourrit principalement de poissons et de céphalopodes.",
             "url": "https://fr.wikipedia.org/wiki/dauphin"
@@ -170,7 +174,7 @@
         {
             "element": "Éléphant",
             "habitat": "Forêts et savanes",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Herbivore",
             "description": "L'éléphant est le plus grand mammifère terrestre. Il est connu pour sa trompe distinctive et son intelligence élevée, vivant en groupes familiaux.",
             "url": "https://fr.wikipedia.org/wiki/éléphant"
@@ -178,7 +182,7 @@
         {
             "element": "Loutre de mer",
             "habitat": "Océans et côtes",
-            "classification": "Mammifère marin",
+            "type": "Mammifère marin",
             "régime alimentaire": "Poissons et crustacés",
             "description": "La loutre de mer est un mammifère marin joueur, souvent observé en train de flotter sur le dos. Elle se nourrit de poissons, d'oursins et de crustacés.",
             "url": "https://fr.wikipedia.org/wiki/Loutre_de_mer"
@@ -186,7 +190,7 @@
         {
             "element": "Girafe",
             "habitat": "Savanes",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Herbivore",
             "description": "La girafe est le plus haut animal terrestre, avec un cou allongé. Elle se nourrit principalement des feuilles des arbres acacias dans les savanes africaines.",
             "url": "https://fr.wikipedia.org/wiki/girafe"
@@ -194,7 +198,7 @@
         {
             "element": "Panda roux",
             "habitat": "Forêts de montagne",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Bambous, fruits et petits animaux",
             "description": "Le panda roux est un petit mammifère arboricole. Il se nourrit principalement de bambous et est connu pour sa fourrure rousse et son apparence adorable.",
             "url": "https://fr.wikipedia.org/wiki/pandaroux"
@@ -202,7 +206,7 @@
         {
             "element": "Chameau",
             "habitat": "Déserts",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Herbivore",
             "description": "Le chameau est adapté à la vie dans les déserts, capable de stocker de l'eau et de résister à des températures élevées. Il est utilisé comme animal de transport.",
             "url": "https://fr.wikipedia.org/wiki/chameau"
@@ -210,7 +214,7 @@
         {
             "element": "Faucon pèlerin",
             "habitat": "Falaises et gratte-ciel",
-            "classification": "Oiseau",
+            "type": "Oiseau",
             "régime alimentaire": "Oiseaux en vol",
             "description": "Le faucon pèlerin est un rapace rapide et agile, capable de plonger en piqué à des vitesses élevées pour capturer ses proies en vol.",
             "url": "https://fr.wikipedia.org/wiki/Faucon_pèlerin"
@@ -218,7 +222,7 @@
         {
             "element": "Tigre blanc",
             "habitat": "Forêts et jungles",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Carnivore",
             "description": "Le tigre blanc est une variante du tigre avec une coloration blanche distinctive. Il est carnivore et chasse une variété de proies dans les forêts et les jungles.",
             "url": "https://fr.wikipedia.org/wiki/tigreblanc"
@@ -226,7 +230,7 @@
         {
             "element": "Rhinocéros",
             "habitat": "Savanes et forêts",
-            "classification": "Mammifère",
+            "type": "Mammifère",
             "régime alimentaire": "Herbivore",
             "description": "Le rhinocéros est un herbivore massif avec une corne distinctive sur son museau. Il est souvent trouvé dans les savanes et les forêts d'Afrique et d'Asie.",
             "url": "https://fr.wikipedia.org/wiki/rhinocéros"
