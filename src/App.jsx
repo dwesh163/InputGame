@@ -112,6 +112,11 @@ function App() {
         setIsSettings(!isSettings);
     };
 
+    const welcomeToggle = () => {
+        console.log("fewf");
+        setIsWelcome(!isWelcome);
+    };
+
     return (
         <>
             <NavComponents onClick={settingToggle} isSettings={isSettings} isWelcome={isWelcome} />
@@ -120,7 +125,7 @@ function App() {
             ) : (
                 <>
                     {isWelcome ? (
-                        <WelcomeCard optionsData={optionData}/>
+                        <WelcomeCard optionsData={optionData} onClick={welcomeToggle}/>
                     ) : (
                         <main className="container">
                             <div id="root">

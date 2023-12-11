@@ -31,9 +31,13 @@ article {
     max-height: 50vh;  
     flex-direction: column-reverse;
 }
+.welcomeBox {
+    text-align: center;
+    padding: 30px;
+}
 
 .choiceBox {
-    height: 100vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;

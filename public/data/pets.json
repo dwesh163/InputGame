@@ -1,0 +1,16 @@
+{
+    "options": {
+        "title": "HTML Elements",
+        "case-sensitive": false,
+        "answers-sort": "desc",
+        "timer": true,
+        "timer-value": 300
+    },
+    "data": [
+        {
+            "element": "muuun",
+            "url": "https://meu.com",
+            "description": "a cow"
+        }
+    ]
+}
