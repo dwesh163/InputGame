@@ -1,13 +1,19 @@
-export function CardList({ element, colorClass, setActiveObject, setShowModal, info, className }) {
+export function CardList({ element, colorClass, setActiveObject, setShowModal, info, className, errorTag }) {
     if (info != undefined) {
         let tag = info['element'];
         let url = info['url'];
         let description = info['description'];
+        let isBlinking = ""
+
+        if (tag == errorTag) {
+            isBlinking = "blinking"
+        }
 
         return (
             <article
                 style={{ borderRadius: '0px' }}
-                className={`${className} cardList ${colorClass}`}
+                id={tag}
+                className={`${className} ${isBlinking} cardList ${colorClass}`}
                 onClick={() => {
                     setActiveObject({ tag, description, url });
                     setShowModal(true);

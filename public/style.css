@@ -2,7 +2,7 @@
     user-select: none;
 }
 
-.logo{
+.logo {
     cursor: pointer;
 }
 
@@ -32,7 +32,7 @@ article {
     padding: 0px;
     display: flex;
     overflow: scroll;
-    max-height: 50vh;  
+    max-height: 50vh;
     flex-direction: column-reverse;
 }
 
@@ -40,7 +40,7 @@ article {
     padding: 0px;
     display: flex;
     overflow: scroll;
-    max-height: 50vh;  
+    max-height: 50vh;
     flex-direction: column-reverse;
     margin-top: 30px;
 }
@@ -78,7 +78,7 @@ article {
 }
 
 .choiceCard span {
-    position: absolute;    
+    position: absolute;
     margin-top: 100px;
     margin-left: 18px;
     z-index: 1;
@@ -99,7 +99,7 @@ button {
 }
 
 .find {
-    background-color: #00895a;
+    background-color: #008959;
 }
 
 .unfind {
@@ -133,9 +133,9 @@ footer {
 }
 
 .settingBox {
-	margin-top: 6%;
-	width: 50%;
-	margin: auto;
+    margin-top: 6%;
+    width: 50%;
+    margin: auto;
 }
 
 .settingLogo {
@@ -151,20 +151,20 @@ footer {
     width: 1.5rem;
 }
 
-.tdInput{
-	width: 50%;
+.tdInput {
+    width: 50%;
 }
 .tdText {
-	width: 50%;
+    width: 50%;
 }
 
 .settingCard {
     display: flex;
-	width: 100%;
+    width: 100%;
 }
 
 .settingText {
-	width: 100%;
+    width: 100%;
 }
 
 .switch {
@@ -199,19 +199,33 @@ footer {
     display: none;
 }
 
+@keyframes blink {
+    0%,
+    100% {
+        background-color: #008959;
+    }
+    50% {
+        background-color: rgb(248, 139, 43);
+    }
+}
+
+.blinking {
+    animation: blink 1.5s 2;
+}
+
 @media only screen and (max-width: 1280px) {
-    .settingBox{
-		width: 100%;
-	}
+    .settingBox {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 465px) {
-    .tdText{
-		width: 40%;
-	}
-	.tdInput{
-		width: 60%;
-	}
+    .tdText {
+        width: 40%;
+    }
+    .tdInput {
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width: 1540px) {

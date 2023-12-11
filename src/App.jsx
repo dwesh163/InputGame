@@ -30,6 +30,8 @@ function App() {
     const [errorList, setErrorList] = useState([]);
     const [error, setError] = useState([])
 
+    const [errorTag, setErrorTag] = useState("")
+
 
     const [isLoading, setIsLoading] = useState(true);
     const [isSettings, setIsSettings] = useState(false);
@@ -86,10 +88,19 @@ function App() {
                         isEmpty = true;
                         setSearch('');
                     }
-                    else {
-
-                        setErrorList(errorList.push(inputSearch))
+                    if(list.includes(inputSearch)){
+                        window.location.href=`#${inputSearch}`
+                        setErrorTag(inputSearch)
+                        isEmpty = true;
+                        setSearch('');
                     }
+                    if (!error.includes(inputSearch) && inputSearch != "") {
+                        error.push(inputSearch);
+                        setErrorList(error);
+                    }
+                    isEmpty = true;
+                    setSearch('');
+
                 } else {
                     const lowerCaseCompleteList = completeList.map(item => item.toLowerCase());
                     const upperCaseCompleteList = completeList.map(item => item.toUpperCase());
@@ -102,12 +113,22 @@ function App() {
                             isEmpty = true;
                             setSearch('');
                         }
+                        else{
+                            let info = data['data'].find(({ element }) => element.toLowerCase() === inputSearch.toLowerCase());
+                            window.location.href=`#${info["element"]}`
+                            setErrorTag(info["element"])
+                            isEmpty = true;
+                            setSearch('');
+                        }
                     }
                     else {
-                        error.push(inputSearch);
-                        setErrorList(error);
+                        if (!error.includes(inputSearch) && inputSearch != "") {
+                            error.push(inputSearch);
+                            setErrorList(error);
+                        }
                         isEmpty = true;
                         setSearch('');
+               
                     }
                 }
             }
@@ -135,6 +156,7 @@ function App() {
 
     const settingToggle = () => {
         setIsSettings(!isSettings)
+        setErrorTag("")
     };
 
     const welcomeToggle = () => {
@@ -146,12 +168,10 @@ function App() {
         }
     };
 
-    console.log(errorList);
-    console.log(completeList);
-
     return (
         <>
             <NavComponents onClick={settingToggle} isSettings={isSettings} isWelcome={isWelcome} />
+
             {isLoading ? (
                 <p>Loading...</p>
             ) : (
@@ -175,7 +195,7 @@ function App() {
                                                             <button onClick={handleToggle}>Show answers</button>
                                                             <Number value={list.length} totalValue={completeList.length} />
                                                         </span>
-                                                        <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} />
+                                                        <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} errorTag={errorTag}/>
                                                         <ContainerList value={errorList} viewFull={false} data={data['data']} isError={true} />
                                                     </>
                                                 )}
