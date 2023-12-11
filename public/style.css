@@ -35,6 +35,16 @@ article {
     max-height: 50vh;  
     flex-direction: column-reverse;
 }
+
+#errorBox {
+    padding: 0px;
+    display: flex;
+    overflow: scroll;
+    max-height: 50vh;  
+    flex-direction: column-reverse;
+    margin-top: 30px;
+}
+
 .welcomeBox {
     text-align: center;
     padding: 30px;
@@ -93,7 +103,11 @@ button {
 }
 
 .unfind {
-    background-color: rgb(197, 30, 63);
+    background-color: rgba(250, 55, 55, 0.726);
+}
+
+.error {
+    background-color: rgba(250, 94, 55, 0.726);
 }
 
 html {

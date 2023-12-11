@@ -27,6 +27,10 @@ function App() {
     const [data, setData] = useState(null);
     const [optionData, setOptionData] = useState(null);
 
+    const [errorList, setErrorList] = useState([]);
+    const [error, setError] = useState([])
+
+
     const [isLoading, setIsLoading] = useState(true);
     const [isSettings, setIsSettings] = useState(false);
     const [isWelcome, setIsWelcome] = useState(true);
@@ -82,6 +86,10 @@ function App() {
                         isEmpty = true;
                         setSearch('');
                     }
+                    else {
+
+                        setErrorList(errorList.push(inputSearch))
+                    }
                 } else {
                     const lowerCaseCompleteList = completeList.map(item => item.toLowerCase());
                     const upperCaseCompleteList = completeList.map(item => item.toUpperCase());
@@ -94,6 +102,12 @@ function App() {
                             isEmpty = true;
                             setSearch('');
                         }
+                    }
+                    else {
+                        error.push(inputSearch);
+                        setErrorList(error);
+                        isEmpty = true;
+                        setSearch('');
                     }
                 }
             }
@@ -132,6 +146,9 @@ function App() {
         }
     };
 
+    console.log(errorList);
+    console.log(completeList);
+
     return (
         <>
             <NavComponents onClick={settingToggle} isSettings={isSettings} isWelcome={isWelcome} />
@@ -159,6 +176,7 @@ function App() {
                                                             <Number value={list.length} totalValue={completeList.length} />
                                                         </span>
                                                         <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} />
+                                                        <ContainerList value={errorList} viewFull={false} data={data['data']} isError={true} />
                                                     </>
                                                 )}
                                             </>
