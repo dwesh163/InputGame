@@ -5,7 +5,7 @@ export function FooterComponents() {
             <footer style={{ color: '#c7c7c7' }}>
                 <a style={{ textDecoration: 'none', color: '#c7c7c7' }} href="https://github.com/dwesh163/InputGameReact/issues" target="_blank">
                     InputGame
-                </a>{' - v2.0.6'}
+                </a>{' - 2.1.2'}
             </footer>
         </>
     );
