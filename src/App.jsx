@@ -147,7 +147,7 @@ function App() {
                     ) : (
                         <main className="container">
                             <div id="root">
-                                <Timer isSettings={isSettings} />
+                                <Timer isSettings={isSettings} handleToggle={handleToggle} />
                                 <div>
                                     <>
                                         {isSettings ? (
