@@ -2,6 +2,10 @@
     user-select: none;
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .logo img {
     width: 100%;
     max-width: 100px;
@@ -37,7 +41,7 @@ article {
 }
 
 .choiceBox {
-    height: 30vh;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;

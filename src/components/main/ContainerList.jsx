@@ -43,7 +43,6 @@ export function ContainerList({ value, completeList, viewFull, data }) {
 
             elementList.push(
                 <CardList element={htmlElement} key={htmlElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(htmlElement)} info={info}>
-                    {' '}
                 </CardList>
             );
         }
@@ -53,7 +52,6 @@ export function ContainerList({ value, completeList, viewFull, data }) {
 
             elementList.push(
                 <CardList element={htmlElement} key={htmlElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(htmlElement)} info={info}>
-                    {' '}
                 </CardList>
             );
         }

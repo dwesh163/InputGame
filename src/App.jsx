@@ -104,17 +104,31 @@ function App() {
         };
     }, [completeList]);
 
+    const url = new URL(window.location.href);
+
+    useEffect(() => {
+        if(url.searchParams.get('p')  == "game"){
+                setIsSettings(false);
+                setIsWelcome(false)
+        }
+
+    }, [url.searchParams.get('p')])
+
     const handleToggle = () => {
         setViewFull(true);
     };
 
     const settingToggle = () => {
-        setIsSettings(!isSettings);
+        setIsSettings(!isSettings)
     };
 
     const welcomeToggle = () => {
-        console.log("fewf");
-        setIsWelcome(!isWelcome);
+        if(isWelcome){
+            window.location.href="?p=game"
+        }
+        else {
+            history.back()
+        }
     };
 
     return (
