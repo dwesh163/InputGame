@@ -7,7 +7,7 @@ import { NavComponents } from './components/NavComponents.jsx';
 import { FooterComponents } from './components/FooterComponents.jsx';
 import { Timer } from './components/forms/Timer.jsx';
 import { render } from 'react-dom';
-import { WelcomeCard } from "./components/WelcomeCard.jsx"
+import { WelcomeCard } from './components/WelcomeCard.jsx';
 
 let currentGame = localStorage.getItem('inputGameCurrent');
 
@@ -28,15 +28,15 @@ function App() {
     const [optionData, setOptionData] = useState(null);
 
     const [errorList, setErrorList] = useState([]);
-    const [error, setError] = useState([])
+    const [error, setError] = useState([]);
 
-    const [errorTag, setErrorTag] = useState("")
+    const [errorTag, setErrorTag] = useState('');
 
     const [isLoading, setIsLoading] = useState(true);
     const [isSettings, setIsSettings] = useState(false);
     const [isWelcome, setIsWelcome] = useState(true);
 
-    const [buttonText, setButtonText] = useState("Show answers")
+    const [buttonText, setButtonText] = useState('Show answers');
 
     useEffect(() => {
         setIsLoading(true);
@@ -88,48 +88,45 @@ function App() {
                         setList(list);
                         isEmpty = true;
                         setSearch('');
-                    }
-                    if(list.includes(inputSearch)){
-                        window.location.href=`#${inputSearch}`
-                        setErrorTag(inputSearch)
+                    } else if (list.includes(inputSearch)) {
+                        window.location.href = `#${inputSearch}`;
+                        setErrorTag(inputSearch);
+                        isEmpty = true;
+                        setSearch('');
+                    } else if (!error.includes(inputSearch) && inputSearch != '') {
+                        error.push(inputSearch);
+                        setErrorList(error);
                         isEmpty = true;
                         setSearch('');
                     }
-                    if (!error.includes(inputSearch) && inputSearch != "") {
-                        error.push(inputSearch);
-                        setErrorList(error);
-                    }
-                    isEmpty = true;
-                    setSearch('');
-
                 } else {
-                    const lowerCaseCompleteList = completeList.map(item => item.toLowerCase());
-                    const upperCaseCompleteList = completeList.map(item => item.toUpperCase());
+                    const lowerCaseCompleteList = completeList.map((item) => item.toLowerCase());
+                    const upperCaseCompleteList = completeList.map((item) => item.toUpperCase());
+
+                    const lowerCaseList = list.map((item) => item.toLowerCase());
+                    const upperCaseList = list.map((item) => item.toUpperCase());
 
                     if (upperCaseCompleteList.includes(inputSearch.toUpperCase()) || lowerCaseCompleteList.includes(inputSearch.toLowerCase())) {
-                        if (!list.includes(inputSearch.toUpperCase()) && !list.includes(inputSearch.toLowerCase())) {
+                        if (!upperCaseList.includes(inputSearch.toUpperCase()) && !lowerCaseList.includes(inputSearch.toLowerCase())) {
                             let info = data['data'].find(({ element }) => element.toLowerCase() === inputSearch.toLowerCase());
-                            list.push(info["element"]);
+                            list.push(info['element']);
                             setList(list);
                             isEmpty = true;
                             setSearch('');
-                        }
-                        else{
+                        } else {
                             let info = data['data'].find(({ element }) => element.toLowerCase() === inputSearch.toLowerCase());
-                            window.location.href=`#${info["element"]}`
-                            setErrorTag(info["element"])
+                            window.location.href = `#${info['element']}`;
+                            setErrorTag(info['element']);
                             isEmpty = true;
                             setSearch('');
                         }
-                    }
-                    else {
-                        if (!error.includes(inputSearch) && inputSearch != "") {
+                    } else {
+                        if (!error.includes(inputSearch) && inputSearch != '') {
                             error.push(inputSearch);
                             setErrorList(error);
                         }
                         isEmpty = true;
                         setSearch('');
-               
                     }
                 }
             }
@@ -144,37 +141,43 @@ function App() {
     const url = new URL(window.location.href);
 
     useEffect(() => {
-        if(url.searchParams.get('p')  == "game"){
-                setIsSettings(false);
-                setIsWelcome(false)
+        if (url.searchParams.get('p') == 'game') {
+            setIsSettings(false);
+            setIsWelcome(false);
         }
-
-    }, [url.searchParams.get('p')])
+    }, [url.searchParams.get('p')]);
 
     const handleToggle = () => {
         setViewFull(!viewFull);
-        if(!viewFull){
-            setButtonText("restart")
-        }
-        else {
-            setButtonText("Show answers")
+        if (!viewFull) {
+            setButtonText('restart');
+        } else {
+            setButtonText('Show answers');
         }
     };
 
+    useEffect(() => {
+        if (!viewFull) {
+            setList([]);
+            setErrorTag('');
+            setErrorList([]);
+            setIsSettings(false);
+            setError([]);
+           
+        }
+    }, [viewFull]);
+
     const settingToggle = () => {
-        setIsSettings(!isSettings)
+        setIsSettings(!isSettings);
     };
 
     const welcomeToggle = () => {
-        if(isWelcome){
-            window.location.href="?p=game"
-        }
-        else {
-            history.back()
+        if (isWelcome) {
+            window.location.href = '?p=game';
+        } else {
+            history.back();
         }
     };
-
-    console.log(errorTag);
 
     return (
         <>
@@ -185,7 +188,7 @@ function App() {
             ) : (
                 <>
                     {isWelcome ? (
-                        <WelcomeCard optionsData={optionData} onClick={welcomeToggle}/>
+                        <WelcomeCard optionsData={optionData} onClick={welcomeToggle} />
                     ) : (
                         <main className="container">
                             <div id="root">
@@ -203,7 +206,7 @@ function App() {
                                                             <button onClick={handleToggle}>{buttonText}</button>
                                                             <Number value={list.length} totalValue={completeList.length} />
                                                         </span>
-                                                        <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} errorTag={errorTag}/>
+                                                        <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} errorTag={errorTag} />
                                                         <ContainerList value={errorList} viewFull={false} data={data['data']} isError={true} />
                                                     </>
                                                 )}
