@@ -2,6 +2,10 @@
     user-select: none;
 }
 
+.logo {
+    cursor: pointer;
+}
+
 .logo img {
     width: 100%;
     max-width: 100px;
@@ -31,13 +35,63 @@ article {
     max-height: 50vh;
     flex-direction: column-reverse;
 }
+
 .checkbox:checked
 {
     border: #ff9500;
     background-color: #ff9500;
 }
+
+#errorBox {
+    padding: 0px;
+    display: flex;
+    overflow: scroll;
+    max-height: 50vh;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+}
+
+.welcomeBox {
+    text-align: center;
+    padding: 30px;
+}
+
+.choiceBox {
+    height: 62.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.choiceCard {
+    width: 500px;
+    height: 167px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-size: 101%;
+    margin: 12px;
+    background-color: #000000;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.choiceCard img {
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.choiceCard span {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 18px;
+    z-index: 1;
+}
+
 button {
-    background-color: #ff9500;
+    background-color: #ff9f19;
     border: var(--pico-border-width) solid var(--pico-form-element-border-color);
     padding: 0px;
     width: 300px !important;
@@ -51,11 +105,15 @@ button {
 }
 
 .find {
-    background-color: #00895a;
+    background-color: #008959;
 }
 
 .unfind {
-    background-color: rgb(197, 30, 63);
+    background-color: rgba(250, 55, 55, 0.726);
+}
+
+.error {
+    background-color: rgba(250, 94, 55, 0.726);
 }
 
 html {
@@ -81,9 +139,9 @@ footer {
 }
 
 .settingBox {
-	margin-top: 6%;
-	width: 50%;
-	margin: auto;
+    margin-top: 6%;
+    width: 50%;
+    margin: auto;
 }
 
 .settingLogo {
@@ -99,20 +157,20 @@ footer {
     width: 1.5rem;
 }
 
-.tdInput{
-	width: 50%;
+.tdInput {
+    width: 50%;
 }
 .tdText {
-	width: 50%;
+    width: 50%;
 }
 
 .settingCard {
     display: flex;
-	width: 100%;
+    width: 100%;
 }
 
 .settingText {
-	width: 100%;
+    width: 100%;
 }
 
 .switch {
@@ -154,20 +212,33 @@ footer {
     background-color: rgb(211, 127, 0);
 }
 
+@keyframes blink {
+    0%,
+    100% {
+        background-color: #008959;
+    }
+    50% {
+        background-color: rgb(248, 139, 43);
+    }
+}
+
+.blinking {
+    animation: blink 1.5s 2;
+}
 
 @media only screen and (max-width: 1280px) {
-    .settingBox{
-		width: 100%;
-	}
+    .settingBox {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 465px) {
-    .tdText{
-		width: 40%;
-	}
-	.tdInput{
-		width: 60%;
-	}
+    .tdText {
+        width: 40%;
+    }
+    .tdInput {
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width: 1540px) {

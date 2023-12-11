@@ -30,5 +30,17 @@
     "type" : {
         "type": "checkbox",
         "name": "type"
-    }
+    },
+    "choiceList" : [
+        {
+            "json" : "html",
+            "name" : "HTML Elements",
+            "img" : "./background/html.jpg"
+        },
+        {
+            "json" : "pets",
+            "name" : "Animals",
+            "img" : "./background/pets.jpg"
+        }
+    ]
 }

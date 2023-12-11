@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useState } from 'react';
 import { CardList } from './CardList.jsx';
 
-
-export function ContainerList({ value, completeList, viewFull, data }) {
+export function ContainerList({ value, completeList, viewFull, data, isError, errorTag }) {
     let elementList = [];
     let colorClass = 'find';
 
@@ -21,7 +20,9 @@ export function ContainerList({ value, completeList, viewFull, data }) {
                 </header>
                 <div className="modalMain">
                     <p>{description}</p>
-                    <a href={url}>{url}</a>
+                    <a href={url} target="_blank">
+                        {url}
+                    </a>
                     <br />
                     <button className="closeButton" onClick={() => setShowModal(false)}>
                         Close
@@ -32,40 +33,68 @@ export function ContainerList({ value, completeList, viewFull, data }) {
     );
 
     if (viewFull) {
-        for (let htmlElement of completeList) {
-            if (value.includes(htmlElement)) {
+        for (let DataElement of completeList) {
+            if (value.includes(DataElement)) {
                 colorClass = 'find';
             } else {
                 colorClass = 'unfind';
             }
 
-            let info = data.find(({ element }) => element === htmlElement);
+            let info = data.find(({ element }) => element === DataElement);
 
             elementList.push(
-                <CardList element={htmlElement} key={htmlElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(htmlElement)} info={info}>
-                    {' '}
-                </CardList>
+                <CardList
+                    element={DataElement}
+                    key={DataElement}
+                    colorClass={colorClass}
+                    setActiveObject={setActiveObject}
+                    setShowModal={setShowModal}
+                    className={getClass(DataElement)}
+                    errorTag={errorTag}
+                    info={info}></CardList>
             );
         }
     } else {
-        for (let htmlElement of value) {
-            let info = data.find(({ element }) => element === htmlElement);
+        for (let DataElement of value) {
+            if (!isError) {
+                let info = data.find(({ element }) => element === DataElement);
 
-            elementList.push(
-                <CardList element={htmlElement} key={htmlElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(htmlElement)} info={info}>
-                    {' '}
-                </CardList>
-            );
+                elementList.push(
+                    <CardList
+                        element={DataElement}
+                        key={DataElement}
+                        colorClass={colorClass}
+                        setActiveObject={setActiveObject}
+                        setShowModal={setShowModal}
+                        className={getClass(DataElement)}
+                        errorTag={errorTag}
+                        info={info}></CardList>
+                );
+            } else {
+                elementList.push(<CardList element={DataElement} key={DataElement} colorClass={'error'} setActiveObject={setActiveObject}></CardList>);
+            }
         }
     }
 
     return (
         <>
-            <article id="box">
-                <div style={{ display: 'flex', flexWrap: 'wrap' }}>{elementList}</div>
-            </article>
+            {!isError ? (
+                <>
+                    <article id="box">
+                        <div style={{ display: 'flex', flexWrap: 'wrap' }}>{elementList}</div>
+                    </article>
 
-            {showModal ? <Modal object={activeObject} /> : null}
+                    {showModal ? <Modal object={activeObject} /> : null}
+                </>
+            ) : (
+                <>
+                    <article id="errorBox">
+                        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                            {elementList}
+                        </div>
+                    </article>
+                </>
+            )}
         </>
     );
 }

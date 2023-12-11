@@ -7,6 +7,7 @@ import { NavComponents } from './components/NavComponents.jsx';
 import { FooterComponents } from './components/FooterComponents.jsx';
 import { Timer } from './components/forms/Timer.jsx';
 import { render } from 'react-dom';
+import { WelcomeCard } from './components/WelcomeCard.jsx';
 
 let currentGame = localStorage.getItem('inputGameCurrent');
 
@@ -26,8 +27,16 @@ function App() {
     const [data, setData] = useState(null);
     const [optionData, setOptionData] = useState(null);
 
+    const [errorList, setErrorList] = useState([]);
+    const [error, setError] = useState([]);
+
+    const [errorTag, setErrorTag] = useState('');
+
     const [isLoading, setIsLoading] = useState(true);
     const [isSettings, setIsSettings] = useState(false);
+    const [isWelcome, setIsWelcome] = useState(true);
+
+    const [buttonText, setButtonText] = useState('Show answers');
 
     useEffect(() => {
         setIsLoading(true);
@@ -36,13 +45,12 @@ function App() {
             .then((data) => {
                 setData(data);
                 let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
-
                 if (localData == null) {
                     localData = {};
                 }
 
                 if (localData[currentGame] == null) {
-                    localData[currentGame] = data["options"];
+                    localData[currentGame] = data['options'];
                     localStorage.setItem('inputGameSettings', JSON.stringify(localData));
                     localData = JSON.parse(localStorage.getItem('inputGameSettings'));
                 }
@@ -84,15 +92,45 @@ function App() {
                         setList(list);
                         isEmpty = true;
                         setSearch('');
+                    } else if (list.includes(inputSearch)) {
+                        window.location.href = `#${inputSearch}`;
+                        setErrorTag(inputSearch);
+                        isEmpty = true;
+                        setSearch('');
+                    } else if (!error.includes(inputSearch) && inputSearch != '') {
+                        error.push(inputSearch);
+                        setErrorList(error);
+                        isEmpty = true;
+                        setSearch('');
                     }
                 } else {
-                    if (completeList.includes(inputSearch.toUpperCase()) || completeList.includes(inputSearch.toLowerCase())) {
-                        if (!list.includes(inputSearch.toUpperCase()) && !list.includes(inputSearch.toLowerCase())) {
-                            list.push(inputSearch.toLowerCase());
+                    const lowerCaseCompleteList = completeList.map((item) => item.toLowerCase());
+                    const upperCaseCompleteList = completeList.map((item) => item.toUpperCase());
+
+                    const lowerCaseList = list.map((item) => item.toLowerCase());
+                    const upperCaseList = list.map((item) => item.toUpperCase());
+
+                    if (upperCaseCompleteList.includes(inputSearch.toUpperCase()) || lowerCaseCompleteList.includes(inputSearch.toLowerCase())) {
+                        if (!upperCaseList.includes(inputSearch.toUpperCase()) && !lowerCaseList.includes(inputSearch.toLowerCase())) {
+                            let info = data['data'].find(({ element }) => element.toLowerCase() === inputSearch.toLowerCase());
+                            list.push(info['element']);
                             setList(list);
                             isEmpty = true;
                             setSearch('');
+                        } else {
+                            let info = data['data'].find(({ element }) => element.toLowerCase() === inputSearch.toLowerCase());
+                            window.location.href = `#${info['element']}`;
+                            setErrorTag(info['element']);
+                            isEmpty = true;
+                            setSearch('');
                         }
+                    } else {
+                        if (!error.includes(inputSearch) && inputSearch != '') {
+                            error.push(inputSearch);
+                            setErrorList(error);
+                        }
+                        isEmpty = true;
+                        setSearch('');
                     }
                 }
             }
@@ -104,48 +142,90 @@ function App() {
         };
     }, [completeList]);
 
+    const url = new URL(window.location.href);
+
+    useEffect(() => {
+        if (url.searchParams.get('p') == 'game') {
+            setIsSettings(false);
+            setIsWelcome(false);
+        }
+    }, [url.searchParams.get('p')]);
+
     const handleToggle = () => {
-        setViewFull(true);
+        setViewFull(!viewFull);
+        if (!viewFull) {
+            setButtonText('restart');
+        } else {
+            setButtonText('Show answers');
+        }
     };
+
+    useEffect(() => {
+        if (!viewFull) {
+            setList([]);
+            setErrorTag('');
+            setErrorList([]);
+            setIsSettings(false);
+            setError([]);
+           
+        }
+    }, [viewFull]);
 
     const settingToggle = () => {
         setIsSettings(!isSettings);
     };
 
-return (
-    <>
-        <NavComponents onClick={settingToggle} isSettings={isSettings} />
-        {isLoading ? (
-            <p>Loading...</p>
-        ) : (
-            <main className="container">
-                <div id="root">
-                    {isSettings ? (
-                        <Setting options={data['options']} optionsData={optionData} />
-                    ) : (
-                        <>
-                            <Timer isSettings={isSettings} />
-                            <div>
-                                {data && (
-                                    <>
-                                        <span role="group" style={{ display: 'flex' }}>
-                                            <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
-                                            <button onClick={handleToggle}>Show answers</button>
-                                            <Number value={list.length} totalValue={completeList.length} />
-                                        </span>
-                                        <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} />
-                                    </>
-                                )}
-                            </div>
-                        </>
-                    )}
-                </div>
-            </main>
-        )}
-        <FooterComponents />
-    </>
-);
+    const welcomeToggle = () => {
+        if (isWelcome) {
+            window.location.href = '?p=game';
+        } else {
+            history.back();
+        }
+    };
 
+    return (
+        <>
+            <NavComponents onClick={settingToggle} isSettings={isSettings} isWelcome={isWelcome} />
+
+            {isLoading ? (
+                <p>Loading...</p>
+            ) : (
+                <>
+                    {isWelcome ? (
+                        <WelcomeCard optionsData={optionData} onClick={welcomeToggle} />
+                    ) : (
+                        <main className="container">
+                            <div id="root">
+                                <Timer isSettings={isSettings} handleToggle={handleToggle} />
+                                <div>
+                                    <>
+                                        {isSettings ? (
+                                            <Setting options={data['options']} optionsData={optionData} />
+                                        ) : (
+                                            <>
+                                                {data && (
+                                                    <>
+                                                        <span role="group" style={{ display: 'flex' }}>
+                                                            <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
+                                                            <button onClick={handleToggle}>{buttonText}</button>
+                                                            <Number value={list.length} totalValue={completeList.length} />
+                                                        </span>
+                                                        <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} errorTag={errorTag} />
+                                                        <ContainerList value={errorList} viewFull={false} data={data['data']} isError={true} />
+                                                    </>
+                                                )}
+                                            </>
+                                        )}
+                                    </>
+                                </div>
+                            </div>
+                        </main>
+                    )}
+                </>
+            )}
+            <FooterComponents />
+        </>
+    );
 }
 
 export default App;
