@@ -85,7 +85,7 @@ article {
 }
 
 button {
-    background-color: #ff9500;
+    background-color: #ff9f19;
     border: var(--pico-border-width) solid var(--pico-form-element-border-color);
     padding: 0px;
     width: 300px !important;

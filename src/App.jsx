@@ -32,10 +32,11 @@ function App() {
 
     const [errorTag, setErrorTag] = useState("")
 
-
     const [isLoading, setIsLoading] = useState(true);
     const [isSettings, setIsSettings] = useState(false);
     const [isWelcome, setIsWelcome] = useState(true);
+
+    const [buttonText, setButtonText] = useState("Show answers")
 
     useEffect(() => {
         setIsLoading(true);
@@ -151,12 +152,17 @@ function App() {
     }, [url.searchParams.get('p')])
 
     const handleToggle = () => {
-        setViewFull(true);
+        setViewFull(!viewFull);
+        if(!viewFull){
+            setButtonText("restart")
+        }
+        else {
+            setButtonText("Show answers")
+        }
     };
 
     const settingToggle = () => {
         setIsSettings(!isSettings)
-        setErrorTag("")
     };
 
     const welcomeToggle = () => {
@@ -167,6 +173,8 @@ function App() {
             history.back()
         }
     };
+
+    console.log(errorTag);
 
     return (
         <>
@@ -192,7 +200,7 @@ function App() {
                                                     <>
                                                         <span role="group" style={{ display: 'flex' }}>
                                                             <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
-                                                            <button onClick={handleToggle}>Show answers</button>
+                                                            <button onClick={handleToggle}>{buttonText}</button>
                                                             <Number value={list.length} totalValue={completeList.length} />
                                                         </span>
                                                         <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} errorTag={errorTag}/>

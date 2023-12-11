@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { CardList } from './CardList.jsx';
 
-export function ContainerList({ value, completeList, viewFull, data, isError }) {
+export function ContainerList({ value, completeList, viewFull, data, isError, errorTag }) {
     let elementList = [];
     let colorClass = 'find';
 
@@ -50,6 +50,7 @@ export function ContainerList({ value, completeList, viewFull, data, isError }) 
                     setActiveObject={setActiveObject}
                     setShowModal={setShowModal}
                     className={getClass(DataElement)}
+                    errorTag={errorTag}
                     info={info}></CardList>
             );
         }
@@ -66,6 +67,7 @@ export function ContainerList({ value, completeList, viewFull, data, isError }) 
                         setActiveObject={setActiveObject}
                         setShowModal={setShowModal}
                         className={getClass(DataElement)}
+                        errorTag={errorTag}
                         info={info}></CardList>
                 );
             } else {
