@@ -21,7 +21,7 @@ export function ContainerList({ value, completeList, viewFull, data }) {
                 </header>
                 <div className="modalMain">
                     <p>{description}</p>
-                    <a href={url}>{url}</a>
+                    <a href={url} target="_blank">{url}</a>
                     <br />
                     <button className="closeButton" onClick={() => setShowModal(false)}>
                         Close
