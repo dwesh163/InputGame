@@ -114,13 +114,13 @@ function App() {
 
     return (
         <>
-            <NavComponents onClick={settingToggle} isSettings={isSettings} />
+            <NavComponents onClick={settingToggle} isSettings={isSettings} isWelcome={isWelcome} />
             {isLoading ? (
                 <p>Loading...</p>
             ) : (
                 <>
                     {isWelcome ? (
-                        <WelcomeCard/>
+                        <WelcomeCard optionsData={optionData}/>
                     ) : (
                         <main className="container">
                             <div id="root">

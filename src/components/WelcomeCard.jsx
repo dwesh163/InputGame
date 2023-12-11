@@ -1,5 +1,17 @@
-export function WelcomeCard(){
-    return <article>
-        hello
-    </article>
+export function WelcomeCard({ optionsData }) {
+    let cardList = [];
+
+    for (const iterator of optionsData['choiceList']) {
+        const setCurrent = () => {
+            localStorage.setItem('inputGameCurrent', iterator['json']);
+        };
+
+        cardList.push(
+            <section onClick={setCurrent} className={`choiceCard ${iterator['json']}`} key={iterator['json']}>
+                {iterator['name']}
+            </section>
+        );
+    }
+
+    return <div className="choiceBox">{cardList}</div>;
 }
