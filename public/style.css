@@ -147,6 +147,14 @@ footer {
     display: none;
 }
 
+.special {
+    background-color: rgb(116, 21, 199);
+}
+.obselete {
+    background-color: rgb(211, 127, 0);
+}
+
+
 @media only screen and (max-width: 1280px) {
     .settingBox{
 		width: 100%;
@@ -192,30 +200,24 @@ footer {
 
 @media only screen and (min-height: 528px) {
     #box {
-        max-height: 50vh;
+        max-height: 40vh;
     }
 }
 
 @media only screen and (min-height: 1000px) {
     #box {
-        max-height: 75vh;
+        max-height: 65vh;
     }
 }
 
 @media only screen and (min-height: 900px) {
     #box {
-        max-height: 65vh;
+        max-height: 55vh;
     }
 }
 
 @media only screen and (min-height: 1150px) {
     #box {
-        max-height: 74vh;
-    }
-}
-
-@media only screen and (min-height: 1150px) {
-    #box {
-        max-height: 74vh;
+        max-height: 64vh;
     }
 }
