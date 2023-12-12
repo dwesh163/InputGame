@@ -207,7 +207,7 @@ function App() {
                                                     <>
                                                         <span role="group" style={{ display: 'flex' }}>
                                                             <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
-                                                            <button onClick={handleToggle}>{buttonText}</button>
+                                                            <button style={{width: "300px"}} onClick={handleToggle}>{buttonText}</button>
                                                             <Number value={list.length} totalValue={completeList.length} />
                                                         </span>
                                                         <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} errorTag={errorTag} />

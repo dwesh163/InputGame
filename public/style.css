@@ -79,16 +79,16 @@ article {
 }
 
 .buttonBox {
-    height: 38px;
-    width: 100%;
     display: flex;
     gap: 5px;
+    width: 100% !important;
+    justify-content: space-between;
 }
 
 .timeButton {
-    width: 30%;
     background-color: #1c212c;
     border: 2px solid var(--pico-form-element-border-color);
+    width: 33%;
 
 }
 
@@ -108,7 +108,6 @@ button {
     background-color: #ff9f19;
     border: var(--pico-border-width) solid var(--pico-form-element-border-color);
     padding: 0px;
-    width: 300px !important;
 }
 
 .closeButton {
