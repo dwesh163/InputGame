@@ -33,7 +33,9 @@ export function Setting({ options, optionsData }) {
             value = (
                 <select defaultValue={localData[current][option]} onChange={(e) => handleAddrTypeChange(e)}>
                     {Add.map((choice, key) => (
-                        <option value={key}>{choice}</option>
+                        <option name={choice} value={key} key={key}>
+                            {choice}
+                        </option>
                     ))}
                 </select>
             );
@@ -105,6 +107,8 @@ export function Setting({ options, optionsData }) {
                         type="number"
                         style={{ marginBottom: '8px' }}
                         value={inputValue}
+                        min={0}
+                        step={60}
                         onChange={(e) => {
                             const newValue = e.target.value;
                             setInputValue(newValue);
@@ -114,9 +118,15 @@ export function Setting({ options, optionsData }) {
                         }}
                     />
                     <div className="buttonBox">
-                        <button onClick={() => timerToggle(5 * 60)} className="timeButton">5 min</button>
-                        <button onClick={() => timerToggle(10 * 60)} className="timeButton">10 min</button>
-                        <button onClick={() => timerToggle(15 * 60)} className="timeButton">15 min</button>
+                        <button onClick={() => timerToggle(5 * 60)} className="timeButton">
+                            5 min
+                        </button>
+                        <button onClick={() => timerToggle(10 * 60)} className="timeButton">
+                            10 min
+                        </button>
+                        <button onClick={() => timerToggle(15 * 60)} className="timeButton">
+                            15 min
+                        </button>
                     </div>
                 </>
             );

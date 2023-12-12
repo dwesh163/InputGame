@@ -1,6 +1,6 @@
 {
-    "title" : {
-        "type" : "title"
+    "title": {
+        "type": "title"
     },
     "case-sensitive": {
         "type": "boolean",
@@ -27,20 +27,20 @@
         "choice": "",
         "name": "Timer value"
     },
-    "type" : {
+    "type": {
         "type": "checkbox",
-        "name": "type"
+        "name": "Type"
     },
-    "choiceList" : [
+    "choiceList": [
         {
-            "json" : "html",
-            "name" : "HTML Elements",
-            "img" : "./background/html.jpg"
+            "json": "html",
+            "name": "HTML Elements",
+            "img": "./background/html.jpg"
         },
         {
-            "json" : "pets",
-            "name" : "Animals",
-            "img" : "./background/pets.jpg"
+            "json": "pets",
+            "name": "Animals",
+            "img": "./background/pets.jpg"
         }
     ]
 }

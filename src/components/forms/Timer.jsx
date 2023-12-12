@@ -9,11 +9,11 @@ export function Timer({ isSettings, handleToggle }) {
 
     function toTimeString(totalSeconds) {
         if (totalSeconds === -1 && !isAlert) {
-            setIsAlert(true)
+            setIsAlert(true);
             setIsRunning(false);
             setTimer(parseInt(settings['timer-value']));
             alert('Fin du temps');
-            handleToggle()
+            handleToggle();
         }
         const totalMs = totalSeconds * 1000;
         const result = new Date(totalMs).toISOString().slice(11, 19);
@@ -25,7 +25,7 @@ export function Timer({ isSettings, handleToggle }) {
         const keyDownHandler = (event) => {
             if (!isRunning) {
                 setIsRunning(true);
-                setIsAlert(false)
+                setIsAlert(false);
             }
         };
 
@@ -39,7 +39,7 @@ export function Timer({ isSettings, handleToggle }) {
     useEffect(() => {
         if (isRunning) {
             setInterval(() => {
-                settimer(count => count - 1)
+                setTimer((count) => count - 1);
             }, 1000);
         }
     }, [isRunning]);
@@ -58,9 +58,5 @@ export function Timer({ isSettings, handleToggle }) {
         };
     }, [isRunning]);
 
-    return (
-        <>
-            {!isSettings ? (settings['timer'] ? <h1 className="timer">{toTimeString(timer)}</h1> : <></>) : <></>}
-        </>
-    );
+    return <>{!isSettings ? settings['timer'] ? <h1 className="timer">{toTimeString(timer)}</h1> : <></> : <></>}</>;
 }

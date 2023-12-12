@@ -55,7 +55,7 @@ function App() {
                     localData = JSON.parse(localStorage.getItem('inputGameSettings'));
                 }
             });
-        fetch('./data/option.json')
+        fetch('./data/options.json')
             .then((response) => response.json())
             .then((data) => {
                 setOptionData(data);
@@ -70,15 +70,13 @@ function App() {
     useEffect(() => {
         if (data) {
             for (const element of data['data']) {
-                if (JSON.parse(localStorage.getItem("inputGameSettings"))[localStorage.getItem("inputGameCurrent")]["type"]["select"].includes(element['type'])) {
-                    
+                if (JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')]['type']['select'].includes(element['type'])) {
                     completeDataList.push(element['element']);
                 }
             }
             setCompleteList(completeDataList);
         }
-
-    }, [data, localStorage.getItem("inputGameSettings")]);
+    }, [data, localStorage.getItem('inputGameSettings')]);
 
     useEffect(() => {
         const keyDownHandler = (event) => {
@@ -167,7 +165,6 @@ function App() {
             setErrorList([]);
             setIsSettings(false);
             setError([]);
-           
         }
     }, [viewFull]);
 
@@ -207,7 +204,9 @@ function App() {
                                                     <>
                                                         <span role="group" style={{ display: 'flex' }}>
                                                             <Input value={search} onChange={setSearch} placeholder="Rechercher..." empty={isEmpty} />
-                                                            <button style={{width: "300px"}} onClick={handleToggle}>{buttonText}</button>
+                                                            <button style={{ width: '300px' }} onClick={handleToggle}>
+                                                                {buttonText}
+                                                            </button>
                                                             <Number value={list.length} totalValue={completeList.length} />
                                                         </span>
                                                         <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} errorTag={errorTag} />
