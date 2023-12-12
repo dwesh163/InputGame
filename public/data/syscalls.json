@@ -1,0 +1,112 @@
+{
+    "options": {
+        "title": "System calls",
+        "case-sensitive": false,
+        "answers-sort": "desc",
+        "timer": true,
+        "timer-value": 300,
+        "type": {
+            "select": ["primary", "secondary"],
+            "all": ["primary", "secondary"]
+        }
+    },
+    "data": [
+        {
+            "element": "open",
+            "url": "https://linux.die.net/man/2/open",
+            "description": "Open and possibly create a file",
+            "type": "primary"
+        },
+        {
+            "element": "close",
+            "url": "https://linux.die.net/man/2/close",
+            "description": "Close a file descriptor",
+            "type": "primary"
+        },
+        {
+            "element": "read",
+            "url": "https://linux.die.net/man/2/read",
+            "description": "Read from a file descriptor",
+            "type": "primary"
+        },
+        {
+            "element": "write",
+            "url": "https://linux.die.net/man/2/write",
+            "description": "Write to a file descriptor",
+            "type": "primary"
+        },
+
+        {
+            "element": "fork",
+            "url": "https://linux.die.net/man/2/fork",
+            "description": "Create a child process",
+            "type": "primary"
+        },
+        {
+            "element": "exec",
+            "url": "https://linux.die.net/man/3/exec",
+            "description": "Execute a file ",
+            "type": "primary"
+        },
+        {
+            "element": "wait",
+            "url": "https://linux.die.net/man/2/wait",
+            "description": "Wait for process to change state",
+            "type": "primary"
+        },
+        {
+            "element": "exit",
+            "url": "https://linux.die.net/man/2/exit",
+            "description": "Terminate the calling process",
+            "type": "primary"
+        },
+        {
+            "element": "kill",
+            "url": "https://linux.die.net/man/2/kill",
+            "description": "Send signal to a process",
+            "type": "primary"
+        },
+        {
+            "element": "poll",
+            "url": "https://linux.die.net/man/2/poll",
+            "description": "Wait for some event on a file descriptor",
+            "type": "primary"
+        },
+        {
+            "element": "access",
+            "url": "https://linux.die.net/man/2/access",
+            "description": "Check user's permissions for a file",
+            "type": "primary"
+        },
+        {
+            "element": "pause",
+            "url": "https://linux.die.net/man/2/pause",
+            "description": "Wait for signal",
+            "type": "primary"
+        },
+        {
+            "element": "brk",
+            "url": "https://linux.die.net/man/2/brk",
+            "description": "Change data segment size",
+            "type": "primary"
+        },
+        {
+            "element": "mmap",
+            "url": "https://linux.die.net/man/2/mmap",
+            "description": "Map or unmap files or devices into memory",
+            "type": "primary"
+        },
+        {
+            "element": "pipe",
+            "url": "https://linux.die.net/man/2/pipe",
+            "description": "Create pipe ",
+            "type": "primary"
+        },
+        {
+            "element": "socket",
+            "url": "https://linux.die.net/man/2/socket",
+            "description": "Create an endpoint for communication",
+            "type": "primary"
+        }
+    ]
+}
