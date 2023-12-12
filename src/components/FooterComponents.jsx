@@ -1,3 +1,5 @@
+import packageJson from '/package.json';
+
 export function FooterComponents() {
     return (
         <>
@@ -11,8 +13,8 @@ export function FooterComponents() {
                     dwesh163
                 </a>
                 {' ― '}
-                <a href="https://github.com/dwesh163/InputGame/releases/tag/v2.1.2" target="_blank">
-                    version 2.1.2
+                <a href={`https://github.com/dwesh163/InputGame/releases/tag/v${ packageJson.version }`} target="_blank">
+                    version { packageJson.version }
                 </a>
                 {' ― '}
                 <a href="https://github.com/dwesh163/InputGame/issues" target="_blank">
