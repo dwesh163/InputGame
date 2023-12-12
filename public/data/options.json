@@ -41,6 +41,6 @@
             "json": "pets",
             "name": "Animals",
             "img": "./background/pets.jpg"
-        },
+        }
     ]
 }

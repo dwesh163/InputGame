@@ -37,7 +37,7 @@ Please check [html.json] or [pets.json].
 
 ### Add the game to the home page
 
-Finally, make sure to modify the [option.json] file to incorporate the new game. Additionally, you'll need to supply an image that visually represents the game and will be featured on the game's card on the homepage.
+Finally, make sure to modify the [options.json] file to incorporate the new game. Additionally, you'll need to supply an image that visually represents the game and will be featured on the game's card on the homepage.
 
 ## How to contribute
 
@@ -47,4 +47,4 @@ Please read [CONTRIBUTING.md].
 [CONTRIBUTING.md]: ./CONTRIBUTING.md
 [html.json]: ./public/data/html.json
 [pets.json]: ./public/data/pets.json
-[option.json]: ./public/data/option.json
+[options.json]: ./public/data/options.json
