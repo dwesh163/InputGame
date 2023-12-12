@@ -42,34 +42,15 @@ export function ContainerList({ value, completeList, viewFull, data, isError, er
 
             let info = data.find(({ element }) => element === DataElement);
 
-            elementList.push(
-                <CardList
-                    element={DataElement}
-                    key={DataElement}
-                    colorClass={colorClass}
-                    setActiveObject={setActiveObject}
-                    setShowModal={setShowModal}
-                    className={getClass(DataElement)}
-                    errorTag={errorTag}
-                    info={info}></CardList>
-            );
+            elementList.push(<CardList element={DataElement} key={DataElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(DataElement)} errorTag={errorTag} info={info}></CardList>);
         }
     } else {
         for (let DataElement of value) {
+            console.log('DataElement', DataElement);
             if (!isError) {
                 let info = data.find(({ element }) => element === DataElement);
 
-                elementList.push(
-                    <CardList
-                        element={DataElement}
-                        key={DataElement}
-                        colorClass={colorClass}
-                        setActiveObject={setActiveObject}
-                        setShowModal={setShowModal}
-                        className={getClass(DataElement)}
-                        errorTag={errorTag}
-                        info={info}></CardList>
-                );
+                elementList.push(<CardList element={DataElement} key={DataElement} colorClass={colorClass} setActiveObject={setActiveObject} setShowModal={setShowModal} className={getClass(DataElement)} errorTag={errorTag} info={info}></CardList>);
             } else {
                 elementList.push(<CardList element={DataElement} key={DataElement} colorClass={'error'} setActiveObject={setActiveObject}></CardList>);
             }
@@ -89,9 +70,7 @@ export function ContainerList({ value, completeList, viewFull, data, isError, er
             ) : (
                 <>
                     <article id="errorBox">
-                        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-                            {elementList}
-                        </div>
+                        <div style={{ display: 'flex', flexWrap: 'wrap' }}>{elementList}</div>
                     </article>
                 </>
             )}

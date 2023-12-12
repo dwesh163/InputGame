@@ -27,7 +27,7 @@ Please note:
 The actual list of entries of the game. Specify the following for each entry in the game:
 
 -   **element:** The word to be typed.
--   **url:** The link displayed in the card.
+-   **url:** The link to the image displayed on the card must be `700` and `438` pixels long.
 -   **description:** The description shown in the card.
 -   **type:** The type (refer to options) to which the entry belongs.
 
