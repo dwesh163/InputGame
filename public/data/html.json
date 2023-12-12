@@ -6,8 +6,15 @@
         "timer": true,
         "timer-value": 300,
         "type": {
-            "select": ["base", "obselete"],
-            "all": ["base", "special", "obselete"]
+            "select": [
+                "base",
+                "obselete"
+            ],
+            "all": [
+                "base",
+                "special",
+                "obselete"
+            ]
         }
     },
     "data": [
@@ -438,12 +445,6 @@
             "type": "base"
         },
         {
-            "element": "param",
-            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param",
-            "description": "Specifies parameters for an object element.",
-            "type": "base"
-        },
-        {
             "element": "pre",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre",
             "description": "Represents preformatted text, preserving both spaces and line breaks.",
@@ -653,7 +654,6 @@
             "description": "Represents a word break opportunity, indicating where a line break can occur.",
             "type": "base"
         },
-
         {
             "element": "acronym",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym",
@@ -762,7 +762,6 @@
             "description": "Obsolete - Represents preformatted text. Not supported in HTML5.",
             "type": "obselete"
         },
-
         {
             "element": "html",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html",

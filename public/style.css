@@ -36,8 +36,7 @@ article {
     flex-direction: column-reverse;
 }
 
-.checkbox:checked
-{
+.checkbox:checked {
     border: #ff9500;
     background-color: #ff9500;
 }
@@ -89,7 +88,6 @@ article {
     background-color: #1c212c;
     border: 2px solid var(--pico-form-element-border-color);
     width: 33%;
-
 }
 
 .choiceCard img {
