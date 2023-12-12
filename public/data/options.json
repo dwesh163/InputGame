@@ -35,12 +35,14 @@
         {
             "json": "html",
             "name": "HTML Elements",
-            "img": "./background/html.jpg"
+            "img": "./background/html.jpg",
+            "description": "Explore the world of HTML elements and tags. Learn how to structure your web content and create stunning websites using the power of HTML."
         },
         {
             "json": "pets",
             "name": "Animals",
-            "img": "./background/pets.jpg"
+            "img": "./background/pets.jpg",
+            "description": "Discover the fascinating realm of animals. From cute pets to wild creatures, delve into the diversity of the animal kingdom and learn interesting facts about our furry and feathered friends."
         }
     ]
 }
