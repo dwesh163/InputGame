@@ -93,6 +93,8 @@ export function Setting({ options, optionsData }) {
         const timerToggle = (value) => {
             if (inputValue != value) {
                 setInputValue(value);
+                localData[current][option] = value;
+                localStorage.setItem('inputGameSettings', JSON.stringify(localData));
             }
         };
 
