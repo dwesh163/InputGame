@@ -78,6 +78,20 @@ article {
     overflow: hidden;
 }
 
+.buttonBox {
+    height: 38px;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.timeButton {
+    width: 30%;
+    background-color: #1c212c;
+    border: 2px solid var(--pico-form-element-border-color);
+
+}
+
 .choiceCard img {
     opacity: 0.8;
     z-index: -1;

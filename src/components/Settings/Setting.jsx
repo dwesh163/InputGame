@@ -65,44 +65,43 @@ export function Setting({ options, optionsData }) {
             const storedData = localData[current][option];
             const [checkboxOption, setCheckboxOption] = useState(storedData['select']);
             const [choiceList, setChoiceList] = useState([]);
-        
+
             useEffect(() => {
-                const updatedChoiceList = storedData['all'].map(index => (
+                const updatedChoiceList = storedData['all'].map((index) => (
                     <div key={index}>
-                        <input
-                            type="checkbox"
-                            value={index}
-                            checked={checkboxOption.includes(index)}
-                            className="checkbox"
-                            onChange={() => handleCheckboxChange(index)}
-                        />
+                        <input type="checkbox" value={index} checked={checkboxOption.includes(index)} className="checkbox" onChange={() => handleCheckboxChange(index)} />
                         <span>{index}</span>
                     </div>
                 ));
                 setChoiceList(updatedChoiceList);
             }, [checkboxOption]);
-        
-            const handleCheckboxChange = index => {
-                const updatedSelect = checkboxOption.includes(index)
-                    ? checkboxOption.filter(selectedIndex => selectedIndex !== index)
-                    : [...checkboxOption, index];
-        
+
+            const handleCheckboxChange = (index) => {
+                const updatedSelect = checkboxOption.includes(index) ? checkboxOption.filter((selectedIndex) => selectedIndex !== index) : [...checkboxOption, index];
+
                 localData[current][option]['select'] = updatedSelect;
                 setCheckboxOption(updatedSelect);
                 localStorage.setItem('inputGameSettings', JSON.stringify(localData));
             };
-        
+
             value = <>{choiceList}</>;
             isHidden = false;
         }
 
         const [inputValue, setInputValue] = useState(localData[current][option]);
 
+        const timerToggle = (value) => {
+            if (inputValue != value) {
+                setInputValue(value);
+            }
+        };
+
         if (optionsData[option]['name'] === 'Timer value' && localData[current]['timer']) {
             value = (
                 <>
                     <input
                         type="number"
+                        style={{ marginBottom: '8px' }}
                         value={inputValue}
                         onChange={(e) => {
                             const newValue = e.target.value;
@@ -112,6 +111,11 @@ export function Setting({ options, optionsData }) {
                             localStorage.setItem('inputGameSettings', JSON.stringify(localData));
                         }}
                     />
+                    <div className="buttonBox">
+                        <button onClick={() => timerToggle(5 * 60)} className="timeButton">5 min</button>
+                        <button onClick={() => timerToggle(10 * 60)} className="timeButton">10 min</button>
+                        <button onClick={() => timerToggle(15 * 60)} className="timeButton">15 min</button>
+                    </div>
                 </>
             );
             isHidden = false;
