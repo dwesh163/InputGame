@@ -150,11 +150,12 @@ function App() {
     const url = new URL(window.location.href);
 
     useEffect(() => {
-        if (url.searchParams.get('p') == 'game') {
+        if (url.searchParams.get('g') != null) {
+            localStorage.setItem('inputGameCurrent', url.searchParams.get('g'));
             setIsSettings(false);
             setIsWelcome(false);
         }
-    }, [url.searchParams.get('p')]);
+    }, [url.searchParams.get('g')]);
 
     const handleToggle = () => {
         setViewFull(!viewFull);
@@ -181,7 +182,7 @@ function App() {
 
     const welcomeToggle = () => {
         if (isWelcome) {
-            window.location.href = '?p=game';
+            window.location.href = `?g=${currentGame}`;
         } else {
             history.back();
         }
