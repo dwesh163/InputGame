@@ -49,7 +49,6 @@ function App() {
         fetch(`./data/${currentGame}.json`)
             .then((response) => response.json())
             .then((data) => {
-                console.log(currentGame);
                 setData(data);
                 let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
                 if (localData == null) {
@@ -72,8 +71,12 @@ function App() {
 
     const [timer, setTimer] = useState(0);
     useEffect(() => {
-        setTimer(JSON.parse(localStorage.getItem('inputGameSettings'))[currentGame]['timer-value']);
-    }, [JSON.parse(localStorage.getItem('inputGameSettings'))[currentGame]['timer-value']]);
+        try {
+            setTimer(JSON.parse(localStorage.getItem('inputGameSettings'))[currentGame]['timer-value']);
+        } catch (error) {}
+    }, [data]);
+
+    const [isRunning, setIsRunning] = useState(false);
 
     useEffect(() => {
         setIsLoading(true);
@@ -172,7 +175,6 @@ function App() {
 
     useEffect(() => {
         if (url.searchParams.get('g') != null) {
-            console.log(url.searchParams.get('g'));
             localStorage.setItem('inputGameCurrent', url.searchParams.get('g'));
             setIsSettings(false);
             setIsWelcome(false);
@@ -210,6 +212,20 @@ function App() {
         }
     };
 
+    useEffect(() => {
+        if (list.length == completeList.length && !isWelcome && !isSettings && !isLoading) {
+            alert("Well done you've found them all");
+            setList([]);
+            setErrorTag('');
+            setErrorList([]);
+            setIsSettings(false);
+            setError([]);
+            setViewFull(false);
+            setTimer(JSON.parse(localStorage.getItem('inputGameSettings'))[currentGame]['timer-value'] + 1);
+            setIsRunning(false);
+        }
+    }, [search]);
+
     return (
         <>
             <NavComponents onClick={settingToggle} isSettings={isSettings} isWelcome={isWelcome} />
@@ -223,7 +239,7 @@ function App() {
                     ) : (
                         <main className="container">
                             <div id="root">
-                                <Timer isSettings={isSettings} handleToggle={handleToggle} timer={timer} setTimer={setTimer} />
+                                <Timer isSettings={isSettings} handleToggle={handleToggle} timer={timer} setTimer={setTimer} isRunning={isRunning} setIsRunning={setIsRunning} />
                                 <div>
                                     <>
                                         {isSettings ? (

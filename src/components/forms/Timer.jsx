@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 
-export function Timer({ isSettings, handleToggle, setTimer, timer }) {
+export function Timer({ isSettings, handleToggle, setTimer, timer, isRunning, setIsRunning }) {
     const settings = JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')];
 
-    const [isRunning, setIsRunning] = useState(false);
     const [isAlert, setIsAlert] = useState(false);
 
     function toTimeString(totalSeconds) {
