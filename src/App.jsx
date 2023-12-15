@@ -167,6 +167,7 @@ function App() {
 
     useEffect(() => {
         if (url.searchParams.get('g') != null) {
+            console.log(url.searchParams.get('g'));
             localStorage.setItem('inputGameCurrent', url.searchParams.get('g'));
             setIsSettings(false);
             setIsWelcome(false);
@@ -198,7 +199,7 @@ function App() {
 
     const welcomeToggle = () => {
         if (isWelcome) {
-            window.location.href = `?g=${currentGame}`;
+            window.location.href = `?g=${localStorage.getItem('inputGameCurrent')}`;
         } else {
             history.back();
         }
