@@ -70,6 +70,11 @@ function App() {
             });
     }, []);
 
+    const [timer, setTimer] = useState(0);
+    useEffect(() => {
+        setTimer(JSON.parse(localStorage.getItem('inputGameSettings'))[currentGame]['timer-value']);
+    }, [JSON.parse(localStorage.getItem('inputGameSettings'))[currentGame]['timer-value']]);
+
     useEffect(() => {
         setIsLoading(true);
     }, []);
@@ -218,7 +223,7 @@ function App() {
                     ) : (
                         <main className="container">
                             <div id="root">
-                                <Timer isSettings={isSettings} handleToggle={handleToggle} />
+                                <Timer isSettings={isSettings} handleToggle={handleToggle} timer={timer} setTimer={setTimer} />
                                 <div>
                                     <>
                                         {isSettings ? (

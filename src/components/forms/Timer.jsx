@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 
-export function Timer({ isSettings, handleToggle }) {
+export function Timer({ isSettings, handleToggle, setTimer, timer }) {
     const settings = JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')];
 
-    const [timer, setTimer] = useState(settings['timer-value']);
     const [isRunning, setIsRunning] = useState(false);
     const [isAlert, setIsAlert] = useState(false);
 
@@ -11,7 +10,7 @@ export function Timer({ isSettings, handleToggle }) {
         if (totalSeconds === -1 && !isAlert) {
             setIsAlert(true);
             setIsRunning(false);
-            setTimer(parseInt(settings['timer-value']));
+            setTimer(parseInt(settings['timer-value']) + 1);
             alert('Fin du temps');
             handleToggle();
         }
@@ -35,14 +34,6 @@ export function Timer({ isSettings, handleToggle }) {
             document.removeEventListener('keydown', keyDownHandler);
         };
     });
-
-    useEffect(() => {
-        if (isRunning) {
-            setInterval(() => {
-                setTimer((count) => count - 1);
-            }, 1000);
-        }
-    }, [isRunning]);
 
     useEffect(() => {
         let interval;
