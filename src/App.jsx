@@ -6,7 +6,6 @@ import { Setting } from './components/Settings/Setting.jsx';
 import { NavComponents } from './components/NavComponents.jsx';
 import { FooterComponents } from './components/FooterComponents.jsx';
 import { Timer } from './components/forms/Timer.jsx';
-import { render } from 'react-dom';
 import { WelcomeCard } from './components/WelcomeCard.jsx';
 
 let currentGame = localStorage.getItem('inputGameCurrent');
@@ -70,8 +69,16 @@ function App() {
     useEffect(() => {
         if (data) {
             for (const element of data['data']) {
-                if (JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')]['type']['select'].includes(element['type'])) {
-                    completeDataList.push(element['element']);
+                if (Array.isArray(element['type'])) {
+                    for (const type of element['type']) {
+                        if (JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')]['type']['select'].includes(type) && !completeDataList.includes(element['element'])) {
+                            completeDataList.push(element['element']);
+                        }
+                    }
+                } else {
+                    if (JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')]['type']['select'].includes(element['type']) && !completeDataList.includes(element['element'])) {
+                        completeDataList.push(element['element']);
+                    }
                 }
             }
             setCompleteList(completeDataList);

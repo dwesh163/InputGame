@@ -46,7 +46,6 @@ export function ContainerList({ value, completeList, viewFull, data, isError, er
         }
     } else {
         for (let DataElement of value) {
-            console.log('DataElement', DataElement);
             if (!isError) {
                 let info = data.find(({ element }) => element === DataElement);
 
