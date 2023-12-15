@@ -17,6 +17,14 @@ export function Setting({ options, optionsData }) {
     }
 
     for (const option in localData[current]) {
+        if (optionsData[option] == undefined) {
+            localData[current] = options;
+            localStorage.setItem('inputGameSettings', JSON.stringify(localData));
+            localData = JSON.parse(localStorage.getItem('inputGameSettings'));
+        }
+    }
+
+    for (const option in localData[current]) {
         let value;
         let isHidden = true;
 

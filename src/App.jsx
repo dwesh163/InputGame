@@ -77,16 +77,24 @@ function App() {
     useEffect(() => {
         if (data) {
             for (const element of data['data']) {
-                if (Array.isArray(element['type'])) {
-                    for (const type of element['type']) {
-                        if (JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')]['type']['select'].includes(type) && !completeDataList.includes(element['element'])) {
+                try {
+                    if (Array.isArray(element['type'])) {
+                        for (const type of element['type']) {
+                            if (JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')]['type']['select'].includes(type) && !completeDataList.includes(element['element'])) {
+                                completeDataList.push(element['element']);
+                            }
+                        }
+                    } else {
+                        if (JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')]['type']['select'].includes(element['type']) && !completeDataList.includes(element['element'])) {
                             completeDataList.push(element['element']);
                         }
                     }
-                } else {
-                    if (JSON.parse(localStorage.getItem('inputGameSettings'))[localStorage.getItem('inputGameCurrent')]['type']['select'].includes(element['type']) && !completeDataList.includes(element['element'])) {
-                        completeDataList.push(element['element']);
-                    }
+                } catch (error) {
+                    let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
+
+                    localData[currentGame] = data['options'];
+                    localStorage.setItem('inputGameSettings', JSON.stringify(localData));
+                    localData = JSON.parse(localStorage.getItem('inputGameSettings'));
                 }
             }
             setCompleteList(completeDataList);
