@@ -197,6 +197,8 @@ function App() {
             setErrorList([]);
             setIsSettings(false);
             setError([]);
+            setTimer(JSON.parse(localStorage.getItem('inputGameSettings'))[currentGame]['timer-value']);
+            setIsRunning(false);
         }
     }, [viewFull]);
 
