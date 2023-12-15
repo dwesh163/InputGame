@@ -10,6 +10,13 @@ import { WelcomeCard } from './components/WelcomeCard.jsx';
 
 let currentGame = localStorage.getItem('inputGameCurrent');
 
+const url = new URL(window.location.href);
+
+if (url.searchParams.get('g') != null) {
+    localStorage.setItem('inputGameCurrent', url.searchParams.get('g'));
+    currentGame = url.searchParams.get('g');
+}
+
 if (currentGame == undefined) {
     localStorage.setItem('inputGameCurrent', 'html');
     currentGame = 'html';
@@ -42,6 +49,7 @@ function App() {
         fetch(`./data/${currentGame}.json`)
             .then((response) => response.json())
             .then((data) => {
+                console.log(currentGame);
                 setData(data);
                 let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
                 if (localData == null) {
