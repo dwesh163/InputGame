@@ -117,7 +117,11 @@ function App() {
             if (event.key === 'Enter') {
                 if (settings['case-sensitive']) {
                     if (completeList.includes(inputSearch) && !list.includes(inputSearch)) {
-                        list.push(inputSearch);
+                        if (settings['answers-sort'] == 3) {
+                            list.unshift(inputSearch);
+                        } else {
+                            list.push(inputSearch);
+                        }
                         setList(list);
                         isEmpty = true;
                         setSearch('');
@@ -142,7 +146,11 @@ function App() {
                     if (upperCaseCompleteList.includes(inputSearch.toUpperCase()) || lowerCaseCompleteList.includes(inputSearch.toLowerCase())) {
                         if (!upperCaseList.includes(inputSearch.toUpperCase()) && !lowerCaseList.includes(inputSearch.toLowerCase())) {
                             let info = data['data'].find(({ element }) => element.toLowerCase() === inputSearch.toLowerCase());
-                            list.push(info['element']);
+                            if (settings['answers-sort'] == 3) {
+                                list.unshift(info['element']);
+                            } else {
+                                list.push(info['element']);
+                            }
                             setList(list);
                             isEmpty = true;
                             setSearch('');
@@ -228,6 +236,18 @@ function App() {
         }
     }, [search]);
 
+    let settings = JSON.parse(localStorage.getItem('inputGameSettings'))[currentGame];
+
+    let displayList = [];
+    displayList = list;
+
+    if (settings['answers-sort'] == 0) {
+        displayList.sort();
+    } else if (settings['answers-sort'] == 1) {
+        displayList.sort();
+        displayList.reverse();
+    }
+
     return (
         <>
             <NavComponents onClick={settingToggle} isSettings={isSettings} isWelcome={isWelcome} />
@@ -257,7 +277,7 @@ function App() {
                                                             </button>
                                                             <Number value={list.length} totalValue={completeList.length} />
                                                         </span>
-                                                        <ContainerList value={list} completeList={completeList} viewFull={viewFull} data={data['data']} errorTag={errorTag} />
+                                                        <ContainerList value={displayList} completeList={completeList} viewFull={viewFull} data={data['data']} errorTag={errorTag} />
                                                         <ContainerList value={errorList} viewFull={false} data={data['data']} isError={true} />
                                                     </>
                                                 )}
