@@ -2,7 +2,7 @@
     "options": {
         "title": "HTML Elements",
         "case-sensitive": false,
-        "answers-sort": "desc",
+        "answers-sort": "3",
         "timer": true,
         "timer-value": 300,
         "type": {

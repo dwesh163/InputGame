@@ -2,12 +2,24 @@
     "options": {
         "title": "Animaux",
         "case-sensitive": false,
-        "answers-sort": "desc",
+        "answers-sort": "3",
         "timer": true,
         "timer-value": 300,
-        "type" : {
-            "select" : ["Mammifère", "Arachnide", "Oiseau", "Reptile", "Insecte"],
-            "all" : ["Mammifère", "Arachnide", "Oiseau", "Reptile", "Insecte"]
+        "type": {
+            "select": [
+                "Mammifère",
+                "Arachnide",
+                "Oiseau",
+                "Reptile",
+                "Insecte"
+            ],
+            "all": [
+                "Mammifère",
+                "Arachnide",
+                "Oiseau",
+                "Reptile",
+                "Insecte"
+            ]
         }
     },
     "data": [

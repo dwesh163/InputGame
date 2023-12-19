@@ -2,12 +2,18 @@
     "options": {
         "title": "System calls",
         "case-sensitive": false,
-        "answers-sort": "desc",
+        "answers-sort": "3",
         "timer": true,
         "timer-value": 300,
         "type": {
-            "select": ["primary", "secondary"],
-            "all": ["primary", "secondary"]
+            "select": [
+                "primary",
+                "secondary"
+            ],
+            "all": [
+                "primary",
+                "secondary"
+            ]
         }
     },
     "data": [
@@ -35,7 +41,6 @@
             "description": "Write to a file descriptor",
             "type": "primary"
         },
-
         {
             "element": "fork",
             "url": "https://linux.die.net/man/2/fork",
