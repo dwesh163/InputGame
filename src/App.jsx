@@ -22,6 +22,22 @@ if (currentGame == undefined) {
     currentGame = 'html';
 }
 
+fetch(`./data/${currentGame}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+        let localData = JSON.parse(localStorage.getItem('inputGameSettings'));
+        if (localData == null) {
+            localData = {};
+        }
+
+        if (localData[currentGame] == null) {
+            localData[currentGame] = data['options'];
+            localStorage.setItem('inputGameSettings', JSON.stringify(localData));
+            localData = JSON.parse(localStorage.getItem('inputGameSettings'));
+            location.reload();
+        }
+    });
+
 function App() {
     let completeDataList = [];
     let isEmpty = false;
