@@ -229,6 +229,13 @@ footer a {
 .obselete {
     background-color: rgb(211, 127, 0);
 }
+.builtin {
+    background-color: rgb(116, 21, 199);
+}
+
+.utility {
+    background-color: rgb(211, 127, 0);
+}
 
 @keyframes blink {
     0%,

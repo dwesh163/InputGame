@@ -1,0 +1,1769 @@
+{
+    "options": {
+        "title": "Bash Commands",
+        "case-sensitive": false,
+        "answers-sort": "3",
+        "timer": true,
+        "timer-value": 300,
+        "type": {
+            "select": [
+                "builtin",
+                "utility",
+                "common"
+            ],
+            "all": [
+                "builtin",
+                "utility",
+                "common"
+            ]
+        }
+    },
+    "data": [
+        {
+            "element": "alias",
+            "url": "https://ss64.com/bash/alias.html",
+            "description": "Create an alias for a command",
+            "type": "common"
+        },
+        {
+            "element": "apt",
+            "url": "https://ss64.com/bash/apt.html",
+            "description": "Search for and manage software packages (Debian/Ubuntu)",
+            "type": "common"
+        },
+        {
+            "element": "apt-get",
+            "url": "https://ss64.com/bash/apt-get.html",
+            "description": "Search for and install software packages (Debian/Ubuntu)",
+            "type": "utility"
+        },
+        {
+            "element": "aptitude",
+            "url": "https://ss64.com/bash/aptitude.html",
+            "description": "Search for and install software packages (Debian/Ubuntu)",
+            "type": "utility"
+        },
+        {
+            "element": "aspell",
+            "url": "https://ss64.com/bash/aspell.html",
+            "description": "Spell checker",
+            "type": "utility"
+        },
+        {
+            "element": "at",
+            "url": "https://ss64.com/bash/at.html",
+            "description": "Schedule a command to run once at a particular time",
+            "type": "utility"
+        },
+        {
+            "element": "awk",
+            "url": "https://ss64.com/bash/awk.html",
+            "description": "Find and replace text, database sort/validate/index",
+            "type": "utility"
+        },
+        {
+            "element": "basename",
+            "url": "https://ss64.com/bash/basename.html",
+            "description": "Strip directory and suffix from filenames",
+            "type": "utility"
+        },
+        {
+            "element": "base32",
+            "url": "https://ss64.com/bash/base32.html",
+            "description": "Base32 encode/decode data and print to standard output",
+            "type": "utility"
+        },
+        {
+            "element": "base64",
+            "url": "https://ss64.com/bash/base64.html",
+            "description": "Base64 encode/decode data and print to standard output",
+            "type": "utility"
+        },
+        {
+            "element": "bash",
+            "url": "https://ss64.com/bash/bash.html",
+            "description": "GNU Bourne-Again SHell",
+            "type": "builtin"
+        },
+        {
+            "element": "bc",
+            "url": "https://ss64.com/bash/bc.html",
+            "description": "Arbitrary precision calculator language",
+            "type": "utility"
+        },
+        {
+            "element": "bg",
+            "url": "https://ss64.com/bash/bg.html",
+            "description": "Send to background",
+            "type": "builtin"
+        },
+        {
+            "element": "bind",
+            "url": "https://ss64.com/bash/bind.html",
+            "description": "Set or display readline key and function bindings",
+            "type": "builtin"
+        },
+        {
+            "element": "break",
+            "url": "https://ss64.com/bash/break.html",
+            "description": "Exit from a loop",
+            "type": "builtin"
+        },
+        {
+            "element": "builtin",
+            "url": "https://ss64.com/bash/builtin.html",
+            "description": "Run a shell builtin",
+            "type": "builtin"
+        },
+        {
+            "element": "bzip2",
+            "url": "https://ss64.com/bash/bzip2.html",
+            "description": "Compress or decompress named file(s)",
+            "type": "utility"
+        },
+        {
+            "element": "&",
+            "url": "https://ss64.com/bash/ampersand.html",
+            "description": "Start a new process in the background",
+            "type": "builtin"
+        },
+        {
+            "element": "cal",
+            "url": "https://ss64.com/bash/cal.html",
+            "description": "Display a calendar",
+            "type": "utility"
+        },
+        {
+            "element": "caller",
+            "url": "https://ss64.com/bash/caller.html",
+            "description": "Return the context of any active subroutine call",
+            "type": "builtin"
+        },
+        {
+            "element": "case",
+            "url": "https://ss64.com/bash/case.html",
+            "description": "Conditionally perform a command",
+            "type": "builtin"
+        },
+        {
+            "element": "cat",
+            "url": "https://ss64.com/bash/cat.html",
+            "description": "Concatenate and print (display) the content of files",
+            "type": "common"
+        },
+        {
+            "element": "cd",
+            "url": "https://ss64.com/bash/cd.html",
+            "description": "Change Directory",
+            "type": "common"
+        },
+        {
+            "element": "cfdisk",
+            "url": "https://ss64.com/bash/cfdisk.html",
+            "description": "Partition table manipulator for Linux",
+            "type": "utility"
+        },
+        {
+            "element": "chattr",
+            "url": "https://ss64.com/bash/chattr.html",
+            "description": "Change file attributes on a Linux file system",
+            "type": "utility"
+        },
+        {
+            "element": "chgrp",
+            "url": "https://ss64.com/bash/chgrp.html",
+            "description": "Change group ownership",
+            "type": "utility"
+        },
+        {
+            "element": "chmod",
+            "url": "https://ss64.com/bash/chmod.html",
+            "description": "Change access permissions",
+            "type": "common"
+        },
+        {
+            "element": "chown",
+            "url": "https://ss64.com/bash/chown.html",
+            "description": "Change file owner and group",
+            "type": "common"
+        },
+        {
+            "element": "chpasswd",
+            "url": "https://ss64.com/bash/chpasswd.html",
+            "description": "Update passwords in batch mode",
+            "type": "utility"
+        },
+        {
+            "element": "chroot",
+            "url": "https://ss64.com/bash/chroot.html",
+            "description": "Run a command with a different root directory",
+            "type": "utility"
+        },
+        {
+            "element": "chkconfig",
+            "url": "https://ss64.com/bash/chkconfig.html",
+            "description": "System services (runlevel)",
+            "type": "utility"
+        },
+        {
+            "element": "cksum",
+            "url": "https://ss64.com/bash/cksum.html",
+            "description": "Print CRC checksum and byte counts",
+            "type": "utility"
+        },
+        {
+            "element": "clear",
+            "url": "https://ss64.com/bash/clear.html",
+            "description": "Clear the terminal screen/console (ncurses)",
+            "type": "common"
+        },
+        {
+            "element": "clear_console",
+            "url": "https://ss64.com/bash/clear_console.html",
+            "description": "Clear the terminal screen/console (bash)",
+            "type": "utility"
+        },
+        {
+            "element": "cmp",
+            "url": "https://ss64.com/bash/cmp.html",
+            "description": "Compare two files",
+            "type": "utility"
+        },
+        {
+            "element": "comm",
+            "url": "https://ss64.com/bash/comm.html",
+            "description": "Compare two sorted files line by line",
+            "type": "utility"
+        },
+        {
+            "element": "command",
+            "url": "https://ss64.com/bash/command.html",
+            "description": "Run a command - ignoring shell functions",
+            "type": "builtin"
+        },
+        {
+            "element": "continue",
+            "url": "https://ss64.com/bash/continue.html",
+            "description": "Resume the next iteration of a loop",
+            "type": "builtin"
+        },
+        {
+            "element": "cp",
+            "url": "https://ss64.com/bash/cp.html",
+            "description": "Copy one or more files to another location",
+            "type": "common"
+        },
+        {
+            "element": "cpio",
+            "url": "https://ss64.com/bash/cpio.html",
+            "description": "Copy files to and from archives",
+            "type": "utility"
+        },
+        {
+            "element": "cron",
+            "url": "https://ss64.com/bash/cron.html",
+            "description": "Daemon to execute scheduled commands",
+            "type": "utility"
+        },
+        {
+            "element": "crontab",
+            "url": "https://ss64.com/bash/crontab.html",
+            "description": "Schedule a command to run at a later time",
+            "type": "utility"
+        },
+        {
+            "element": "csplit",
+            "url": "https://ss64.com/bash/csplit.html",
+            "description": "Split a file into context-determined pieces",
+            "type": "utility"
+        },
+        {
+            "element": "curl",
+            "url": "https://ss64.com/bash/curl.html",
+            "description": "Transfer data from or to a server",
+            "type": "common"
+        },
+        {
+            "element": "cut",
+            "url": "https://ss64.com/bash/cut.html",
+            "description": "Divide a file into several parts",
+            "type": "utility"
+        },
+        {
+            "element": "date",
+            "url": "https://ss64.com/bash/date.html",
+            "description": "Display or change the date & time",
+            "type": "utility"
+        },
+        {
+            "element": "dc",
+            "url": "https://ss64.com/bash/dc.html",
+            "description": "Desk calculator",
+            "type": "utility"
+        },
+        {
+            "element": "dd",
+            "url": "https://ss64.com/bash/dd.html",
+            "description": "Data Duplicator - convert and copy a file, write disk headers, boot records",
+            "type": "utility"
+        },
+        {
+            "element": "ddrescue",
+            "url": "https://ss64.com/bash/ddrescue.html",
+            "description": "Data recovery tool",
+            "type": "utility"
+        },
+        {
+            "element": "declare",
+            "url": "https://ss64.com/bash/declare.html",
+            "description": "Declare variables and give them attributes",
+            "type": "builtin"
+        },
+        {
+            "element": "df",
+            "url": "https://ss64.com/bash/df.html",
+            "description": "Display free disk space",
+            "type": "utility"
+        },
+        {
+            "element": "diff",
+            "url": "https://ss64.com/bash/diff.html",
+            "description": "Display the differences between two files",
+            "type": "utility"
+        },
+        {
+            "element": "diff3",
+            "url": "https://ss64.com/bash/diff3.html",
+            "description": "Show differences among three files",
+            "type": "utility"
+        },
+        {
+            "element": "dig",
+            "url": "https://ss64.com/bash/dig.html",
+            "description": "DNS lookup",
+            "type": "utility"
+        },
+        {
+            "element": "dir",
+            "url": "https://ss64.com/bash/dir.html",
+            "description": "Briefly list directory contents",
+            "type": "utility"
+        },
+        {
+            "element": "dircolors",
+            "url": "https://ss64.com/bash/dircolors.html",
+            "description": "Colour setup for 'ls'",
+            "type": "utility"
+        },
+        {
+            "element": "dirname",
+            "url": "https://ss64.com/bash/dirname.html",
+            "description": "Convert a full pathname to just a path",
+            "type": "utility"
+        },
+        {
+            "element": "dirs",
+            "url": "https://ss64.com/bash/dirs.html",
+            "description": "Display list of remembered directories",
+            "type": "utility"
+        },
+        {
+            "element": "dos2unix",
+            "url": "https://ss64.com/bash/dos2unix.html",
+            "description": "Windows/MAC to UNIX text file format converter",
+            "type": "utility"
+        },
+        {
+            "element": "dmesg",
+            "url": "https://ss64.com/bash/dmesg.html",
+            "description": "Print kernel & driver messages",
+            "type": "utility"
+        },
+        {
+            "element": "dpkg",
+            "url": "https://ss64.com/bash/dpkg.html",
+            "description": "Package manager (Debian/Ubuntu)",
+            "type": "utility"
+        },
+        {
+            "element": "du",
+            "url": "https://ss64.com/bash/du.html",
+            "description": "Estimate file space usage",
+            "type": "utility"
+        },
+        {
+            "element": "echo",
+            "url": "https://ss64.com/bash/echo.html",
+            "description": "Display message on screen",
+            "type": "builtin"
+        },
+        {
+            "element": "egrep",
+            "url": "https://ss64.com/bash/egrep.html",
+            "description": "Search file(s) for lines that match an extended expression",
+            "type": "utility"
+        },
+        {
+            "element": "eject",
+            "url": "https://ss64.com/bash/eject.html",
+            "description": "Eject removable media",
+            "type": "utility"
+        },
+        {
+            "element": "enable",
+            "url": "https://ss64.com/bash/enable.html",
+            "description": "Enable and disable builtin shell commands",
+            "type": "builtin"
+        },
+        {
+            "element": "env",
+            "url": "https://ss64.com/bash/env.html",
+            "description": "Environment variables",
+            "type": "common"
+        },
+        {
+            "element": "ethtool",
+            "url": "https://ss64.com/bash/ethtool.html",
+            "description": "Ethernet card settings",
+            "type": "utility"
+        },
+        {
+            "element": "eval",
+            "url": "https://ss64.com/bash/eval.html",
+            "description": "Evaluate several commands/arguments",
+            "type": "builtin"
+        },
+        {
+            "element": "exec",
+            "url": "https://ss64.com/bash/exec.html",
+            "description": "Execute a command",
+            "type": "builtin"
+        },
+        {
+            "element": "exit",
+            "url": "https://ss64.com/bash/exit.html",
+            "description": "Exit the shell",
+            "type": "builtin"
+        },
+        {
+            "element": "expand",
+            "url": "https://ss64.com/bash/expand.html",
+            "description": "Convert tabs to spaces",
+            "type": "utility"
+        },
+        {
+            "element": "export",
+            "url": "https://ss64.com/bash/export.html",
+            "description": "Set an environment variable",
+            "type": "builtin"
+        },
+        {
+            "element": "expr",
+            "url": "https://ss64.com/bash/expr.html",
+            "description": "Evaluate expressions",
+            "type": "utility"
+        },
+        {
+            "element": "false",
+            "url": "https://ss64.com/bash/false.html",
+            "description": "Do nothing, unsuccessfully",
+            "type": "builtin"
+        },
+        {
+            "element": "fdformat",
+            "url": "https://ss64.com/bash/fdformat.html",
+            "description": "Low-level format a floppy disk",
+            "type": "utility"
+        },
+        {
+            "element": "fdisk",
+            "url": "https://ss64.com/bash/fdisk.html",
+            "description": "Partition table manipulator for Linux",
+            "type": "utility"
+        },
+        {
+            "element": "fg",
+            "url": "https://ss64.com/bash/fg.html",
+            "description": "Send job to foreground",
+            "type": "builtin"
+        },
+        {
+            "element": "fgrep",
+            "url": "https://ss64.com/bash/fgrep.html",
+            "description": "Search file(s) for lines that match a fixed string",
+            "type": "utility"
+        },
+        {
+            "element": "file",
+            "url": "https://ss64.com/bash/file.html",
+            "description": "Determine file type",
+            "type": "utility"
+        },
+        {
+            "element": "find",
+            "url": "https://ss64.com/bash/find.html",
+            "description": "Search for files that meet a desired criteria",
+            "type": "utility"
+        },
+        {
+            "element": "fmt",
+            "url": "https://ss64.com/bash/fmt.html",
+            "description": "Reformat paragraph text",
+            "type": "utility"
+        },
+        {
+            "element": "fold",
+            "url": "https://ss64.com/bash/fold.html",
+            "description": "Wrap text to fit a specified width",
+            "type": "utility"
+        },
+        {
+            "element": "for",
+            "url": "https://ss64.com/bash/for.html",
+            "description": "Expand words, and execute commands",
+            "type": "builtin"
+        },
+        {
+            "element": "format",
+            "url": "https://ss64.com/bash/format.html",
+            "description": "Format disks or tapes",
+            "type": "utility"
+        },
+        {
+            "element": "free",
+            "url": "https://ss64.com/bash/free.html",
+            "description": "Display memory usage",
+            "type": "utility"
+        },
+        {
+            "element": "fsck",
+            "url": "https://ss64.com/bash/fsck.html",
+            "description": "File system consistency check and repair",
+            "type": "utility"
+        },
+        {
+            "element": "ftp",
+            "url": "https://ss64.com/bash/ftp.html",
+            "description": "File Transfer Protocol",
+            "type": "utility"
+        },
+        {
+            "element": "function",
+            "url": "https://ss64.com/bash/function.html",
+            "description": "Define Function Macros",
+            "type": "builtin"
+        },
+        {
+            "element": "fuser",
+            "url": "https://ss64.com/bash/fuser.html",
+            "description": "Identify/kill the process that is accessing a file",
+            "type": "utility"
+        },
+        {
+            "element": "gawk",
+            "url": "https://ss64.com/bash/gawk.html",
+            "description": "Find and Replace text within file(s)",
+            "type": "utility"
+        },
+        {
+            "element": "getopts",
+            "url": "https://ss64.com/bash/getopts.html",
+            "description": "Parse positional parameters",
+            "type": "utility"
+        },
+        {
+            "element": "getfacl",
+            "url": "https://ss64.com/bash/getfacl.html",
+            "description": "Get file access control lists",
+            "type": "utility"
+        },
+        {
+            "element": "grep",
+            "url": "https://ss64.com/bash/grep.html",
+            "description": "Search file(s) for lines that match a given pattern",
+            "type": "common"
+        },
+        {
+            "element": "groupadd",
+            "url": "https://ss64.com/bash/groupadd.html",
+            "description": "Add a user security group",
+            "type": "utility"
+        },
+        {
+            "element": "groupdel",
+            "url": "https://ss64.com/bash/groupdel.html",
+            "description": "Delete a group",
+            "type": "utility"
+        },
+        {
+            "element": "groupmod",
+            "url": "https://ss64.com/bash/groupmod.html",
+            "description": "Modify a group",
+            "type": "utility"
+        },
+        {
+            "element": "groups",
+            "url": "https://ss64.com/bash/groups.html",
+            "description": "Print group names a user is in",
+            "type": "utility"
+        },
+        {
+            "element": "gzip",
+            "url": "https://ss64.com/bash/gzip.html",
+            "description": "Compress or decompress named file(s)",
+            "type": "utility"
+        },
+        {
+            "element": "hash",
+            "url": "https://ss64.com/bash/hash.html",
+            "description": "Remember the full pathname of a name argument",
+            "type": "utility"
+        },
+        {
+            "element": "head",
+            "url": "https://ss64.com/bash/head.html",
+            "description": "Output the first part of file(s)",
+            "type": "common"
+        },
+        {
+            "element": "help",
+            "url": "https://ss64.com/bash/help.html",
+            "description": "Display help for a built-in command",
+            "type": "builtin"
+        },
+        {
+            "element": "history",
+            "url": "https://ss64.com/bash/history.html",
+            "description": "Command History",
+            "type": "builtin"
+        },
+        {
+            "element": "hostname",
+            "url": "https://ss64.com/bash/hostname.html",
+            "description": "Print or set system name",
+            "type": "common"
+        },
+        {
+            "element": "htop",
+            "url": "https://ss64.com/bash/htop.html",
+            "description": "Interactive process viewer",
+            "type": "utility"
+        },
+        {
+            "element": "iconv",
+            "url": "https://ss64.com/bash/iconv.html",
+            "description": "Convert the character set of a file",
+            "type": "utility"
+        },
+        {
+            "element": "id",
+            "url": "https://ss64.com/bash/id.html",
+            "description": "Print user and group id’s",
+            "type": "utility"
+        },
+        {
+            "element": "if",
+            "url": "https://ss64.com/bash/if.html",
+            "description": "Conditionally perform a command",
+            "type": "builtin"
+        },
+        {
+            "element": "ifconfig",
+            "url": "https://ss64.com/bash/ifconfig.html",
+            "description": "Configure a network interface",
+            "type": "utility"
+        },
+        {
+            "element": "ifdown",
+            "url": "https://ss64.com/bash/ifdown.html",
+            "description": "Stop a network interface",
+            "type": "utility"
+        },
+        {
+            "element": "ifup",
+            "url": "https://ss64.com/bash/ifup.html",
+            "description": "Start a network interface up",
+            "type": "utility"
+        },
+        {
+            "element": "import",
+            "url": "https://ss64.com/bash/import.html",
+            "description": "Capture an X server screen and save the image to file",
+            "type": "utility"
+        },
+        {
+            "element": "install",
+            "url": "https://ss64.com/bash/install.html",
+            "description": "Copy files and set attributes",
+            "type": "utility"
+        },
+        {
+            "element": "iostat",
+            "url": "https://ss64.com/bash/iostat.html",
+            "description": "Report CPU and i/o statistics",
+            "type": "utility"
+        },
+        {
+            "element": "ip",
+            "url": "https://ss64.com/bash/ip.html",
+            "description": "Routing, devices and tunnels",
+            "type": "utility"
+        },
+        {
+            "element": "jobs",
+            "url": "https://ss64.com/bash/jobs.html",
+            "description": "List active jobs",
+            "type": "builtin"
+        },
+        {
+            "element": "join",
+            "url": "https://ss64.com/bash/join.html",
+            "description": "Join lines on a common field",
+            "type": "utility"
+        },
+        {
+            "element": "kill",
+            "url": "https://ss64.com/bash/kill.html",
+            "description": "Kill a process by specifying its PID",
+            "type": "builtin"
+        },
+        {
+            "element": "killall",
+            "url": "https://ss64.com/bash/killall.html",
+            "description": "Kill processes by name",
+            "type": "builtin"
+        },
+        {
+            "element": "klist",
+            "url": "https://ss64.com/bash/klist.html",
+            "description": "List cached Kerberos tickets",
+            "type": "utility"
+        },
+        {
+            "element": "less",
+            "url": "https://ss64.com/bash/less.html",
+            "description": "Display output one screen at a time",
+            "type": "utility"
+        },
+        {
+            "element": "let",
+            "url": "https://ss64.com/bash/let.html",
+            "description": "Perform arithmetic on shell variables",
+            "type": "builtin"
+        },
+        {
+            "element": "link",
+            "url": "https://ss64.com/bash/link.html",
+            "description": "Create a link to a file",
+            "type": "utility"
+        },
+        {
+            "element": "ln",
+            "url": "https://ss64.com/bash/ln.html",
+            "description": "Create a symbolic link to a file",
+            "type": "utility"
+        },
+        {
+            "element": "local",
+            "url": "https://ss64.com/bash/local.html",
+            "description": "Create a function variable",
+            "type": "builtin"
+        },
+        {
+            "element": "locate",
+            "url": "https://ss64.com/bash/locate.html",
+            "description": "Find files",
+            "type": "utility"
+        },
+        {
+            "element": "logname",
+            "url": "https://ss64.com/bash/logname.html",
+            "description": "Print current login name",
+            "type": "builtin"
+        },
+        {
+            "element": "logout",
+            "url": "https://ss64.com/bash/logout.html",
+            "description": "Exit a login shell",
+            "type": "builtin"
+        },
+        {
+            "element": "look",
+            "url": "https://ss64.com/bash/look.html",
+            "description": "Display lines beginning with a given string",
+            "type": "utility"
+        },
+        {
+            "element": "lpc",
+            "url": "https://ss64.com/bash/lpc.html",
+            "description": "Line printer control program",
+            "type": "utility"
+        },
+        {
+            "element": "lpr",
+            "url": "https://ss64.com/bash/lpr.html",
+            "description": "Print files",
+            "type": "utility"
+        },
+        {
+            "element": "lprint",
+            "url": "https://ss64.com/bash/lprint.html",
+            "description": "Print a file",
+            "type": "utility"
+        },
+        {
+            "element": "lprintd",
+            "url": "https://ss64.com/bash/lprintd.html",
+            "description": "Delete a print job",
+            "type": "utility"
+        },
+        {
+            "element": "lprintq",
+            "url": "https://ss64.com/bash/lprintq.html",
+            "description": "List the print queue",
+            "type": "utility"
+        },
+        {
+            "element": "lprm",
+            "url": "https://ss64.com/bash/lprm.html",
+            "description": "Remove jobs from the print queue",
+            "type": "utility"
+        },
+        {
+            "element": "lsattr",
+            "url": "https://ss64.com/bash/lsattr.html",
+            "description": "List file attributes on a Linux second extended file system",
+            "type": "utility"
+        },
+        {
+            "element": "lsblk",
+            "url": "https://ss64.com/bash/lsblk.html",
+            "description": "List block devices",
+            "type": "utility"
+        },
+        {
+            "element": "ls",
+            "url": "https://ss64.com/bash/ls.html",
+            "description": "List information about file(s)",
+            "type": "common"
+        },
+        {
+            "element": "lsof",
+            "url": "https://ss64.com/bash/lsof.html",
+            "description": "List open files",
+            "type": "utility"
+        },
+        {
+            "element": "lspci",
+            "url": "https://ss64.com/bash/lspci.html",
+            "description": "List all PCI devices",
+            "type": "utility"
+        },
+        {
+            "element": "make",
+            "url": "https://ss64.com/bash/make.html",
+            "description": "Recompile a group of programs",
+            "type": "utility"
+        },
+        {
+            "element": "man",
+            "url": "https://ss64.com/bash/man.html",
+            "description": "Help manual",
+            "type": "common"
+        },
+        {
+            "element": "mapfile",
+            "url": "https://ss64.com/bash/mapfile.html",
+            "description": "Read lines from standard input into an indexed array variable",
+            "type": "builtin"
+        },
+        {
+            "element": "md5sum",
+            "url": "https://ss64.com/bash/md5sum.html",
+            "description": "Compute and check MD5 message digest",
+            "type": "utility"
+        },
+        {
+            "element": "mkdir",
+            "url": "https://ss64.com/bash/mkdir.html",
+            "description": "Create new folder(s)",
+            "type": "common"
+        },
+        {
+            "element": "mkfifo",
+            "url": "https://ss64.com/bash/mkfifo.html",
+            "description": "Make FIFOs (named pipes)",
+            "type": "utility"
+        },
+        {
+            "element": "mkfile",
+            "url": "https://ss64.com/bash/mkfile.html",
+            "description": "Make a file",
+            "type": "utility"
+        },
+        {
+            "element": "mkisofs",
+            "url": "https://ss64.com/bash/mkisofs.html",
+            "description": "Create a hybrid ISO9660/JOLIET/HFS filesystem",
+            "type": "utility"
+        },
+        {
+            "element": "mknod",
+            "url": "https://ss64.com/bash/mknod.html",
+            "description": "Make block or character special files",
+            "type": "utility"
+        },
+        {
+            "element": "mktemp",
+            "url": "https://ss64.com/bash/mktemp.html",
+            "description": "Make a temporary file",
+            "type": "utility"
+        },
+        {
+            "element": "more",
+            "url": "https://ss64.com/bash/more.html",
+            "description": "Display output one screen at a time",
+            "type": "utility"
+        },
+        {
+            "element": "most",
+            "url": "https://ss64.com/bash/most.html",
+            "description": "Browse or page through a text file",
+            "type": "utility"
+        },
+        {
+            "element": "mount",
+            "url": "https://ss64.com/bash/mount.html",
+            "description": "Mount a file system",
+            "type": "utility"
+        },
+        {
+            "element": "mtools",
+            "url": "https://ss64.com/bash/mtools.html",
+            "description": "Manipulate MS-DOS files",
+            "type": "utility"
+        },
+        {
+            "element": "mtr",
+            "url": "https://ss64.com/bash/mtr.html",
+            "description": "Network diagnostics (traceroute/ping)",
+            "type": "utility"
+        },
+        {
+            "element": "mv",
+            "url": "https://ss64.com/bash/mv.html",
+            "description": "Move or rename files or directories",
+            "type": "common"
+        },
+        {
+            "element": "mmv",
+            "url": "https://ss64.com/bash/mmv.html",
+            "description": "Mass Move and rename (files)",
+            "type": "utility"
+        },
+        {
+            "element": "nc",
+            "url": "https://ss64.com/bash/nc.html",
+            "description": "Netcat, read and write data across networks",
+            "type": "utility"
+        },
+        {
+            "element": "netstat",
+            "url": "https://ss64.com/bash/netstat.html",
+            "description": "Networking connections/stats",
+            "type": "utility"
+        },
+        {
+            "element": "nft",
+            "url": "https://ss64.com/bash/nft.html",
+            "description": "nftables for packet filtering and classification",
+            "type": "utility"
+        },
+        {
+            "element": "nice",
+            "url": "https://ss64.com/bash/nice.html",
+            "description": "Set the priority of a command or job",
+            "type": "builtin"
+        },
+        {
+            "element": "nl",
+            "url": "https://ss64.com/bash/nl.html",
+            "description": "Number lines and write files",
+            "type": "utility"
+        },
+        {
+            "element": "nohup",
+            "url": "https://ss64.com/bash/nohup.html",
+            "description": "Run a command immune to hangups",
+            "type": "utility"
+        },
+        {
+            "element": "notify-send",
+            "url": "https://ss64.com/bash/notify-send.html",
+            "description": "Send desktop notifications",
+            "type": "utility"
+        },
+        {
+            "element": "nslookup",
+            "url": "https://ss64.com/bash/nslookup.html",
+            "description": "Query Internet name servers interactively",
+            "type": "utility"
+        },
+        {
+            "element": "open",
+            "url": "https://ss64.com/bash/open.html",
+            "description": "Open a file in its default application",
+            "type": "utility"
+        },
+        {
+            "element": "op",
+            "url": "https://ss64.com/bash/op.html",
+            "description": "Operator access",
+            "type": "utility"
+        },
+        {
+            "element": "passwd",
+            "url": "https://ss64.com/bash/passwd.html",
+            "description": "Modify a user password",
+            "type": "utility"
+        },
+        {
+            "element": "paste",
+            "url": "https://ss64.com/bash/paste.html",
+            "description": "Merge lines of files",
+            "type": "utility"
+        },
+        {
+            "element": "pathchk",
+            "url": "https://ss64.com/bash/pathchk.html",
+            "description": "Check file name portability",
+            "type": "utility"
+        },
+        {
+            "element": "Perf",
+            "url": "https://ss64.com/bash/perf.html",
+            "description": "Performance analysis tools for Linux",
+            "type": "utility"
+        },
+        {
+            "element": "ping",
+            "url": "https://ss64.com/bash/ping.html",
+            "description": "Test a network connection",
+            "type": "common"
+        },
+        {
+            "element": "pgrep",
+            "url": "https://ss64.com/bash/pgrep.html",
+            "description": "List processes by name",
+            "type": "utility"
+        },
+        {
+            "element": "pkill",
+            "url": "https://ss64.com/bash/pkill.html",
+            "description": "Kill processes by name",
+            "type": "utility"
+        },
+        {
+            "element": "popd",
+            "url": "https://ss64.com/bash/popd.html",
+            "description": "Restore the previous value of the current directory",
+            "type": "builtin"
+        },
+        {
+            "element": "pr",
+            "url": "https://ss64.com/bash/pr.html",
+            "description": "Prepare files for printing",
+            "type": "utility"
+        },
+        {
+            "element": "printcap",
+            "url": "https://ss64.com/bash/printcap.html",
+            "description": "Printer capability database",
+            "type": "utility"
+        },
+        {
+            "element": "printenv",
+            "url": "https://ss64.com/bash/printenv.html",
+            "description": "Print environment variables",
+            "type": "builtin"
+        },
+        {
+            "element": "printf",
+            "url": "https://ss64.com/bash/printf.html",
+            "description": "Format and print data",
+            "type": "builtin"
+        },
+        {
+            "element": "ps",
+            "url": "https://ss64.com/bash/ps.html",
+            "description": "Process status",
+            "type": "utility"
+        },
+        {
+            "element": "pushd",
+            "url": "https://ss64.com/bash/pushd.html",
+            "description": "Save and then change the current directory",
+            "type": "builtin"
+        },
+        {
+            "element": "pv",
+            "url": "https://ss64.com/bash/pv.html",
+            "description": "Monitor the progress of data through a pipe",
+            "type": "utility"
+        },
+        {
+            "element": "pwd",
+            "url": "https://ss64.com/bash/pwd.html",
+            "description": "Print Working Directory",
+            "type": "common"
+        },
+        {
+            "element": "quota",
+            "url": "https://ss64.com/bash/quota.html",
+            "description": "Display disk usage and limits",
+            "type": "utility"
+        },
+        {
+            "element": "quotacheck",
+            "url": "https://ss64.com/bash/quotacheck.html",
+            "description": "Scan a file system for disk usage",
+            "type": "utility"
+        },
+        {
+            "element": "ram",
+            "url": "https://ss64.com/bash/ram.html",
+            "description": "ram disk device",
+            "type": "utility"
+        },
+        {
+            "element": "rar",
+            "url": "https://ss64.com/bash/rar.html",
+            "description": "Archive files with compression",
+            "type": "utility"
+        },
+        {
+            "element": "rcp",
+            "url": "https://ss64.com/bash/rcp.html",
+            "description": "Copy files between two machines",
+            "type": "utility"
+        },
+        {
+            "element": "read",
+            "url": "https://ss64.com/bash/read.html",
+            "description": "Read a line from standard input",
+            "type": "builtin"
+        },
+        {
+            "element": "readarray",
+            "url": "https://ss64.com/bash/readarray.html",
+            "description": "Read from stdin into an array variable",
+            "type": "builtin"
+        },
+        {
+            "element": "readonly",
+            "url": "https://ss64.com/bash/readonly.html",
+            "description": "Mark variables/functions as readonly",
+            "type": "builtin"
+        },
+        {
+            "element": "reboot",
+            "url": "https://ss64.com/bash/reboot.html",
+            "description": "Reboot the system",
+            "type": "common"
+        },
+        {
+            "element": "rename",
+            "url": "https://ss64.com/bash/rename.html",
+            "description": "Rename files",
+            "type": "utility"
+        },
+        {
+            "element": "renice",
+            "url": "https://ss64.com/bash/renice.html",
+            "description": "Alter priority of running processes",
+            "type": "utility"
+        },
+        {
+            "element": "remsync",
+            "url": "https://ss64.com/bash/remsync.html",
+            "description": "Synchronize remote files via email",
+            "type": "utility"
+        },
+        {
+            "element": "return",
+            "url": "https://ss64.com/bash/return.html",
+            "description": "Exit a shell function",
+            "type": "builtin"
+        },
+        {
+            "element": "rev",
+            "url": "https://ss64.com/bash/rev.html",
+            "description": "Reverse lines of a file",
+            "type": "utility"
+        },
+        {
+            "element": "rm",
+            "url": "https://ss64.com/bash/rm.html",
+            "description": "Remove files",
+            "type": "common"
+        },
+        {
+            "element": "rmdir",
+            "url": "https://ss64.com/bash/rmdir.html",
+            "description": "Remove folder(s)",
+            "type": "common"
+        },
+        {
+            "element": "rsync",
+            "url": "https://ss64.com/bash/rsync.html",
+            "description": "Remote file copy (Synchronize file trees)",
+            "type": "utility"
+        },
+        {
+            "element": "screen",
+            "url": "https://ss64.com/bash/screen.html",
+            "description": "Multiplex terminal, run remote shells via ssh",
+            "type": "utility"
+        },
+        {
+            "element": "scp",
+            "url": "https://ss64.com/bash/scp.html",
+            "description": "Secure copy (remote file copy)",
+            "type": "utility"
+        },
+        {
+            "element": "sdiff",
+            "url": "https://ss64.com/bash/sdiff.html",
+            "description": "Merge two files interactively",
+            "type": "utility"
+        },
+        {
+            "element": "sed",
+            "url": "https://ss64.com/bash/sed.html",
+            "description": "Stream Editor",
+            "type": "utility"
+        },
+        {
+            "element": "select",
+            "url": "https://ss64.com/bash/select.html",
+            "description": "Accept user choices via keyboard input",
+            "type": "builtin"
+        },
+        {
+            "element": "seq",
+            "url": "https://ss64.com/bash/seq.html",
+            "description": "Print numeric sequences",
+            "type": "utility"
+        },
+        {
+            "element": "set",
+            "url": "https://ss64.com/bash/set.html",
+            "description": "Manipulate shell variables and functions",
+            "type": "builtin"
+        },
+        {
+            "element": "setfacl",
+            "url": "https://ss64.com/bash/setfacl.html",
+            "description": "Set file access control lists",
+            "type": "utility"
+        },
+        {
+            "element": "sftp",
+            "url": "https://ss64.com/bash/sftp.html",
+            "description": "Secure File Transfer Program",
+            "type": "utility"
+        },
+        {
+            "element": "sha256sum",
+            "url": "https://ss64.com/bash/sha256sum.html",
+            "description": "Compute and check SHA256 (256-bit) checksums",
+            "type": "utility"
+        },
+        {
+            "element": "shift",
+            "url": "https://ss64.com/bash/shift.html",
+            "description": "Shift positional parameters",
+            "type": "builtin"
+        },
+        {
+            "element": "shopt",
+            "url": "https://ss64.com/bash/shopt.html",
+            "description": "Shell Options",
+            "type": "builtin"
+        },
+        {
+            "element": "shuf",
+            "url": "https://ss64.com/bash/shuf.html",
+            "description": "Generate random permutations",
+            "type": "utility"
+        },
+        {
+            "element": "shutdown",
+            "url": "https://ss64.com/bash/shutdown.html",
+            "description": "Shutdown or restart Linux",
+            "type": "common"
+        },
+        {
+            "element": "sleep",
+            "url": "https://ss64.com/bash/sleep.html",
+            "description": "Delay for a specified time",
+            "type": "builtin"
+        },
+        {
+            "element": "slocate",
+            "url": "https://ss64.com/bash/slocate.html",
+            "description": "Find files",
+            "type": "utility"
+        },
+        {
+            "element": "sort",
+            "url": "https://ss64.com/bash/sort.html",
+            "description": "Sort text files",
+            "type": "utility"
+        },
+        {
+            "element": "source",
+            "url": "https://ss64.com/bash/source.html",
+            "description": "Run commands from a file",
+            "type": "builtin"
+        },
+        {
+            "element": "split",
+            "url": "https://ss64.com/bash/split.html",
+            "description": "Split a file into fixed-size pieces",
+            "type": "utility"
+        },
+        {
+            "element": "ss",
+            "url": "https://ss64.com/bash/ss.html",
+            "description": "Socket Statistics",
+            "type": "utility"
+        },
+        {
+            "element": "ssh",
+            "url": "https://ss64.com/bash/ssh.html",
+            "description": "Secure Shell client (remote login program)",
+            "type": "common"
+        },
+        {
+            "element": "stat",
+            "url": "https://ss64.com/bash/stat.html",
+            "description": "Display file or file system status",
+            "type": "utility"
+        },
+        {
+            "element": "strace",
+            "url": "https://ss64.com/bash/strace.html",
+            "description": "Trace system calls and signals",
+            "type": "utility"
+        },
+        {
+            "element": "su",
+            "url": "https://ss64.com/bash/su.html",
+            "description": "Substitute user identity",
+            "type": "common"
+        },
+        {
+            "element": "sudo",
+            "url": "https://ss64.com/bash/sudo.html",
+            "description": "Execute a command as another user",
+            "type": "common"
+        },
+        {
+            "element": "sum",
+            "url": "https://ss64.com/bash/sum.html",
+            "description": "Print a checksum for a file",
+            "type": "utility"
+        },
+        {
+            "element": "suspend",
+            "url": "https://ss64.com/bash/suspend.html",
+            "description": "Suspend execution of this shell",
+            "type": "builtin"
+        },
+        {
+            "element": "sync",
+            "url": "https://ss64.com/bash/sync.html",
+            "description": "Synchronize data on disk with memory",
+            "type": "utility"
+        },
+        {
+            "element": "tabs",
+            "url": "https://ss64.com/bash/tabs.html",
+            "description": "Set tabs on a terminal",
+            "type": "utility"
+        },
+        {
+            "element": "tail",
+            "url": "https://ss64.com/bash/tail.html",
+            "description": "Output the last part of a file",
+            "type": "utility"
+        },
+        {
+            "element": "tar",
+            "url": "https://ss64.com/bash/tar.html",
+            "description": "Store, list or extract files in an archive",
+            "type": "utility"
+        },
+        {
+            "element": "tee",
+            "url": "https://ss64.com/bash/tee.html",
+            "description": "Redirect output to multiple files",
+            "type": "utility"
+        },
+        {
+            "element": "test",
+            "url": "https://ss64.com/bash/test.html",
+            "description": "Evaluate a conditional expression",
+            "type": "builtin"
+        },
+        {
+            "element": "time",
+            "url": "https://ss64.com/bash/time.html",
+            "description": "Measure program running time",
+            "type": "utility"
+        },
+        {
+            "element": "timeout",
+            "url": "https://ss64.com/bash/timeout.html",
+            "description": "Run a command with a time limit",
+            "type": "utility"
+        },
+        {
+            "element": "times",
+            "url": "https://ss64.com/bash/times.html",
+            "description": "User and system times",
+            "type": "utility"
+        },
+        {
+            "element": "tmux",
+            "url": "https://ss64.com/bash/tmux.html",
+            "description": "Terminal multiplexer",
+            "type": "utility"
+        },
+        {
+            "element": "touch",
+            "url": "https://ss64.com/bash/touch.html",
+            "description": "Change file timestamps",
+            "type": "utility"
+        },
+        {
+            "element": "top",
+            "url": "https://ss64.com/bash/top.html",
+            "description": "List processes running on the system",
+            "type": "utility"
+        },
+        {
+            "element": "tput",
+            "url": "https://ss64.com/bash/tput.html",
+            "description": "Set terminal-dependent capabilities, color, position",
+            "type": "utility"
+        },
+        {
+            "element": "traceroute",
+            "url": "https://ss64.com/bash/traceroute.html",
+            "description": "Trace route to host",
+            "type": "utility"
+        },
+        {
+            "element": "trap",
+            "url": "https://ss64.com/bash/trap.html",
+            "description": "Execute a command when the shell receives a signal",
+            "type": "builtin"
+        },
+        {
+            "element": "tr",
+            "url": "https://ss64.com/bash/tr.html",
+            "description": "Translate, squeeze, and/or delete characters",
+            "type": "utility"
+        },
+        {
+            "element": "true",
+            "url": "https://ss64.com/bash/true.html",
+            "description": "Do nothing, successfully",
+            "type": "builtin"
+        },
+        {
+            "element": "tsort",
+            "url": "https://ss64.com/bash/tsort.html",
+            "description": "Topological sort",
+            "type": "utility"
+        },
+        {
+            "element": "tty",
+            "url": "https://ss64.com/bash/tty.html",
+            "description": "Print filename of terminal on stdin",
+            "type": "utility"
+        },
+        {
+            "element": "type",
+            "url": "https://ss64.com/bash/type.html",
+            "description": "Describe a command",
+            "type": "builtin"
+        },
+        {
+            "element": "ulimit",
+            "url": "https://ss64.com/bash/ulimit.html",
+            "description": "Limit user resources",
+            "type": "builtin"
+        },
+        {
+            "element": "umask",
+            "url": "https://ss64.com/bash/umask.html",
+            "description": "User's file creation mask",
+            "type": "builtin"
+        },
+        {
+            "element": "umount",
+            "url": "https://ss64.com/bash/umount.html",
+            "description": "Unmount a device",
+            "type": "utility"
+        },
+        {
+            "element": "unalias",
+            "url": "https://ss64.com/bash/unalias.html",
+            "description": "Remove an alias",
+            "type": "builtin"
+        },
+        {
+            "element": "uname",
+            "url": "https://ss64.com/bash/uname.html",
+            "description": "Print system information",
+            "type": "utility"
+        },
+        {
+            "element": "unexpand",
+            "url": "https://ss64.com/bash/unexpand.html",
+            "description": "Convert spaces to tabs",
+            "type": "utility"
+        },
+        {
+            "element": "uniq",
+            "url": "https://ss64.com/bash/uniq.html",
+            "description": "Uniquify files",
+            "type": "utility"
+        },
+        {
+            "element": "units",
+            "url": "https://ss64.com/bash/units.html",
+            "description": "Convert units from one scale to another",
+            "type": "utility"
+        },
+        {
+            "element": "unix2dos",
+            "url": "https://ss64.com/bash/unix2dos.html",
+            "description": "UNIX to Windows or MAC text file format converter",
+            "type": "utility"
+        },
+        {
+            "element": "unrar",
+            "url": "https://ss64.com/bash/unrar.html",
+            "description": "Extract files from a rar archive",
+            "type": "utility"
+        },
+        {
+            "element": "unset",
+            "url": "https://ss64.com/bash/unset.html",
+            "description": "Remove variable or function names",
+            "type": "builtin"
+        },
+        {
+            "element": "unshar",
+            "url": "https://ss64.com/bash/unshar.html",
+            "description": "Unpack shell archive scripts",
+            "type": "utility"
+        },
+        {
+            "element": "until",
+            "url": "https://ss64.com/bash/until.html",
+            "description": "Execute commands (until error)",
+            "type": "builtin"
+        },
+        {
+            "element": "uptime",
+            "url": "https://ss64.com/bash/uptime.html",
+            "description": "Show uptime",
+            "type": "utility"
+        },
+        {
+            "element": "useradd",
+            "url": "https://ss64.com/bash/useradd.html",
+            "description": "Create new user account",
+            "type": "utility"
+        },
+        {
+            "element": "userdel",
+            "url": "https://ss64.com/bash/userdel.html",
+            "description": "Delete a user account",
+            "type": "utility"
+        },
+        {
+            "element": "usermod",
+            "url": "https://ss64.com/bash/usermod.html",
+            "description": "Modify user account",
+            "type": "utility"
+        },
+        {
+            "element": "users",
+            "url": "https://ss64.com/bash/users.html",
+            "description": "List users currently logged in",
+            "type": "utility"
+        },
+        {
+            "element": "uuencode",
+            "url": "https://ss64.com/bash/uuencode.html",
+            "description": "Encode a binary file",
+            "type": "utility"
+        },
+        {
+            "element": "uudecode",
+            "url": "https://ss64.com/bash/uudecode.html",
+            "description": "Decode a file created by uuencode",
+            "type": "utility"
+        },
+        {
+            "element": "v",
+            "url": "https://ss64.com/bash/v.html",
+            "description": "Verbosely list directory contents ('ls -l -b')",
+            "type": "utility"
+        },
+        {
+            "element": "vdir",
+            "url": "https://ss64.com/bash/vdir.html",
+            "description": "Verbosely list directory contents ('ls -l -b')",
+            "type": "utility"
+        },
+        {
+            "element": "vi",
+            "url": "https://ss64.com/bash/vi.html",
+            "description": "Text editor",
+            "type": "common"
+        },
+        {
+            "element": "vmstat",
+            "url": "https://ss64.com/bash/vmstat.html",
+            "description": "Report virtual memory statistics",
+            "type": "utility"
+        },
+        {
+            "element": "w",
+            "url": "https://ss64.com/bash/w.html",
+            "description": "Show who is logged on and what they are doing",
+            "type": "utility"
+        },
+        {
+            "element": "wait",
+            "url": "https://ss64.com/bash/wait.html",
+            "description": "Wait for a process to complete",
+            "type": "builtin"
+        },
+        {
+            "element": "watch",
+            "url": "https://ss64.com/bash/watch.html",
+            "description": "Execute/display a program periodically",
+            "type": "utility"
+        },
+        {
+            "element": "wc",
+            "url": "https://ss64.com/bash/wc.html",
+            "description": "Print byte, word, and line counts",
+            "type": "utility"
+        },
+        {
+            "element": "whereis",
+            "url": "https://ss64.com/bash/whereis.html",
+            "description": "Search the user’s $path, man pages, and source files for a program",
+            "type": "utility"
+        },
+        {
+            "element": "which",
+            "url": "https://ss64.com/bash/which.html",
+            "description": "Search the user’s $path for a program file",
+            "type": "common"
+        },
+        {
+            "element": "while",
+            "url": "https://ss64.com/bash/while.html",
+            "description": "Execute commands",
+            "type": "builtin"
+        },
+        {
+            "element": "who",
+            "url": "https://ss64.com/bash/who.html",
+            "description": "Print all usernames currently logged in",
+            "type": "utility"
+        },
+        {
+            "element": "whoami",
+            "url": "https://ss64.com/bash/whoami.html",
+            "description": "Print the current user ID and name ('id -un')",
+            "type": "utility"
+        },
+        {
+            "element": "wget",
+            "url": "https://ss64.com/bash/wget.html",
+            "description": "Retrieve web pages or files via HTTP, HTTPS, or FTP",
+            "type": "common"
+        },
+        {
+            "element": "write",
+            "url": "https://ss64.com/bash/write.html",
+            "description": "Send a message to another user",
+            "type": "utility"
+        },
+        {
+            "element": "xargs",
+            "url": "https://ss64.com/bash/xargs.html",
+            "description": "Execute utility, passing constructed argument list(s)",
+            "type": "utility"
+        },
+        {
+            "element": "xdg-open",
+            "url": "https://ss64.com/bash/xdg-open.html",
+            "description": "Open a file or URL in the user’s preferred application",
+            "type": "utility"
+        },
+        {
+            "element": "xxd",
+            "url": "https://ss64.com/bash/xxd.html",
+            "description": "Make a hexdump or do the reverse",
+            "type": "utility"
+        },
+        {
+            "element": "xz",
+            "url": "https://ss64.com/bash/xz.html",
+            "description": "Compress or decompress .xz and .lzma files",
+            "type": "utility"
+        },
+        {
+            "element": "yes",
+            "url": "https://ss64.com/bash/yes.html",
+            "description": "Print a string until interrupted",
+            "type": "utility"
+        },
+        {
+            "element": "zip",
+            "url": "https://ss64.com/bash/zip.html",
+            "description": "Package and compress (archive) files",
+            "type": "utility"
+        },
+        {
+            "element": ".",
+            "url": "https://ss64.com/bash/dot.html",
+            "description": "Run a command script in the current shell",
+            "type": "common"
+        },
+        {
+            "element": "!!",
+            "url": "https://ss64.com/bash/lastcommand.html",
+            "description": "Run the last command again",
+            "type": "common"
+        },
+        {
+            "element": "#",
+            "url": "https://ss64.com/bash/comment.html",
+            "description": "Comment / Remark",
+            "type": "builtin"
+        }
+    ]
+}

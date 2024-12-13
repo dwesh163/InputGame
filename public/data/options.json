@@ -49,6 +49,12 @@
             "name" : "System calls",
             "img" : "./background/syscalls.jpg",
             "description": "In computing, a system call (commonly abbreviated to syscall) is the programmatic way in which a computer program requests a service from the operating system on which it is executed."
+        },
+        {
+            "json": "bash",
+            "name": "Bash",
+            "img": "./background/bash.jpg",
+            "description": "Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell."
         }
     ]
 }
