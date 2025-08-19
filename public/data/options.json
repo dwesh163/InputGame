@@ -55,6 +55,12 @@
             "name": "Bash",
             "img": "./background/bash.jpg",
             "description": "Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell."
+        },
+        {
+            "json": "git",
+            "name": "Git Commands",
+            "img": "./background/git.png",
+            "description": "Common Git commands used in various situations."
         }
     ]
 }
