@@ -277,6 +277,7 @@ function App() {
                     ) : (
                         <main className="container">
                             <div id="root">
+                                <h1>{JSON.parse(localStorage.getItem('inputGameSettings'))[currentGame].title}</h1>
                                 <Timer isSettings={isSettings} handleToggle={handleToggle} timer={timer} setTimer={setTimer} isRunning={isRunning} setIsRunning={setIsRunning} />
                                 <div>
                                     <>
