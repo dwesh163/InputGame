@@ -20,10 +20,6 @@ Feel free to [open an issue](https://github.com/dwesh163/InputGame/issues/new/ch
 
 We **love** pull requests! Before **forking the repo** and **creating a pull request** for non-trivial changes, it is usually best to first open an issue to discuss the changes, or discuss your intended approach for solving the problem in the comments for an existing issue.
 
--   **Update the [CHANGELOG.md]** for all enhancements and bug fixes.
--   **Add documentation.** Document your changes with code doc comments or in existing guides.
--   **Use the repo's default branch.** Branch from and submit your pull request to the repo's default branch. This is the `main` branch for this repository.
-
 ### Writing Commit Messages
 
 -   **Limit the subject** line to 50 characters.
