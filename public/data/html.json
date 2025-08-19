@@ -340,7 +340,7 @@
             "element": "keygen",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen",
             "description": "Represents a key-pair generator field used in cryptographic forms.",
-            "type": "base"
+            "type": "obselete"
         },
         {
             "element": "label",
