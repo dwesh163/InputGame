@@ -1,0 +1,157 @@
+{
+    "options": {
+        "title": "Git commands",
+        "case-sensitive": false,
+        "answers-sort": "3",
+        "timer": true,
+        "timer-value": 300,
+        "type": {
+            "select": [
+                "common"
+            ],
+            "all": [
+                "common"
+            ]
+        }
+    },
+    "data": [
+        {
+            "element": "clone",
+            "description": "Clone a repository into a new directory",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-clone"
+        },
+        {
+            "element": "init",
+            "description": "Create an empty Git repository or reinitialize an existing one",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-init"
+        },
+        {
+            "element": "add",
+            "description": "Add file contents to the index",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-add"
+        },
+        {
+            "element": "mv",
+            "description": "Move or rename a file, a directory, or a symlink",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-mv"
+        },
+        {
+            "element": "restore",
+            "description": "Restore working tree files",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-restore"
+        },
+        {
+            "element": "rm",
+            "description": "Remove files from the working tree and from the index",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-rm"
+        },
+        {
+            "element": "bisect",
+            "description": "Use binary search to find the commit that introduced a bug",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-bisect"
+        },
+        {
+            "element": "diff",
+            "description": "Show changes between commits, commit and working tree, etc",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-diff"
+        },
+        {
+            "element": "grep",
+            "description": "Print lines matching a pattern",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-grep"
+        },
+        {
+            "element": "log",
+            "description": "Show commit logs",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-log"
+        },
+        {
+            "element": "show",
+            "description": "Show various types of objects",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-show"
+        },
+        {
+            "element": "status",
+            "description": "Show the working tree status",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-status"
+        },
+        {
+            "element": "backfill",
+            "description": "Download missing objects in a partial clone",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-backfill"
+        },
+        {
+            "element": "branch",
+            "description": "List, create, or delete branches",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-branch"
+        },
+        {
+            "element": "commit",
+            "description": "Record changes to the repository",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-commit"
+        },
+        {
+            "element": "merge",
+            "description": "Join two or more development histories together",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-merge"
+        },
+        {
+            "element": "rebase",
+            "description": "Reapply commits on top of another base tip",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-rebase"
+        },
+        {
+            "element": "reset",
+            "description": "Reset current HEAD to the specified state",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-reset"
+        },
+        {
+            "element": "switch",
+            "description": "Switch branches",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-switch"
+        },
+        {
+            "element": "tag",
+            "description": "Create, list, delete or verify a tag object signed with GPG",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-tag"
+        },
+        {
+            "element": "fetch",
+            "description": "Download objects and refs from another repository",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-fetch"
+        },
+        {
+            "element": "pull",
+            "description": "Fetch from and integrate with another repository or a local branch",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-pull"
+        },
+        {
+            "element": "push",
+            "description": "Update remote refs along with associated objects",
+            "type": "common",
+            "url": "https://git-scm.com/docs/git-push"
+        }
+    ]
+}
