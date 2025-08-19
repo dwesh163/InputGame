@@ -367,6 +367,18 @@
             "type": "base"
         },
         {
+            "element": "main",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main",
+            "description": "Represents the main content of a document, excluding headers, footers, and sidebars.",
+            "type": "base"
+        },
+        {
+            "element": "map",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map",
+            "description": "Defines an image map, which is a clickable area within an image.",
+            "type": "base"
+        },
+        {
             "element": "map",
             "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map",
             "description": "Defines a client-side image map.",
